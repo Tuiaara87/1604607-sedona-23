@@ -7,16 +7,18 @@
 </head>
 
 <body class="body">
-  <header class="header">
-    <a class="header__logo">
-      <img src="img/logo-mobile/logotype-mobile.svg.svg" width="102" height="84" alt="Логотип Седона">
-    </a>
+  <div class="layout">
 
-    <nav class="navigation">
-      <button class="navigation__toggle" type="button">
-        <span class="visually-hidden">Открыть меню</span>
-      </button>
-      <div class="wrapper">
+    <header class="header">
+      <a class="header__logo">
+        <img src="img/logo-mobile/logotype-mobile.svg.svg" width="102" height="84" alt="Логотип Седона">
+      </a>
+
+      <nav class="navigation">
+        <button class="navigation__toggle" type="button">
+          <span class="visually-hidden">Открыть меню</span>
+        </button>
+
         <ul class="navigation__list site-list">
           <li class="site-list__item">
             <a>главная</a>
@@ -31,53 +33,117 @@
             <a href="#">html academy</a>
           </li>
         </ul>
+
+      </nav>
+      <section class="banner">
+        <h2 class="visually-hidden">Седона</h2>
+        <img src="img/welcome-mobile/SEDONA.svg" width="229" height="39" alt="SEDONA">
+      </section>
+    </header>
+
+    <main class="main wrapper">
+      <h1 class="visually-hidden">Форма заполнения</h1>
+
+      <div class="review wrapper">
+        <p class="review__title">оставьте свой отзыв</p>
+        <p class="review__subtitle">помогите нашим отелям стать лучше! оставьте отзыв о них, а также о посещенных
+          вами
+          достопримечательностях</p>
       </div>
-    </nav>
-  </header>
 
-  <main class="main">
-    <h1 class="visually-hidden">Форма заполнения</h1>
+      <section class="form wrapper">
 
-    <section class="sedona-banner">
-      <h2 class="visually-hidden">Седона</h2>
+        <form class="form__introduce" method="post">
+          <p class="form__title-introduce">представьтесь:</p>
+          <label class="form__name-introduce" for="name-field">имя<sup>*</sup>:
+            <input type="text" name="name" id="name-field">
+          </label>
+          <label class="form__name-introduce" for="name-field">фамилия<sup>*</sup>:
+            <input type="text" name="name" id="name-field">
+          </label>
+          <label class="form__name-introduce" for="name-field">отчество:
+            <input type="text" name="name" id="name-field">
+          </label>
+        </form>
+
+        <form class="form__contacts" method="post">
+          <p class="form__title">контактная информация:</p>
+          <label class="form__phone" for="phone-field">контактный телефон<sup>*</sup>:
+            <input type="text" name="phone" id="phone-field">
+          </label>
+          <label class="form__email" for="email-field">электронная почта<sup>*</sup>:
+            <input type="text" name="email" id="email-field">
+          </label>
+        </form>
+
+        <div class="form__radio">
+          <p class="form__title-radio">ваше общее впечатление:</p>
+          <label>
+            <input class="form__item-radio" type="radio" name="impression" value="positive">
+            Скорее положительное
+          </label>
+          <label>
+            <input class="form__item-radio" type="radio" name="impression" value="negative">
+            Скорее отрицательное
+          </label>
+          <label>
+            <input class="form__item-radio" type="radio" name="impression" value="neutral">
+            Затрудняюсь ответить
+          </label>
+        </div>
+
+        <div class="form__checkbox">
+          <p class="form__title-checkbox">посещенные достопримечательности:</p>
+          <input class="form__item-checkbox" type="checkbox" name="places" id="places-field" checked>
+          <label for="places-field">Мост Дьявола</label>
+
+
+          <input class="form__item-checkbox" type="checkbox" name="places" id="places-field" checked>
+          <label for="places-field">Гора-Колокол</label>
+
+
+          <input class="form__item-checkbox" type="checkbox" name="places" id="places-field" checked>
+          <label for="places-field">Слайд парк</label>
+
+
+          <input class="form__item-checkbox" type="checkbox" name="places" id="places-field">
+          <label for="places-field">Красные скалы</label>
+        </div>
+
+        <div class="form__feedback">
+          <p class="form__describe">опишите свои эмоции:</p>
+          <textarea class="form__share" name="comment" id="comment-field"
+            rows="10">опишите подробно все свои восторги</textarea>
+        </div>
+        <button class="button" type="button">отправить отзыв</button>
+
+      </section>
+    </main>
+
+    <footer class="footer">
       <div class="wrapper">
-        <img src="img/banner-mobile/back-desktop.png" width="900" height="214" alt="Горы Седона">
-      </div>
-    </section>
-
-    <div class="review">
-      <div class="wrapper">
-        <div class="review__title">оставьте свой отзыв</div>
-        <div class="review__subtitle">помогите нашим отелям стать лучше! оставьте отзыв о них, а также о посещенных вами
-          достопримечательностях</div>
-      </div>
-    </div>
-
-  </main>
-
-  <footer class="footer">
-    <div class="wrapper">
-      <div class="sedona-footer">
-        <div class="sedona-footer__hashtag">#visitsedona</div>
-        <ul class="sedona-footer__social-list">
-          <li class="sedona-footer__social-item">
-            <a class="sedona-footer__social-link" href="#">twitter</a>
-          </li>
-          <li class="sedona-footer__social-item">
-            <a class="sedona-footer__social-link" href="#">facebook</a>
-          </li>
-          <li class="sedona-footer__social-item">
-            <a class="sedona-footer__social-link" href="#">youtube</a>
-          </li>
-        </ul>
-        <div class="sedona-footer__copyright copyright">
-          <b class="copyright__text">Разработано:</b>
-          <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
+        <div class="sedona-footer">
+          <div class="sedona-footer__hashtag">#visitsedona</div>
+          <ul class="sedona-footer__social-list">
+            <li class="sedona-footer__social-item">
+              <a class="sedona-footer__social-link" href="#">twitter</a>
+            </li>
+            <li class="sedona-footer__social-item">
+              <a class="sedona-footer__social-link" href="#">facebook</a>
+            </li>
+            <li class="sedona-footer__social-item">
+              <a class="sedona-footer__social-link" href="#">youtube</a>
+            </li>
+          </ul>
+          <div class="sedona-footer__copyright copyright">
+            <b class="copyright__text">Разработано:</b>
+            <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
+          </div>
         </div>
       </div>
-    </div>
 
-  </footer>
+    </footer>
+  </div>
 </body>
 
 </html>
