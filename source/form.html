@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Форма</title>
+</head>
+
+<body class="body">
+  <div class="layout">
+
+    <header class="header">
+      <a class="header__logo" href="http://127.0.0.1:5500/source/index.html">
+        <img src="img/logo-mobile/logotype-mobile.svg.svg" width="102" height="84" alt="Логотип Седона">
+      </a>
+
+      <nav class="navigation">
+        <button class="navigation__toggle" type="button">
+          <span class="visually-hidden">Открыть меню</span>
+        </button>
+
+        <ul class="navigation__list site-list">
+          <li class="site-list__item">
+            <a>главная</a>
+          </li>
+          <li class="site-list__item">
+            <a href="photo.html">фото и видео</a>
+          </li>
+          <li class="site-list__item">
+            <a href="form.html">форма отзыва</a>
+          </li>
+          <li class="site-list__item">
+            <a href="#">html academy</a>
+          </li>
+        </ul>
+
+      </nav>
+      <div class="intro">
+        <p class="intro__title">Седона</p>
+        <img src="img/welcome-mobile/SEDONA.svg" width="229" height="39" alt="SEDONA">
+      </div>
+    </header>
+
+    <main class="main wrapper">
+
+      <div class="review wrapper">
+        <h1 class="review__title">оставьте свой отзыв</h1>
+        <p class="review__subtitle">помогите нашим отелям стать лучше! оставьте отзыв о них, а также о посещенных
+          вами
+          достопримечательностях</p>
+      </div>
+
+      <section class="form wrapper">
+
+        <form class="form__introduce" method="post">
+          <p class="form__title-introduce">представьтесь:</p>
+          <label class="form__name-introduce" for="name-field">имя<sup>*</sup>:
+            <input type="text" name="name" id="name-field">
+          </label>
+          <label class="form__name-introduce" for="name-field">фамилия<sup>*</sup>:
+            <input type="text" name="name" id="name-field">
+          </label>
+          <label class="form__name-introduce" for="name-field">отчество:
+            <input type="text" name="name" id="name-field">
+          </label>
+        </form>
+
+        <form class="form__contacts" method="post">
+          <p class="form__title">контактная информация:</p>
+          <label class="form__phone" for="phone-field">контактный телефон<sup>*</sup>:
+            <input type="text" name="phone" id="phone-field">
+          </label>
+          <label class="form__email" for="email-field">электронная почта<sup>*</sup>:
+            <input type="text" name="email" id="email-field">
+          </label>
+        </form>
+
+        <div class="form__radio">
+          <p class="form__title-radio">ваше общее впечатление:</p>
+          <label>
+            <input class="form__item-radio" type="radio" name="impression" value="positive">
+            Скорее положительное
+          </label>
+          <label>
+            <input class="form__item-radio" type="radio" name="impression" value="negative">
+            Скорее отрицательное
+          </label>
+          <label>
+            <input class="form__item-radio" type="radio" name="impression" value="neutral">
+            Затрудняюсь ответить
+          </label>
+        </div>
+
+        <div class="form__checkbox">
+          <p class="form__title-checkbox">посещенные достопримечательности:</p>
+          <input class="form__item-checkbox" type="checkbox" name="places" id="places-field" checked>
+          <label for="places-field">Мост Дьявола</label>
+
+
+          <input class="form__item-checkbox" type="checkbox" name="places" id="places-field" checked>
+          <label for="places-field">Гора-Колокол</label>
+
+
+          <input class="form__item-checkbox" type="checkbox" name="places" id="places-field" checked>
+          <label for="places-field">Слайд парк</label>
+
+
+          <input class="form__item-checkbox" type="checkbox" name="places" id="places-field">
+          <label for="places-field">Красные скалы</label>
+        </div>
+
+        <div class="form__feedback">
+          <p class="form__describe">опишите свои эмоции:</p>
+          <textarea class="form__share" name="comment" id="comment-field"
+            rows="10">опишите подробно все свои восторги</textarea>
+        </div>
+        <button class="button" type="button">отправить отзыв</button>
+
+      </section>
+    </main>
+
+    <footer class="footer wrapper">
+      <p class="footer__hashtag">#visitsedona</p>
+
+      <ul class="social">
+        <li class="social__item">
+          <a class="social__link" href="#">twitter</a>
+        </li>
+        <li class="social__item">
+          <a class="social__link" href="#">facebook</a>
+        </li>
+        <li class="social__item">
+          <a class="social__link" href="#">youtube</a>
+        </li>
+      </ul>
+      <div class="footer__copyright copyright">
+        <b class="copyright__text">Разработано:</b>
+        <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
+      </div>
+    </footer>
+  </div>
+</body>
+
+</html>
