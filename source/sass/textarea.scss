@@ -1,0 +1,14 @@
+.textarea {
+  &__title--center {
+    text-align: center;
+    font-size: $font-size18;
+    line-height: $line-height26;
+    font-weight: bold;
+    font-family: $base-font;
+    text-transform: uppercase;
+  }
+  &__share {
+    width: 279px;
+    margin-left: 20px;
+  }
+}

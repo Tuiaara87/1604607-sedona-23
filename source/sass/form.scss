@@ -1,0 +1,40 @@
+.form {
+  &__container {
+    border: none;
+    padding: 0;
+    margin-bottom: 56px;
+  }
+  &__title {
+    font-size: $font-size21;
+    margin: 0;
+    font-family: $base-font;
+    text-transform: uppercase;
+    font-weight: bold;
+    text-align: center;
+  }
+  &__fill-in {
+    line-height: $line-height26;
+    margin: 0;
+    font-family: $base-font;
+    text-transform: uppercase;
+  }
+  &__radio {
+    font-size: $font-size18;
+    line-height: $line-height26;
+    font-weight: bold;
+    font-family: $base-font;
+  }
+  &__checkbox {
+    font-size: $font-size18;
+    line-height: $line-height26;
+    font-weight: bold;
+    font-family: $base-font;
+  }
+  &__input {
+    font-size: $font-size18;
+    line-height: $line-height26;
+    font-weight: bold;
+    font-family: $base-font;
+    color: $black;
+  }
+}

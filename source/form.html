@@ -4,6 +4,7 @@
 <head>
   <meta charset="UTF-8">
   <title>Форма</title>
+  <link rel="stylesheet" href="normalize.css">
   <link rel="stylesheet" href="css/style.css">
 </head>
 
@@ -37,80 +38,81 @@
 
       </nav>
       <div class="intro">
-        <p class="intro__title">Седона</p>
         <img src="img/welcome-mobile/SEDONA.svg" width="229" height="39" alt="SEDONA">
       </div>
     </header>
 
     <main class="main wrapper">
 
-      <div class="intro wrapper">
-        <h1 class="intro__title">оставьте свой отзыв</h1>
-        <p class="intro__subtitle">помогите нашим отелям стать лучше! оставьте отзыв о них, а также о посещенных
+      <div class="feedback wrapper">
+        <h1 class="feedback__title">оставьте свой отзыв</h1>
+        <p class="feedback__subtitle">помогите нашим отелям стать лучше! оставьте отзыв о них, а также о посещенных
           вами
           достопримечательностях</p>
       </div>
 
-      <form class="form wrapper" action="echo.htmlacademy.ru">
+      <section class="worksheet">
+        <form class="form wrapper" action="echo.htmlacademy.ru">
 
-        <fieldset class="form__container" method="post">
-          <legend class="form__title--center">представьтесь:</legend>
-          <label class="form__fill-in" for="name-field">имя<sup>*</sup>:</label>
-          <input class="form__input" type="text" name="name" placeholder="Петр" id="name-field" required>
+          <fieldset class="form__container">
+            <legend class="form__title form__title--center">представьтесь:</legend>
+            <label class="form__fill-in" for="name-field">имя<sup>*</sup>:</label>
+            <input class="form__input" type="text" name="name" placeholder="Петр" id="name-field" required>
 
-          <label class="form__fill-in" for="name-field">фамилия<sup>*</sup>:</label>
-          <input class="form__input" type="text" name="name" placeholder="Иванов" id="name-field" required>
+            <label class="form__fill-in" for="family-name">фамилия<sup>*</sup>:</label>
+            <input class="form__input" type="text" name="name" placeholder="Иванов" id="family-name" required>
 
-          <label class="form__fill-in" for="name-field">отчество:</label>
-          <input class="form__input" type="text" name="name" placeholder="Александрович" id="name-field">
+            <label class="form__fill-in" for="father-name">отчество:</label>
+            <input class="form__input" type="text" name="name" placeholder="Александрович" id="father-name">
 
-        </fieldset>
+          </fieldset>
 
-        <fieldset class="form__container" method="post">
-          <legend class="form__title--center">контактная информация:</legend>
-          <label class="form__fill-in" for="phone-field">контактный телефон<sup>*</sup>:</label>
-          <input class="form__input" type="text" name="name" placeholder="Введите телефон" id="phone-field" required>
+          <fieldset class="form__container">
+            <legend class="form__title form__title--center">контактная информация:</legend>
+            <label class="form__fill-in" for="phone-field">контактный телефон<sup>*</sup>:</label>
+            <input class="form__input" type="text" name="name" placeholder="Введите телефон" id="phone-field" required>
 
-          <label class="form__fill-in" for="email-field">электронная почта<sup>*</sup>:</label>
-          <input class="form__input" type="text" name="email" placeholder="Введите телефон" id="email-field" required>
-        </fieldset>
+            <label class="form__fill-in" for="email-field">электронная почта<sup>*</sup>:</label>
+            <input class="form__input" type="text" name="email" placeholder="Введите телефон" id="email-field" required>
+          </fieldset>
 
-        <fieldset class="form__container">
-          <legend class="form__title--left">ваше общее впечатление:</legend>
+          <fieldset class="form__container">
 
-          <input class="visually-hidden" type="radio" id="positive" name="impression" value="good">
-          <label class="form__radio" for="opinion">Скорее положительное</label>
+            <legend class="form__title form__title--left">ваше общее впечатление:</legend>
 
-          <input class="visually-hidden" type="radio" id="negative" name="impression" value="not good">
-          <label class="form__radio" for="opinion">Скорее отрицательное</label>
+            <input class="visually-hidden" type="radio" id="positive" name="impression" value="good">
+            <label class="form__radio" for="positive">Скорее положительное</label>
 
-          <input class="visually-hidden" type="radio" id="average" name="impression" value="neutral">
-          <label class="form__radio" for="opinion">Затрудняюсь ответить</label>
+            <input class="visually-hidden" type="radio" id="negative" name="impression" value="not good">
+            <label class="form__radio" for="negative">Скорее отрицательное</label>
 
-        </fieldset>
+            <input class="visually-hidden" type="radio" id="average" name="impression" value="neutral">
+            <label class="form__radio" for="average">Затрудняюсь ответить</label>
 
-        <fieldset class="form__container">
-          <legend class="form__title--center">посещенные достопримечательности:</legend>
+          </fieldset>
 
-          <input class="visually-hidden" type="checkbox" name="places" id="places-field" checked>
-          <label class="form__checkbox" for="places-field">Мост Дьявола</label>
-          <input class="visually-hidden" type="checkbox" name="places" id="places-field" checked>
-          <label class="form__checkbox" for="places-field">Гора-Колокол</label>
-          <input class="visually-hidden" type="checkbox" name="places" id="places-field" checked>
-          <label class="form__checkbox" for="places-field">Слайд парк</label>
-          <input class="visually-hidden" type="checkbox" name="places" id="places-field">
-          <label class="form__checkbox" for="places-field">Красные скалы</label>
-        </fieldset>
+          <fieldset class="form__container">
+            <legend class="form__title form__title--center">посещенные достопримечательности:</legend>
 
-        <div class="form__textarea">
-          <p class="form__title--center">опишите свои эмоции:</p>
-          <textarea class="form__share" name="comment" id="comment-field"
-            rows="10">опишите подробно все свои восторги</textarea>
-        </div>
-        <button class="button" type="submit">отправить отзыв</button>
+            <input class="visually-hidden" type="checkbox" name="places" id="bridge-field" checked>
+            <label class="form__checkbox" for="places-field">Мост Дьявола</label>
+            <input class="visually-hidden" type="checkbox" name="places" id="mountain-field" checked>
+            <label class="form__checkbox" for="places-field">Гора-Колокол</label>
+            <input class="visually-hidden" type="checkbox" name="places" id="park-field" checked>
+            <label class="form__checkbox" for="places-field">Слайд парк</label>
+            <input class="visually-hidden" type="checkbox" name="places" id="places-field">
+            <label class="form__checkbox" for="places-field">Красные скалы</label>
+          </fieldset>
 
-        </section>
-      </form>
+          <div class="textarea wrapper">
+            <label class="textarea__title">опишите свои эмоции:</label>
+            <textarea class="textarea__share" name="comment" id="comment-field"
+              rows="10">опишите подробно все свои восторги</textarea>
+          </div>
+          <button class="button" type="submit">отправить отзыв</button>
+        </form>
+      </section>
+
 
 
 

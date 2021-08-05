@@ -1,0 +1,24 @@
+.advantages {
+  background-color: $white;
+  &__title {
+    font-size: $font-size21;
+    margin: 0;
+    font-family: $base-font;
+    text-transform: uppercase;
+    min-width: 200px;
+  }
+  &__subtitle {
+    line-height: $line-height26;
+    margin: 0;
+    font-family: $base-font;
+    text-transform: uppercase;
+  }
+  &__proof {
+    height: 281px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-left: 21px;
+  }
+}

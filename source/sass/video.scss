@@ -1,0 +1,24 @@
+.video {
+  &__title {
+    text-align: center;
+    font-size: $font-size21;
+    font-family: $base-font;
+    text-transform: uppercase;
+    min-width: 200px;
+    font-weight: bold;
+  }
+  &__text {
+    text-align: center;
+    line-height: $line-height26;
+    font-family: $base-font;
+    text-transform: uppercase;
+  }
+  // &__player {
+  //   position: relative;
+  // }
+  // &__layer {
+  //   background-image: url("../img/layers/layer-player.png");
+  //   position: absolute;
+  //   z-index: 1;
+  // }
+}

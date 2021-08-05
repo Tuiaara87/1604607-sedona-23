@@ -1,0 +1,16 @@
+.feedback {
+  &__subtitle {
+    line-height: $line-height26;
+    margin: 0;
+    font-family: $base-font;
+    text-transform: uppercase;
+    margin-bottom: 37px;
+  }
+  &__title {
+    font-size: $font-size21;
+    margin: 0;
+    font-family: $base-font;
+    text-transform: uppercase;
+    margin-top: 36px;
+  }
+}
