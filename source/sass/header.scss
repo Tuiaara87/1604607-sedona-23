@@ -1,9 +1,8 @@
 .header {
+  position: relative;
   &__logo {
-    // display: flex;
-    // align-items: center;
-    // justify-content: center;
     position: absolute;
     z-index: 1;
+    left: 109px;
   }
 }
