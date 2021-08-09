@@ -4,6 +4,7 @@
   padding-left: 22px;
   padding-top: 26px;
   padding-bottom: 35px;
+
   &__title {
     font-family: $base-font;
     font-size: $font-size21;
@@ -11,10 +12,16 @@
     text-transform: uppercase;
     margin: 0;
   }
+
   &__text {
     line-height: $line-height26;
     font-family: $base-font;
     text-transform: uppercase;
     margin: 0;
+  }
+
+  &__container {
+    display: flex;
+    justify-content: space-between;
   }
 }

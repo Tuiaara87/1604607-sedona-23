@@ -2,17 +2,20 @@
   height: 503px;
   background-color: $light-grey;
   padding-left: 26px;
+
   &__list {
     list-style: none;
     padding: 0;
     margin: 0;
   }
+
   &__title {
     font-family: $base-font;
     font-size: $font-size21;
     font-weight: bold;
     text-transform: uppercase;
   }
+
   &__text {
     line-height: $line-height26;
     font-family: $base-font;

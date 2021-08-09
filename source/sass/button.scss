@@ -11,10 +11,12 @@
   margin-left: 17px;
   margin-bottom: 40px;
   cursor: pointer;
+
   &:hover {
     background-color: $deep-blue;
     transition: 0.3s;
   }
+
   &:active {
     background-color: $dark-blue;
   }

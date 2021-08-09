@@ -2,7 +2,10 @@
   // display: none;
   padding: 0;
   list-style: none;
+
   &__list {
     list-style: none;
+    height: 223px;
+    border: 2px solid red;
   }
 }
