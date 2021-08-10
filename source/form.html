@@ -55,40 +55,46 @@
         <form class="form wrapper" action="echo.htmlacademy.ru">
 
           <fieldset class="form__container">
+
             <legend class="form__title form__title--center">представьтесь:</legend>
-            <label class="form__fill-in" for="name-field">имя<sup>*</sup>:</label>
-            <input class="form__input" type="text" name="name" placeholder="Петр" id="name-field" required>
+            <div class="form__box">
+              <label class="form__fill-in" for="name-field">имя<sup>*</sup>:</label>
+              <input class="form__input" type="text" name="name" placeholder="Петр" id="name-field" required>
 
-            <label class="form__fill-in" for="family-name">фамилия<sup>*</sup>:</label>
-            <input class="form__input" type="text" name="name" placeholder="Иванов" id="family-name" required>
+              <label class="form__fill-in" for="family-name">фамилия<sup>*</sup>:</label>
+              <input class="form__input" type="text" name="name" placeholder="Иванов" id="family-name" required>
 
-            <label class="form__fill-in" for="father-name">отчество:</label>
-            <input class="form__input" type="text" name="name" placeholder="Александрович" id="father-name">
-
+              <label class="form__fill-in" for="father-name">отчество:</label>
+              <input class="form__input" type="text" name="name" placeholder="Александрович" id="father-name">
+            </div>
           </fieldset>
 
           <fieldset class="form__container">
             <legend class="form__title form__title--center">контактная информация:</legend>
-            <label class="form__fill-in" for="phone-field">контактный телефон<sup>*</sup>:</label>
-            <input class="form__input" type="text" name="name" placeholder="Введите телефон" id="phone-field" required>
+            <div class="form__box">
+              <label class="form__fill-in" for="phone-field">контактный телефон<sup>*</sup>:</label>
+              <input class="form__input" type="text" name="name" placeholder="Введите телефон" id="phone-field"
+                required>
 
-            <label class="form__fill-in" for="email-field">электронная почта<sup>*</sup>:</label>
-            <input class="form__input" type="text" name="email" placeholder="Введите телефон" id="email-field" required>
+              <label class="form__fill-in" for="email-field">электронная почта<sup>*</sup>:</label>
+              <input class="form__input" type="text" name="email" placeholder="Введите телефон" id="email-field"
+                required>
+            </div>
           </fieldset>
 
           <fieldset class="form__container">
 
             <legend class="form__title form__title--left">ваше общее впечатление:</legend>
+            <div class="form__wrap">
+              <input class="visually-hidden" type="radio" id="positive" name="impression" value="good">
+              <label class="form__radio" for="positive">Скорее положительное</label>
 
-            <input class="visually-hidden" type="radio" id="positive" name="impression" value="good">
-            <label class="form__radio" for="positive">Скорее положительное</label>
+              <input class="visually-hidden" type="radio" id="negative" name="impression" value="not good">
+              <label class="form__radio" for="negative">Скорее отрицательное</label>
 
-            <input class="visually-hidden" type="radio" id="negative" name="impression" value="not good">
-            <label class="form__radio" for="negative">Скорее отрицательное</label>
-
-            <input class="visually-hidden" type="radio" id="average" name="impression" value="neutral">
-            <label class="form__radio" for="average">Затрудняюсь ответить</label>
-
+              <input class="visually-hidden" type="radio" id="average" name="impression" value="neutral">
+              <label class="form__radio" for="average">Затрудняюсь ответить</label>
+            </div>
           </fieldset>
 
           <fieldset class="form__container">

@@ -1,10 +1,12 @@
 .feedback {
+  // margin-left: 20px;
   &__subtitle {
     line-height: $line-height26;
     margin: 0;
     font-family: $base-font;
     text-transform: uppercase;
     margin-bottom: 37px;
+    text-align: center;
   }
 
   &__title {
@@ -13,5 +15,7 @@
     font-family: $base-font;
     text-transform: uppercase;
     margin-top: 36px;
+    text-align: center;
+    margin-bottom: 36px;
   }
 }

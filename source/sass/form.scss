@@ -3,6 +3,7 @@
     border: none;
     padding: 0;
     margin-bottom: 56px;
+    margin-left: 20px;
   }
 
   &__title {
@@ -12,6 +13,7 @@
     text-transform: uppercase;
     font-weight: bold;
     text-align: center;
+    margin-bottom: 19px;
   }
 
   &__fill-in {
@@ -19,6 +21,7 @@
     margin: 0;
     font-family: $base-font;
     text-transform: uppercase;
+    margin-bottom: 8px;
   }
 
   &__radio {
@@ -41,5 +44,20 @@
     font-weight: bold;
     font-family: $base-font;
     color: $black;
+    border: none;
+    margin-bottom: 14px;
+
+    &::placeholder {
+      color: $black;
+      background-color: $concrete;
+
+      width: 280px;
+      height: 58px;
+    }
+  }
+
+  &__box {
+    display: flex;
+    flex-direction: column;
   }
 }

@@ -6,4 +6,20 @@
   &__box {
     margin-left: 20px;
   }
+
+  &__title {
+    font-family: $base-font;
+    text-transform: uppercase;
+    font-size: $font-size14;
+    line-height: $line-height24;
+    font-weight: bold;
+  }
+
+  &__author {
+    font-family: $base-font;
+    text-transform: uppercase;
+    font-size: $font-size14;
+    line-height: $line-height24;
+    font-weight: normal;
+  }
 }

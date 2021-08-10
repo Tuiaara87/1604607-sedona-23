@@ -1,6 +1,6 @@
 .pluses {
   height: 503px;
-  background-color: $light-grey;
+  background-color: $gallery;
   padding-left: 26px;
 
   &__list {
@@ -11,14 +11,21 @@
 
   &__title {
     font-family: $base-font;
-    font-size: $font-size21;
+    font-size: $font-size26;
+    line-height: $line-height18;
     font-weight: bold;
     text-transform: uppercase;
+    margin: 0;
   }
 
   &__text {
-    line-height: $line-height26;
+    line-height: $line-height21;
+    font-size: $font-size14;
     font-family: $base-font;
     text-transform: uppercase;
+  }
+
+  &__container {
+    padding-top: 26px;
   }
 }

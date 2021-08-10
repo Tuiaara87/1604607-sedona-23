@@ -2,7 +2,8 @@
   background-color: $white;
 
   &__title {
-    font-size: $font-size21;
+    font-size: $font-size18;
+    line-height: $line-height26;
     margin: 0;
     font-family: $base-font;
     text-transform: uppercase;
@@ -10,6 +11,7 @@
   }
 
   &__subtitle {
+    font-size: $font-size14;
     line-height: $line-height26;
     margin: 0;
     font-family: $base-font;

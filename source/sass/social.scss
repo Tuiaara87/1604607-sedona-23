@@ -3,4 +3,29 @@
   margin: 0;
   list-style: none;
   text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  &__item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    column-gap: 6px;
+    width: 46px;
+    height: 48px;
+    background-color: $steel-blue2;
+  }
+
+  &__link {
+    border: 2px solid $black;
+
+    // &::before {
+    //   content: "";
+    //   width: 46px;
+    //   height: 48px;
+    //   background-image: $steel-blue2;
+    //   display: block;
+    // }
+  }
 }

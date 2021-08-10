@@ -8,13 +8,15 @@
     margin: 0;
     font-family: $base-font;
     font-size: $font-size21;
+    line-height: $line-height26;
     font-weight: bold;
     text-transform: uppercase;
     margin-top: 33px;
   }
 
   &__text {
-    line-height: $line-height26;
+    font-size: $font-size14;
+    line-height: $line-height24;
     font-family: $base-font;
     text-transform: uppercase;
   }

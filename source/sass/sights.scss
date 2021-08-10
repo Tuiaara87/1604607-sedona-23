@@ -7,14 +7,16 @@
 
   &__title {
     font-family: $base-font;
-    font-size: $font-size21;
+    font-size: $font-size18;
+    line-height: $line-height26;
     font-weight: bold;
     text-transform: uppercase;
     margin: 0;
   }
 
   &__text {
-    line-height: $line-height26;
+    line-height: $line-height21;
+    font-size: $font-size14;
     font-family: $base-font;
     text-transform: uppercase;
     margin: 0;
@@ -23,5 +25,10 @@
   &__container {
     display: flex;
     justify-content: space-between;
+  }
+
+  &__box {
+    margin-left: 13px;
+    margin-bottom: 26px;
   }
 }
