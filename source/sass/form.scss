@@ -39,25 +39,13 @@
   }
 
   &__input {
-    font-size: $font-size18;
-    line-height: $line-height26;
-    font-weight: bold;
-    font-family: $base-font;
-    color: $black;
+    width: 280px;
+    height: 58px;
+    background-color: $concrete;
     border: none;
-    margin-bottom: 14px;
 
     &::placeholder {
       color: $black;
-      background-color: $concrete;
-
-      width: 280px;
-      height: 58px;
     }
-  }
-
-  &__box {
-    display: flex;
-    flex-direction: column;
   }
 }

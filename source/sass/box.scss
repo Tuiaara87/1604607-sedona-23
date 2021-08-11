@@ -1,0 +1,29 @@
+.box {
+  display: flex;
+  flex-direction: column;
+
+  &__input {
+    font-size: $font-size18;
+    line-height: $line-height26;
+    font-weight: bold;
+    font-family: $base-font;
+    color: $black;
+    border: none;
+    margin-bottom: 14px;
+    margin-left: 10px;
+
+    &::placeholder {
+      color: $black;
+      background-color: $concrete;
+      width: 280px;
+      height: 58px;
+    }
+  }
+
+  &__fill-in {
+    font-family: $base-font;
+    text-transform: uppercase;
+    font-size: $font-size14;
+    line-height: $line-height26;
+  }
+}

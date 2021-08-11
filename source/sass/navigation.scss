@@ -5,12 +5,12 @@
 
   &__list {
     list-style: none;
-    height: 223px;
     background-color: $steel-blue2;
-    position: relative;
+    position: absolute;
+    width: 100%;
+    top: 0;
     cursor: pointer;
     z-index: 2;
-    top: 75px;
     margin: 0;
     padding: 0;
   }
