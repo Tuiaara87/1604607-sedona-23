@@ -1,0 +1,29 @@
+.navigation {
+  // display: none;
+  padding: 0;
+  list-style: none;
+
+  &__list {
+    list-style: none;
+    height: 223px;
+    background-color: $steel-blue2;
+    position: relative;
+    cursor: pointer;
+    z-index: 2;
+    top: 75px;
+    margin: 0;
+    padding: 0;
+  }
+
+  &__item {
+    margin-left: 108px;
+    text-transform: uppercase;
+    color: $white;
+    font-family: $base-font;
+    font-size: $font-size18;
+    line-height: $line-height40;
+    display: block;
+    // border-top: 1px solid $steel-blue2;
+    // border-bottom: 1px solid $steel-blue2 opacity($color: $steel);
+  }
+}

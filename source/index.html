@@ -4,13 +4,16 @@
 <head>
   <meta charset="utf-8">
   <title>Седона</title>
+  <link rel="stylesheet" href="normalize.css">
+  <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body class="body">
   <div class="layout">
     <header class="header">
       <a class="header__logo">
-        <img src="img/logo-mobile/logotype-mobile.svg.svg" width="102" height="84" alt="Логотип Седона">
+        <img class="header__pic" src="img/logo-mobile/logotype-mobile.svg.svg" width="102" height="84"
+          alt="Логотип Седона">
       </a>
 
       <nav class="navigation  wrapper">
@@ -18,17 +21,17 @@
           <span class="visually-hidden">Открыть меню</span>
         </button>
 
-        <ul class="navigation__list site-list">
-          <li class="site-list__item">
+        <ul class="navigation__list">
+          <li class="navigation__item">
             <a>главная</a>
           </li>
-          <li class="site-list__item">
+          <li class="navigation__item">
             <a href="photo.html">фото и видео</a>
           </li>
-          <li class="site-list__item">
+          <li class="navigation__item">
             <a href="form.html">форма отзыва</a>
           </li>
-          <li class="site-list__item">
+          <li class="navigation__item">
             <a href="#">html academy</a>
           </li>
         </ul>
@@ -37,7 +40,7 @@
 
       <section class="intro">
         <h2 class="visually-hidden">Добро пожаловать в Седону</h2>
-        <img src="img/welcome-mobile/text-welcome.svg" width="282" height="214"
+        <img class="intro__title" src="img/welcome-mobile/text-welcome.svg" width="282" height="214"
           alt="Welcome to the gorgeous Sedona because the grand Canyon sucks">
       </section>
     </header>
@@ -55,77 +58,101 @@
           <ol class="features__list">
             <li class="features__item">
               <div class="features__container">
-                <h3 class="features__title">настоящий городок</h3>
-                <p class="features__text">седона не аттракцион для туристов, там течет своя жизнь</p>
+                <div class="features__box">
+                  <h3 class="features__title">настоящий городок</h3>
+                  <p class="features__text">седона не аттракцион для туристов, там течет своя жизнь</p>
+                </div>
                 <img class="features__picture" src="img/views-mobile/photo-city.png" width="520" height="260"
                   alt="город Седона">
               </div>
               <ul class="sights">
                 <li class="sights__item">
-                  <img class="sights__img" src="#" width="39" height="37" alt="домик">
-                  <p class="sights__title">жилье</p>
-                  <p class="sights__text">рекомендуем пожить в настоящем мотеле, все как в кино!</p>
+                  <div class="sights__container">
+                    <img class="sights__img" src="img/icons/icon-house.svg.svg" width="39" height="37" alt="домик">
+                    <div class="sights__box">
+                      <p class="sights__title">жилье</p>
+                      <p class="sights__text">рекомендуем пожить в настоящем мотеле, все как в кино!</p>
+                    </div>
+                  </div>
                 </li>
 
                 <li class="sights__item">
-                  <img class="sights__img" src="#" width="32" height="38" alt="сувенир">
-                  <p class="sights__title">сувениры</p>
-                  <p class="sights__text">не только китайского, но и местного производства!</p>
+                  <div class="sights__container">
+                    <img class="sights__img" src="img/icons/icon-gift.svg.svg" width="32" height="38" alt="сувенир">
+                    <div class="sights__box">
+                      <p class="sights__title">сувениры</p>
+                      <p class="sights__text">не только китайского, но и местного производства!</p>
+                    </div>
+                  </div>
                 </li>
 
                 <li class="sights__item">
-                  <img class="sights__img" src="#" width="40" height="35" alt="питание">
-                  <p class="sights__title">еда</p>
-                  <p class="sights__text">всегда заказывайте фирменный бургер, вы не разочаруетесь!</p>
+                  <div class="sights__container">
+                    <img class="sights__img" src="img/icons/icon-burger.svg.svg" width="40" height="35" alt="питание">
+                    <div class="sights__box">
+                      <p class="sights__title">еда</p>
+                      <p class="sights__text">всегда заказывайте фирменный бургер, вы не разочаруетесь!</p>
+                    </div>
+                  </div>
                 </li>
+
               </ul>
             </li>
 
             <li class="features__item">
               <div class="features__container">
-                <h3 class="features__title">там есть мост дьявола</h3>
-                <p class="features__text">да, по нему можно пройти! если вы осмелитесь, конечно</p>
+                <div class="features__box">
+                  <h3 class="features__title">там есть мост дьявола</h3>
+                  <p class="features__text">да, по нему можно пройти! если вы осмелитесь, конечно</p>
+                </div>
                 <img class="features__picture" src="img/views-mobile/photo-bridge.png" width="520" height="260"
                   alt="мост Седона">
               </div>
             </li>
-
-            <li class="features__item">
-              <div class="features__container">
-                <h3 class="features__title">небольшая площадь</h3>
-                <p class="features__text">все интересные места находятся очень близко</p>
-              </div>
-            </li>
-
-            <li class="features__item">
-              <div class="features__container">
-                <h3 class="features__title">красивая дорога</h3>
-                <p class="features__text">ехать в седону из лас-вегаса совсем не скучно!</p>
-              </div>
-            </li>
-
-            <li class="features__item">
-              <div class="features__container">
-                <h3 class="features__title">мало туристов</h3>
-                <p class="features__text">большинство едет в гранд-каньон и толпится там</p>
-              </div>
-            </li>
           </ol>
         </div>
+
+
+        <div class="pluses">
+          <ul class="pluses__list">
+            <li class="pluses__item">
+              <div class="pluses__container">
+                <h3 class="pluses__title">небольшая площадь</h3>
+                <p class="pluses__text">все интересные места находятся очень близко</p>
+              </div>
+            </li>
+
+            <li class="pluses__item">
+              <div class="pluses__container">
+                <h3 class="pluses__title">красивая дорога</h3>
+                <p class="pluses__text">ехать в седону из лас-вегаса совсем не скучно!</p>
+              </div>
+            </li>
+
+            <li class="pluses__item">
+              <div class="pluses__container">
+                <h3 class="pluses__title">мало туристов</h3>
+                <p class="pluses__text">большинство едет в гранд-каньон и толпится там</p>
+              </div>
+            </li>
+          </ul>
+        </div>
+
       </section>
 
       <section class="contact wrapper">
         <h2 class="visually-hidden">Свяжитесь с нами</h2>
-
-        <p class="contact__question">заинтересовались?</p>
-        <p class="contact__text">укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения
-          гостиниц в седоне</p>
-        <button class="button" type="button">найти гостиницу</button>
+        <div class="contact__box">
+          <p class="contact__question">заинтересовались?</p>
+          <p class="contact__text">укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения
+            гостиниц в седоне</p>
+        </div>
+        <button class="button" type="button"><a href="#" target="_blank">найти гостиницу</a></button>
         <div class="contact__map">
           <iframe
             src="
             https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d74083.5403412585!2d-111.80524746357068!3d34.85469809132695!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x872da132f942b00d%3A0x5548c523fa6c8efd!2sSedona%2C%20AZ%2086336%2C%20USA!5e0!3m2!1sen!2sru!4v1627022862823!5m2!1sen!2sru"
-            width="800" height="600" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+            width="320" height="600" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
         </div>
 
       </section>
@@ -136,7 +163,8 @@
 
       <ul class="social">
         <li class="social__item">
-          <a class="social__link" href="#">twitter</a>
+          <a class="social__link" href="#"><img src="img/icons/icon-twitter.svg.svg" width="17" height="15"
+              alt="твиттер"></a>
         </li>
         <li class="social__item">
           <a class="social__link" href="#">facebook</a>

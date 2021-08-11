@@ -1,0 +1,23 @@
+.button {
+  width: 280px;
+  height: 58px;
+  background-color: $steel-blue2;
+  border: none;
+  color: $white;
+  font-weight: bold;
+  font-size: $font-size21;
+  line-height: $line-height26;
+  font-family: $base-font;
+  margin-left: 17px;
+  margin-bottom: 40px;
+  cursor: pointer;
+
+  &:hover {
+    background-color: $fountain-blue;
+    transition: 0.3s;
+  }
+
+  &:active {
+    background-color: $steel-blue;
+  }
+}

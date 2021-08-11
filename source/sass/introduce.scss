@@ -1,0 +1,18 @@
+.introduce {
+  &__title {
+    text-align: center;
+    font-family: $base-font;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: $font-size18;
+    line-height: $line-height26;
+  }
+
+  &__subtitle {
+    text-align: center;
+    font-family: $base-font;
+    text-transform: uppercase;
+    font-size: $font-size14;
+    line-height: $line-height24;
+  }
+}
