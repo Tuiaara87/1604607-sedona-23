@@ -12,6 +12,16 @@
   margin-bottom: 40px;
   cursor: pointer;
 
+  @media (min-width: $tablet-width) {
+    width: 458px;
+    height: 58px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 458px;
+    height: 58px;
+  }
+
   &:hover {
     background-color: $fountain-blue;
     transition: 0.3s;

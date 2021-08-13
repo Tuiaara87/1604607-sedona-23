@@ -1,6 +1,6 @@
 .features {
-  // display: flex;
-  // flex-wrap: wrap;
+  display: flex;
+  flex-wrap: wrap;
 }
 
 .features__list {
@@ -40,6 +40,10 @@
     width: 486px;
     height: 282px;
   }
+
+  @media (min-width: $desktop-width) {
+    width: 800px;
+  }
 }
 
 .features__box {
@@ -53,6 +57,11 @@
 
   @media (min-width: $tablet-width) {
     width: 256px;
+    height: 256px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 400px;
     height: 256px;
   }
 }

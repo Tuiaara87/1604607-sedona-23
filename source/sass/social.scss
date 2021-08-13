@@ -8,6 +8,10 @@
   align-items: center;
   column-gap: 6px;
   margin-bottom: 45px;
+
+  @media (min-width: $tablet-width) {
+    margin-top: 36px;
+  }
 }
 
 .social__item {
