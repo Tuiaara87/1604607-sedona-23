@@ -1,23 +1,51 @@
 .contact {
-  &__box {
-    height: 278px;
-    padding-left: 27px;
+  @media (min-width: $tablet-width) {
+    height: 318px;
+    border: 2px solid $red;
   }
+}
 
-  &__question {
+.contact__box {
+  margin-bottom: 27px;
+
+  @media (min-width: $tablet-width) {
+    height: 318px;
+  }
+}
+
+.contact__question {
+  margin: 0;
+  font-family: $base-font;
+  font-size: $font-size21;
+  line-height: $line-height26;
+  font-weight: bold;
+  text-transform: uppercase;
+  margin-top: 33px;
+  text-align: center;
+}
+
+.contact__text {
+  font-size: $font-size14;
+  line-height: $line-height24;
+  font-family: $base-font;
+  text-transform: uppercase;
+  text-align: center;
+  max-width: 289px;
+  color: $mine-shaft;
+  margin: 0;
+
+  @media (min-width: $tablet-width) {
+    text-align: center;
     margin: 0;
-    font-family: $base-font;
-    font-size: $font-size21;
-    line-height: $line-height26;
-    font-weight: bold;
-    text-transform: uppercase;
-    margin-top: 33px;
+    border: 2px solid $lime;
+    margin-top: 40px;
+    margin-bottom: 37px;
   }
+}
 
-  &__text {
-    font-size: $font-size14;
-    line-height: $line-height24;
-    font-family: $base-font;
-    text-transform: uppercase;
+.contact__location {
+  @media (min-width: $tablet-width) {
+    height: 350px;
+    width: 100%;
   }
 }

@@ -1,9 +1,15 @@
 .intro {
-  height: 389px;
   background-image: url("../img/banner-mobile/back-mobile.jpg.png");
   display: flex;
   align-items: center;
   justify-content: center;
-  margin-top: -85px;
   position: relative;
+
+  @media (min-width: $tablet-width) {
+    height: 518px;
+  }
+
+  @media (min-width: $desktop-width) {
+    height: 518px;
+  }
 }

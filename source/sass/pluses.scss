@@ -3,29 +3,59 @@
   background-color: $gallery;
   padding-left: 26px;
 
-  &__list {
-    list-style: none;
-    padding: 0;
-    margin: 0;
+  @media (min-width: $tablet-width) {
+    height: 256px;
   }
+}
 
-  &__title {
-    font-family: $base-font;
-    font-size: $font-size26;
-    line-height: $line-height18;
-    font-weight: bold;
-    text-transform: uppercase;
-    margin: 0;
-  }
+.pluses__list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
 
-  &__text {
-    line-height: $line-height21;
-    font-size: $font-size14;
-    font-family: $base-font;
-    text-transform: uppercase;
+  @media (min-width: $tablet-width) {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
   }
+}
 
-  &__container {
-    padding-top: 26px;
+.pluses__title {
+  font-family: $base-font;
+  font-size: $font-size18;
+  line-height: $line-height26;
+  font-weight: bold;
+  text-transform: uppercase;
+  margin: 0;
+  text-align: center;
+
+  @media (min-width: $tablet-width) {
+    font-size: $font-size21;
   }
+}
+
+.pluses__text {
+  line-height: $line-height21;
+  font-size: $font-size14;
+  font-family: $base-font;
+  text-transform: uppercase;
+  color: $mine-shaft;
+  text-align: center;
+  max-width: 247px;
+}
+
+.pluses__container {
+  padding-top: 26px;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 41px;
+  }
+}
+
+.pluses__number {
+  font-family: $base-font;
+  font-size: $font-size14;
+  line-height: $line-height21;
+  text-transform: uppercase;
+  color: $mine-shaft;
+  text-align: center;
 }

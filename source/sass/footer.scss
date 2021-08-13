@@ -1,12 +1,23 @@
 .footer {
-  &__hashtag {
-    font-size: $font-size21;
-    line-height: $line-height26;
-    font-weight: bold;
-    text-transform: uppercase;
-    font-family: $base-font;
-    margin: 0;
-    margin-top: 48px;
-    text-align: center;
+  @media (min-width: $tablet-width) {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
   }
+}
+
+.footer__hashtag {
+  font-size: $font-size21;
+  line-height: $line-height26;
+  font-weight: bold;
+  text-transform: uppercase;
+  font-family: $base-font;
+  margin: 0;
+  margin-top: 38px;
+  margin-bottom: 33px;
+  text-align: center;
+}
+
+.footer__copyright {
+  text-align: center;
+  margin-bottom: 26px;
 }
