@@ -37,8 +37,8 @@
   width: 320px;
 
   @media (min-width: $tablet-width) {
-    width: 486px;
-    height: 282px;
+    width: 100%;
+    height: auto;
   }
 
   @media (min-width: $desktop-width) {
@@ -64,6 +64,12 @@
     width: 400px;
     height: 256px;
   }
+
+  &--right {
+    @media (min-width: $tablet-width) {
+      order: 1;
+    }
+  }
 }
 
 .features__number {
@@ -81,8 +87,18 @@
   }
 }
 
-// .features__container--right {
-//   @media (min-width: $tablet-width) {
-//     display: grid;
-//     grid-template-columns: 1fr 1fr;
-//   }
+.features__wrap {
+  @media (min-width: $tablet-width) {
+    width: 512px;
+  }
+}
+
+.features__photo {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+  @media (min-width: $tablet-width) {
+    width: 100%;
+    height: auto;
+  }
+}

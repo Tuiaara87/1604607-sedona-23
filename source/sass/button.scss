@@ -15,11 +15,13 @@
   @media (min-width: $tablet-width) {
     width: 458px;
     height: 58px;
+    margin-left: 155px;
   }
 
   @media (min-width: $desktop-width) {
     width: 458px;
     height: 58px;
+    margin-left: 371px;
   }
 
   &:hover {

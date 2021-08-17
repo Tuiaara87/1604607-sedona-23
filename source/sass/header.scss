@@ -3,7 +3,10 @@
 }
 
 .header__logo {
-  // position: absolute;
-  // z-index: 1;
-  left: 109px;
+  @media (min-width: $tablet-width) {
+    position: absolute;
+    z-index: 5;
+    left: 50%;
+    transform: translateX(-50%);
+  }
 }

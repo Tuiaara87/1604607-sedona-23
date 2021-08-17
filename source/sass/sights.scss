@@ -40,6 +40,7 @@
 .sights__container {
   display: flex;
   justify-content: space-between;
+  align-items: center;
 
   @media (min-width: $tablet-width) {
     display: flex;
@@ -56,25 +57,19 @@
   margin-left: 13px;
 
   @media (min-width: $tablet-width) {
-    margin-top: 26px;
     // margin-left: 58px;
   }
-}
-
-.sights__item {
-  height: 330px;
 }
 
 .sights__img {
   @media (min-width: $tablet-width) {
     width: 75px;
     height: 72px;
-    margin-left: 90px;
+    margin-bottom: 26px;
   }
 
   @media (min-width: $desktop-width) {
     width: 75px;
     height: 72px;
-    margin-left: 161px;
   }
 }

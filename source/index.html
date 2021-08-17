@@ -23,7 +23,7 @@
 
         <ul class="navigation__list">
           <li class="navigation__item">
-            <a class="navigation__link">главная</a>
+            <a class="navigation__link--first">главная</a>
           </li>
           <li class="navigation__item">
             <a class="navigation__link" href="photo.html">фото и видео</a>
@@ -63,8 +63,10 @@
                   <p class="features__number">- №1 -</p>
                   <p class="features__text">седона не аттракцион для туристов, там течет своя жизнь</p>
                 </div>
-                <img class="features__picture" src="img/views-mobile/photo-city.png" width="520" height="260"
-                  alt="город Седона">
+                <div class="features__wrap">
+                  <img class="features__photo" src="img/views-mobile/photo-city.png" width="520" height="260"
+                    alt="город Седона">
+                </div>
               </div>
               <ul class="sights">
                 <li class="sights__item">
@@ -78,7 +80,7 @@
                 </li>
 
                 <li class="sights__item">
-                  <div class="sights__container">
+                  <div class="sights__container--middle">
                     <img class="sights__img" src="img/icons/icon-gift.svg" width="32" height="38" alt="сувенир">
                     <div class="sights__box">
                       <p class="sights__title">сувениры</p>
@@ -101,14 +103,16 @@
             </li>
 
             <li class="features__item">
-              <div class="features__container features__container--right">
-                <div class="features__box">
+              <div class="features__container">
+                <div class="features__box features__box--right">
                   <h3 class="features__title">там есть мост дьявола</h3>
                   <p class="features__number">- №2 -</p>
                   <p class="features__text">да, по нему можно пройти! если вы осмелитесь, конечно</p>
                 </div>
-                <img class="features__picture" src="img/views-mobile/photo-bridge.png" width="520" height="260"
-                  alt="мост Седона">
+                <div class="features__wrap">
+                  <img class="features__picture" src="img/views-mobile/photo-bridge.png" width="520" height="260"
+                    alt="мост Седона">
+                </div>
               </div>
             </li>
           </ol>
@@ -151,7 +155,9 @@
           <p class="contact__question">заинтересовались?</p>
           <p class="contact__text">укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения
             гостиниц в седоне</p>
-          <button class="button" type="button"><a href="#" target="_blank">найти гостиницу</a></button>
+          <button class="button" type="button">
+            найти гостиницу
+          </button>
         </div>
 
         <div class="contact__map">

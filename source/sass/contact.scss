@@ -1,7 +1,5 @@
 .contact {
   @media (min-width: $tablet-width) {
-    height: 318px;
-    border: 2px solid $red;
   }
 }
 
@@ -10,6 +8,7 @@
 
   @media (min-width: $tablet-width) {
     height: 318px;
+    align-items: center;
   }
 }
 
@@ -45,8 +44,7 @@
   margin: 0;
 
   @media (min-width: $tablet-width) {
-    text-align: center;
-    margin: 0;
+    margin-left: 167px;
     border: 2px solid $lime;
     margin-top: 40px;
     margin-bottom: 37px;
@@ -54,6 +52,7 @@
 
   @media (min-width: $desktop-width) {
     margin-bottom: 42px;
+    margin-left: 383px;
   }
 }
 

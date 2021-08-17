@@ -14,16 +14,29 @@
   width: 100%;
   margin: 0;
   padding: 0;
+
+  @media (min-width: $tablet-width) {
+    background-color: $white;
+    display: flex;
+  }
 }
 
 .navigation__item {
-  margin-left: 108px;
   text-transform: uppercase;
-  color: $white;
+
   font-family: $base-font;
   font-size: $font-size18;
   line-height: $line-height40;
-  display: flex;
+
+  text-align: center;
+
+  @media (min-width: $tablet-width) {
+    width: 20%;
+
+    &:nth-child(3) {
+      margin-left: 20%;
+    }
+  }
 }
 
 .navigation__link {
@@ -34,6 +47,18 @@
   text-transform: uppercase;
   color: $white;
   text-decoration: none;
+
+  @media (min-width: $tablet-width) {
+    color: $black;
+    font-size: $font-size14;
+    line-height: $line-height26;
+  }
+
+  &--first {
+    font-size: $font-size14;
+    line-height: $line-height26;
+    color: $brown-grey;
+  }
 }
 
 .navigation__toggle {
