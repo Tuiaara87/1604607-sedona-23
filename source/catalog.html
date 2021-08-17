@@ -3,6 +3,7 @@
 
 <head>
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Каталог</title>
   <link rel="stylesheet" href="normalize.css">
   <link rel="stylesheet" href="css/style.css">
@@ -56,8 +57,10 @@
           <div class="photos__box">
             <h3 class="photos__title">неродные просторы</h3>
             <p class="photos__author">Автор: Борис</p>
-            <button class="photos__like" type="button"><span class="visually-hidden">нравится!</span></button>
-            <p class="photos__numbers">1350<span class="visually-hidden">мне нравится</span></p>
+            <div class="photos__wrap">
+              <img src="img/icons/like-icon.svg" width="23" height="21" alt="мне нравится">
+              <p class="photos__numbers">1350<span class="visually-hidden">мне нравится</span></p>
+            </div>
           </div>
         </div>
 
@@ -67,8 +70,10 @@
           <div class="photos__box">
             <h3 class="photos__title">местная растительность</h3>
             <p class="photos__author">Автор: Сергей</p>
-            <button class="photos__like" type="button"><span class="visually-hidden">нравится!</span></button>
-            <p class="photos__numbers">143<span class="visually-hidden">мне нравится</span></p>
+            <div class="photos__wrap">
+              <img src="img/icons/like-icon.svg" width="23" height="21" alt="мне нравится">
+              <p class="photos__numbers">143<span class="visually-hidden">мне нравится</span></p>
+            </div>
           </div>
         </div>
 
@@ -78,8 +83,10 @@
           <div class="photos__box">
             <h3 class="photos__title">дорога на север</h3>
             <p class="photos__author">Автор: Петр</p>
-            <button class="photos__like" type="button"><span class="visually-hidden">нравится!</span></button>
-            <p class="photos__numbers">96<span class="visually-hidden">мне нравится</span></p>
+            <div class="photos__wrap">
+              <img src="img/icons/like-icon.svg" width="23" height="21" alt="мне нравится">
+              <p class="photos__numbers">96<span class="visually-hidden">мне нравится</span></p>
+            </div>
           </div>
         </div>
 
@@ -90,8 +97,10 @@
           <div class="photos__box">
             <h3 class="photos__title">мост дьявола</h3>
             <p class="photos__author">Автор: Антон</p>
-            <button class="photos__like" type="button"><span class="visually-hidden">нравится!</span></button>
-            <p class="photos__numbers">254<span class="visually-hidden">мне нравится</span></p>
+            <div class="photos__wrap">
+              <img src="img/icons/like-icon.svg" width="23" height="21" alt="мне нравится">
+              <p class="photos__numbers">254<span class="visually-hidden">мне нравится</span></p>
+            </div>
           </div>
         </div>
       </section>
@@ -103,7 +112,7 @@
         <div class="video__box">
           <div class="video__player">
             <img src="img/catalog-mobile/video-mobile.png" width="320" height="201" alt="видеоролик Седоны">
-            <div class="video__layer"></div>
+            <div class="video__controls"></div>
           </div>
           <div class="video__control">
             <button class="video__repeat" type="button"><span class="visually-hidden">Проиграть сначала</span></button>
@@ -121,18 +130,22 @@
 
       <ul class="social">
         <li class="social__item">
-          <a class="social__link" href="#">twitter</a>
+          <a class="social__link" href="#"><img src="img/icons/icon-twitter.svg" width="17" height="15"
+              alt="твиттер"></a>
         </li>
         <li class="social__item">
-          <a class="social__link" href="#">facebook</a>
+          <a class="social__link" href="#"><img src="img/icons/icon-facebook.svg" width="9" height="19"
+              alt="фейсбук"></a>
         </li>
         <li class="social__item">
-          <a class="social__link" href="#">youtube</a>
+          <a class="social__link" href="#"><img src="img/icons/icon-youtube.svg" width="20" height="14" alt="ютуб"></a>
         </li>
       </ul>
       <div class="footer__copyright copyright">
+
         <b class="copyright__text">Разработано:</b>
-        <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
+        <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive"><img src="img/icons/htmlacademy.svg"
+            width="27" height="34" alt="логотип академии"></a>
       </div>
     </footer>
   </div>

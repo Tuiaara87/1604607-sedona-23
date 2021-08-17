@@ -1,25 +1,37 @@
-.photos {
-  &__pic {
-    margin-left: 20px;
-  }
+.photos__pic {
+  margin-left: 20px;
+}
 
-  &__box {
-    margin-left: 20px;
-  }
+.photos__box {
+  margin-left: 20px;
+}
 
-  &__title {
-    font-family: $base-font;
-    text-transform: uppercase;
-    font-size: $font-size14;
-    line-height: $line-height24;
-    font-weight: bold;
-  }
+.photos__title {
+  font-family: $base-font;
+  text-transform: uppercase;
+  font-size: $font-size14;
+  line-height: $line-height24;
+  font-weight: bold;
+}
 
-  &__author {
-    font-family: $base-font;
-    text-transform: uppercase;
-    font-size: $font-size14;
-    line-height: $line-height24;
-    font-weight: normal;
-  }
+.photos__author {
+  font-family: $base-font;
+  text-transform: uppercase;
+  font-size: $font-size14;
+  line-height: $line-height24;
+  font-weight: normal;
+}
+
+.photos__wrap {
+  display: flex;
+  column-gap: 14px;
+  margin-bottom: 44px;
+}
+
+.photos__numbers {
+  font-family: $base-font;
+  font-size: $font-size14;
+  line-height: $line-height24;
+  text-transform: uppercase;
+  margin: 0;
 }

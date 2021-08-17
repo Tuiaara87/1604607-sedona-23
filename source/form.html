@@ -3,6 +3,7 @@
 
 <head>
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Форма</title>
   <link rel="stylesheet" href="normalize.css">
   <link rel="stylesheet" href="css/style.css">
@@ -16,7 +17,7 @@
         <img src="img/logo-mobile/logotype-mobile.svg.svg" width="102" height="84" alt="Логотип Седона">
       </a>
 
-      <nav class="navigation">
+      <nav class="navigation  wrapper">
         <button class="navigation__toggle" type="button">
           <span class="visually-hidden">Открыть меню</span>
         </button>
@@ -57,57 +58,77 @@
           <fieldset class="form__container">
 
             <legend class="form__title form__title--center">представьтесь:</legend>
-            <div class="form__box">
-              <label class="form__fill-in" for="name-field">имя<sup>*</sup>:</label>
-              <input class="form__input" type="text" name="name" placeholder="Петр" id="name-field" required>
-
-              <label class="form__fill-in" for="family-name">фамилия<sup>*</sup>:</label>
-              <input class="form__input" type="text" name="name" placeholder="Иванов" id="family-name" required>
-
-              <label class="form__fill-in" for="father-name">отчество:</label>
-              <input class="form__input" type="text" name="name" placeholder="Александрович" id="father-name">
+            <div class="box">
+              <div class="box__wrap">
+                <label class="form__fill-in" for="name-field">имя<sup>*</sup>:</label>
+                <input class="form__input" type="text" name="name" placeholder="Петр" id="name-field" required>
+              </div>
+              <div class="box__wrap">
+                <label class="form__fill-in" for="family-name">фамилия<sup>*</sup>:</label>
+                <input class="form__input" type="text" name="name" placeholder="Иванов" id="family-name" required>
+              </div>
+              <div class="box__wrap">
+                <label class="form__fill-in" for="father-name">отчество:</label>
+                <input class="form__input" type="text" name="name" placeholder="Александрович" id="father-name">
+              </div>
             </div>
           </fieldset>
 
           <fieldset class="form__container">
             <legend class="form__title form__title--center">контактная информация:</legend>
-            <div class="form__box">
-              <label class="form__fill-in" for="phone-field">контактный телефон<sup>*</sup>:</label>
-              <input class="form__input" type="text" name="name" placeholder="Введите телефон" id="phone-field"
-                required>
-
-              <label class="form__fill-in" for="email-field">электронная почта<sup>*</sup>:</label>
-              <input class="form__input" type="text" name="email" placeholder="Введите телефон" id="email-field"
-                required>
+            <div class="wrap">
+              <div class="wrap__box">
+                <label class="form__fill-in" for="phone-field">контактный телефон<sup>*</sup>:</label>
+                <input class="form__input" type="text" name="name" placeholder="Введите телефон" id="phone-field"
+                  required>
+              </div>
+              <div class="wrap__box">
+                <label class="form__fill-in" for="email-field">электронная почта<sup>*</sup>:</label>
+                <input class="form__input" type="text" name="email" placeholder="Введите телефон" id="email-field"
+                  required>
+              </div>
             </div>
           </fieldset>
 
           <fieldset class="form__container">
 
             <legend class="form__title form__title--left">ваше общее впечатление:</legend>
-            <div class="form__wrap">
-              <input class="visually-hidden" type="radio" id="positive" name="impression" value="good">
-              <label class="form__radio" for="positive">Скорее положительное</label>
-
-              <input class="visually-hidden" type="radio" id="negative" name="impression" value="not good">
-              <label class="form__radio" for="negative">Скорее отрицательное</label>
-
-              <input class="visually-hidden" type="radio" id="average" name="impression" value="neutral">
-              <label class="form__radio" for="average">Затрудняюсь ответить</label>
+            <div class="box">
+              <div class="box__wrap">
+                <input class="visually-hidden" type="radio" id="positive" name="impression" value="good">
+                <label class="form__radio" for="positive">Скорее положительное</label>
+              </div>
+              <div class="box__wrap">
+                <input class="visually-hidden" type="radio" id="negative" name="impression" value="not good">
+                <label class="form__radio" for="negative">Скорее отрицательное</label>
+              </div>
+              <div class="box__wrap">
+                <input class="visually-hidden" type="radio" id="average" name="impression" value="neutral">
+                <label class="form__radio" for="average">Затрудняюсь ответить</label>
+              </div>
             </div>
           </fieldset>
 
           <fieldset class="form__container">
             <legend class="form__title form__title--center">посещенные достопримечательности:</legend>
-
-            <input class="visually-hidden" type="checkbox" name="places" id="bridge-field" checked>
-            <label class="form__checkbox" for="places-field">Мост Дьявола</label>
-            <input class="visually-hidden" type="checkbox" name="places" id="mountain-field" checked>
-            <label class="form__checkbox" for="places-field">Гора-Колокол</label>
-            <input class="visually-hidden" type="checkbox" name="places" id="park-field" checked>
-            <label class="form__checkbox" for="places-field">Слайд парк</label>
-            <input class="visually-hidden" type="checkbox" name="places" id="places-field">
-            <label class="form__checkbox" for="places-field">Красные скалы</label>
+            <div class="box">
+              <div class="box__wrap">
+                <input class="visually-hidden" type="checkbox" name="places" id="bridge-field" checked>
+                <label class="form__checkbox" for="bridge-field">Мост Дьявола</label>
+              </div>
+              <div class="box__wrap">
+                <input class="visually-hidden" type="checkbox" name="places" id="mountain-field" checked>
+                <label class="form__checkbox" for="mountain-field">Гора-Колокол</label>
+              </div>
+              <div class="box__wrap">
+                <input class="visually-hidden" type="checkbox" name="places" id="park-field" checked>
+                <label class="form__checkbox" for="park-field">Слайд парк</label>
+              </div>
+              <div class="box__wrap">
+                <input class="visually-hidden" type="checkbox" name="places" id="places-field">
+                <label class="form__checkbox" for="places-field">Красные скалы</label>
+              </div>
+            </div>
           </fieldset>
 
           <div class="textarea wrapper">
@@ -129,18 +150,21 @@
 
       <ul class="social">
         <li class="social__item">
-          <a class="social__link" href="#">twitter</a>
+          <a class="social__link" href="#"><img src="img/icons/icon-twitter.svg" width="17" height="15"
+              alt="твиттер"></a>
         </li>
         <li class="social__item">
-          <a class="social__link" href="#">facebook</a>
+          <a class="social__link" href="#"><img src="img/icons/icon-facebook.svg" width="9" height="19"
+              alt="фейсбук"></a>
         </li>
         <li class="social__item">
-          <a class="social__link" href="#">youtube</a>
+          <a class="social__link" href="#"><img src="img/icons/icon-youtube.svg" width="20" height="14" alt="ютуб"></a>
         </li>
       </ul>
       <div class="footer__copyright copyright">
         <b class="copyright__text">Разработано:</b>
-        <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
+        <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive"><img src="img/icons/htmlacademy.svg"
+            width="27" height="34" alt="логотип академии"></a>
       </div>
     </footer>
   </div>

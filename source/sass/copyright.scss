@@ -1,8 +1,21 @@
 .copyright {
-  &__text {
-    font-family: $base-font;
-    font-size: $font-size14;
-    line-height: $line-height26;
-    text-transform: uppercase;
+  display: flex;
+  column-gap: 14px;
+  justify-content: center;
+  align-items: center;
+}
+
+.copyright__text {
+  font-family: $base-font;
+  font-size: $font-size14;
+  line-height: $line-height26;
+  text-transform: uppercase;
+}
+
+.copyright__link {
+  cursor: pointer;
+
+  &:hover {
+    background-color: $steel-blue2;
   }
 }

@@ -1,44 +1,104 @@
 .features {
-  &__list {
-    padding: 0;
-    margin: 0;
-    list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.features__list {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+.features__title {
+  margin: 0;
+  color: $white;
+  font-family: $base-font;
+  text-transform: uppercase;
+  font-size: $font-size18;
+  line-height: $line-height26;
+  font-weight: bold;
+  min-width: 200px;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+
+.features__text {
+  margin: 0;
+  color: $white;
+  text-transform: uppercase;
+  line-height: $line-height21;
+  font-size: $font-size14;
+  text-align: center;
+}
+
+.features__picture {
+  width: 320px;
+
+  @media (min-width: $tablet-width) {
+    width: 100%;
+    height: auto;
   }
 
-  &__title {
-    margin: 0;
-    color: $white;
-    font-family: $base-font;
-    text-transform: uppercase;
-    font-size: $font-size18;
-    line-height: $line-height26;
-    font-weight: bold;
-    min-width: 200px;
+  @media (min-width: $desktop-width) {
+    width: 800px;
+  }
+}
 
-    &:last-child {
-      margin-bottom: 0;
+.features__box {
+  height: 211px;
+  background-color: $steel-blue2;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 13px;
+
+  @media (min-width: $tablet-width) {
+    width: 256px;
+    height: 256px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 400px;
+    height: 256px;
+  }
+
+  &--right {
+    @media (min-width: $tablet-width) {
+      order: 1;
     }
   }
+}
 
-  &__text {
-    margin: 0;
-    color: $white;
-    text-transform: uppercase;
-    line-height: $line-height21;
-    font-size: $font-size14;
+.features__number {
+  font-family: $base-font;
+  font-size: $font-size14;
+  line-height: $line-height21;
+  text-transform: uppercase;
+  color: $white;
+}
+
+.features__container {
+  @media (min-width: $tablet-width) {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
   }
+}
 
-  &__picture {
-    width: 320px;
+.features__wrap {
+  @media (min-width: $tablet-width) {
+    width: 512px;
   }
+}
 
-  &__box {
-    height: 211px;
-    background-color: $steel-blue2;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    padding: 13px;
+.features__photo {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+  @media (min-width: $tablet-width) {
+    width: 100%;
+    height: auto;
   }
 }
