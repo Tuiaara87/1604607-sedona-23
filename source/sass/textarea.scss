@@ -6,6 +6,10 @@
   font-family: $base-font;
   text-transform: uppercase;
   margin-bottom: 51px;
+
+  @media (min-width: $tablet-width) {
+    margin: 0;
+  }
 }
 
 .textarea__share {
@@ -17,4 +21,24 @@
   font-weight: bold;
   font-family: $base-font;
   background-color: $concrete;
+
+  @media (min-width: $tablet-width) {
+    width: 648px;
+    margin-bottom: 58px;
+    padding-left: 110px;
+    padding-right: 120px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 960px;
+  }
+}
+
+.textarea__title {
+  @media (min-width: $tablet-width) {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 54px;
+  }
 }

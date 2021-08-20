@@ -1,5 +1,14 @@
+.photos {
+  display: flex;
+  flex-wrap: wrap;
+}
+
 .photos__pic {
-  margin-left: 20px;
+  &--center {
+    @media (min-width: $tablet-width) {
+      width: 100%;
+    }
+  }
 }
 
 .photos__box {
@@ -34,4 +43,29 @@
   line-height: $line-height24;
   text-transform: uppercase;
   margin: 0;
+}
+
+.photos__container {
+  @media (min-width: $tablet-width) {
+    width: 50%;
+    margin: 0 auto;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 100%;
+    margin: 0 auto;
+  }
+}
+
+.photos__wrapper {
+  @media (min-width: $tablet-width) {
+    width: 648px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 100%;
+    display: flex;
+  }
 }

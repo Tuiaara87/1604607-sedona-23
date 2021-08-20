@@ -1,3 +1,8 @@
+.introduce {
+  display: flex;
+  flex-direction: column;
+}
+
 .introduce__title {
   text-align: center;
   font-family: $base-font;
@@ -13,5 +18,4 @@
   text-transform: uppercase;
   font-size: $font-size14;
   line-height: $line-height24;
-  max-width: 290px;
 }

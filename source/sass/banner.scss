@@ -1,7 +1,14 @@
 .banner {
-  height: 214px;
   background-image: url("../img/banner-mobile/back-catalog.png");
   display: flex;
   align-items: center;
   justify-content: center;
+  position: relative;
+
+  @media (min-width: $tablet-width) {
+    height: 241px;
+    background-image: url("../img/banner-catalog/banner.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
 }

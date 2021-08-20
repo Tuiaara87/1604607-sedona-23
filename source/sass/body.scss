@@ -1,4 +1,10 @@
-// .body {
-//   width: 320px;
-//   margin: 0 auto;
-// }
+.body {
+  * {
+    box-sizing: border-box;
+  }
+
+  @media (min-width: $tablet-width) {
+    width: 648px;
+    margin: 0 auto;
+  }
+}

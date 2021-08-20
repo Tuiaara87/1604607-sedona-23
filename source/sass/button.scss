@@ -13,15 +13,13 @@
   cursor: pointer;
 
   @media (min-width: $tablet-width) {
-    width: 458px;
+    width: 324px;
     height: 58px;
-    margin-left: 155px;
   }
 
   @media (min-width: $desktop-width) {
-    width: 458px;
+    width: 480px;
     height: 58px;
-    margin-left: 371px;
   }
 
   &:hover {
