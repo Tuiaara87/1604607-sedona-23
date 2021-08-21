@@ -39,6 +39,14 @@
     }
   }
 
+  &--center {
+    @media (min-width: $desktop-width) {
+      display: flex;
+      column-gap: 79px;
+      justify-content: center;
+    }
+  }
+
   &--down {
     @media (min-width: $tablet-width) {
       width: 100%;
@@ -124,11 +132,14 @@
 .form__box {
   display: flex;
   flex-direction: column;
+
+  @media (min-width: $desktop-width) {
+    display: flex;
+    flex-direction: unset;
+  }
 }
 
 .form__wrap {
-  width: 50%;
-
   @media (min-width: $desktop-width) {
     width: 25%;
   }

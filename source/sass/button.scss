@@ -8,17 +8,17 @@
   font-size: $font-size21;
   line-height: $line-height26;
   font-family: $base-font;
-  margin-left: 17px;
   margin-bottom: 40px;
   cursor: pointer;
+  text-align: center;
 
   @media (min-width: $tablet-width) {
-    width: 324px;
+    width: 458px;
     height: 58px;
   }
 
   @media (min-width: $desktop-width) {
-    width: 480px;
+    width: 458px;
     height: 58px;
   }
 

@@ -1,15 +1,16 @@
 .photos {
   display: flex;
   flex-wrap: wrap;
+  margin-left: 20px;
 }
 
-.photos__pic {
-  &--center {
-    @media (min-width: $tablet-width) {
-      width: 100%;
-    }
-  }
-}
+// .photos__pic {
+//   &--center {
+//     @media (min-width: $tablet-width) {
+//       width: 100%;
+//     }
+//   }
+// }
 
 .photos__box {
   margin-left: 20px;
@@ -47,7 +48,6 @@
 
 .photos__container {
   @media (min-width: $tablet-width) {
-    width: 50%;
     margin: 0 auto;
   }
 
