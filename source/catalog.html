@@ -13,28 +13,29 @@
   <div class="layout">
     <header class="header">
       <a class="header__logo" href="http://127.0.0.1:5500/source/index.html">
-        <img src="img/logo-mobile/logotype-mobile.svg.svg" width="102" height="84" alt="Логотип Седона">
+        <img src="img/logo-mobile/logotype-mobile.svg" width="102" height="84" alt="Логотип Седона">
       </a>
 
-      <nav class="navigation">
+      <nav class="navigation  wrapper">
         <button class="navigation__toggle" type="button">
           <span class="visually-hidden">Открыть меню</span>
         </button>
 
-        <ul class="navigation__list site-list">
-          <li class="site-list__item">
-            <a>главная</a>
+        <ul class="navigation__list">
+          <li class="navigation__item">
+            <a class="navigation__link--first">главная</a>
           </li>
-          <li class="site-list__item">
-            <a href="photo.html">фото и видео</a>
+          <li class="navigation__item">
+            <a class="navigation__link" href="catalog.html">фото и видео</a>
           </li>
-          <li class="site-list__item">
-            <a href="form.html">форма отзыва</a>
+          <li class="navigation__item">
+            <a class="navigation__link" href="form.html">форма отзыва</a>
           </li>
-          <li class="site-list__item">
-            <a href="#">html academy</a>
+          <li class="navigation__item">
+            <a class="navigation__link" href="#">html academy</a>
           </li>
         </ul>
+
       </nav>
 
       <div class="banner">
@@ -43,16 +44,17 @@
 
     </header>
 
-    <main class="main wrapper">
-      <div class="introduce wrapper">
+    <main class="main">
+
+      <div class="introduce">
         <h1 class="introduce__title">фото и видео</h1>
         <p class="introduce__subtitle">не можете решиться на путешествие из-за курса? фотографии помогут вам забыть о
           политике и экономике.</p>
       </div>
 
-      <section class="photos wrapper">
+      <section class="photos">
         <div class="photos__container">
-          <a href="#"><img class="photos__pic" src="img/catalog-mobile/road.png" width="280" height="280"
+          <a href="#"><img class="photos__pic photos__pic--center" src="img/catalog/road.png" width="280" height="280"
               alt="дорога"></a>
           <div class="photos__box">
             <h3 class="photos__title">неродные просторы</h3>
@@ -63,59 +65,64 @@
             </div>
           </div>
         </div>
-
-        <div class="photos__container">
-          <a href="#"><img class="photos__pic" src="img/catalog-mobile/plants.png" width="280" height="280"
-              alt="растения"></a>
-          <div class="photos__box">
-            <h3 class="photos__title">местная растительность</h3>
-            <p class="photos__author">Автор: Сергей</p>
-            <div class="photos__wrap">
-              <img src="img/icons/like-icon.svg" width="23" height="21" alt="мне нравится">
-              <p class="photos__numbers">143<span class="visually-hidden">мне нравится</span></p>
+        <div class="photos__wrapper">
+          <div class="photos__container">
+            <a href="#"><img class="photos__pic" src="img/catalog/plants.png" width="280" height="280"
+                alt="растения"></a>
+            <div class="photos__box">
+              <h3 class="photos__title">местная растительность</h3>
+              <p class="photos__author">Автор: Сергей</p>
+              <div class="photos__wrap">
+                <img src="img/icons/like-icon.svg" width="23" height="21" alt="мне нравится">
+                <p class="photos__numbers">143<span class="visually-hidden">мне нравится</span></p>
+              </div>
             </div>
           </div>
-        </div>
 
-        <div class="photos__container">
-          <a href="#"><img class="photos__pic" src="img/catalog-mobile/north-road.png" width="280" height="280"
-              alt="северная дорога"></a>
-          <div class="photos__box">
-            <h3 class="photos__title">дорога на север</h3>
-            <p class="photos__author">Автор: Петр</p>
-            <div class="photos__wrap">
-              <img src="img/icons/like-icon.svg" width="23" height="21" alt="мне нравится">
-              <p class="photos__numbers">96<span class="visually-hidden">мне нравится</span></p>
+          <div class="photos__container">
+            <a href="#"><img class="photos__pic" src="img/catalog/north-road.png" width="280" height="280"
+                alt="северная дорога"></a>
+            <div class="photos__box">
+              <h3 class="photos__title">дорога на север</h3>
+              <p class="photos__author">Автор: Петр</p>
+              <div class="photos__wrap">
+                <img src="img/icons/like-icon.svg" width="23" height="21" alt="мне нравится">
+                <p class="photos__numbers">96<span class="visually-hidden">мне нравится</span></p>
+              </div>
             </div>
           </div>
-        </div>
 
-        <div class="photos__container">
-          <a class="photos__link" href="#">
-            <img class="photos__pic" src="img/catalog-mobile/devil-bridge.png" width="280" height="280"
-              alt="мост Дьявола"></a>
-          <div class="photos__box">
-            <h3 class="photos__title">мост дьявола</h3>
-            <p class="photos__author">Автор: Антон</p>
-            <div class="photos__wrap">
-              <img src="img/icons/like-icon.svg" width="23" height="21" alt="мне нравится">
-              <p class="photos__numbers">254<span class="visually-hidden">мне нравится</span></p>
+          <div class="photos__container">
+            <a class="photos__link" href="#">
+              <img class="photos__pic" src="img/catalog/devil-bridge.png" width="280" height="280"
+                alt="мост Дьявола"></a>
+            <div class="photos__box">
+              <h3 class="photos__title">мост дьявола</h3>
+              <p class="photos__author">Автор: Антон</p>
+              <div class="photos__wrap">
+                <img src="img/icons/like-icon.svg" width="23" height="21" alt="мне нравится">
+                <p class="photos__numbers">254<span class="visually-hidden">мне нравится</span></p>
+              </div>
             </div>
           </div>
         </div>
       </section>
 
       <div class="video">
-        <p class="video__title">все еще сомневаетесь?</p>
-        <p class="video__text">смотрите видеопрезетнацию и скорее за билетами, пока они не подорожали в очередной раз!
-        </p>
+        <div class="video__wrap">
+          <p class="video__title">все еще сомневаетесь?</p>
+          <p class="video__text">смотрите видеопрезетнацию и скорее за билетами, пока они не подорожали в очередной
+            раз!
+          </p>
+        </div>
         <div class="video__box">
           <div class="video__player">
-            <img src="img/catalog-mobile/video-mobile.png" width="320" height="201" alt="видеоролик Седоны">
+            <img src="img/catalog/video-mobile.png" width="320" height="201" alt="видеоролик Седоны">
             <div class="video__controls"></div>
           </div>
           <div class="video__control">
-            <button class="video__repeat" type="button"><span class="visually-hidden">Проиграть сначала</span></button>
+            <button class="video__repeat" type="button"><span class="visually-hidden">Проиграть
+                сначала</span></button>
             <button class="video__subtitle" type="button"><span class="visually-hidden">включить
                 субтитры</span></button>
             <button class="video__fullscreen" type="button"><span class="visually-hidden">развернуть полностью
@@ -123,6 +130,7 @@
           </div>
         </div>
       </div>
+
     </main>
 
     <footer class="footer wrapper">

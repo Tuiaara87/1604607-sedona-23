@@ -1,5 +1,4 @@
 .navigation {
-  // display: none;
   padding: 0;
   list-style: none;
 }
@@ -19,15 +18,18 @@
     background-color: $white;
     display: flex;
   }
+
+  @media (min-width: $desktop-width) {
+    background-color: $white;
+    display: flex;
+  }
 }
 
 .navigation__item {
   text-transform: uppercase;
-
   font-family: $base-font;
   font-size: $font-size18;
   line-height: $line-height40;
-
   text-align: center;
 
   @media (min-width: $tablet-width) {

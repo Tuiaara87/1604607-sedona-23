@@ -14,7 +14,7 @@
 
     <header class="header">
       <a class="header__logo" href="http://127.0.0.1:5500/source/index.html">
-        <img src="img/logo-mobile/logotype-mobile.svg.svg" width="102" height="84" alt="Логотип Седона">
+        <img src="img/logo-mobile/logotype-mobile.svg" width="102" height="84" alt="Логотип Седона">
       </a>
 
       <nav class="navigation  wrapper">
@@ -22,18 +22,18 @@
           <span class="visually-hidden">Открыть меню</span>
         </button>
 
-        <ul class="navigation__list site-list">
-          <li class="site-list__item">
-            <a>главная</a>
+        <ul class="navigation__list">
+          <li class="navigation__item">
+            <a class="navigation__link--first">главная</a>
           </li>
-          <li class="site-list__item">
-            <a href="photo.html">фото и видео</a>
+          <li class="navigation__item">
+            <a class="navigation__link" href="catalog.html">фото и видео</a>
           </li>
-          <li class="site-list__item">
-            <a href="form.html">форма отзыва</a>
+          <li class="navigation__item">
+            <a class="navigation__link" href="form.html">форма отзыва</a>
           </li>
-          <li class="site-list__item">
-            <a href="#">html academy</a>
+          <li class="navigation__item">
+            <a class="navigation__link" href="#">html academy</a>
           </li>
         </ul>
 
@@ -42,132 +42,187 @@
         <img src="img/welcome-mobile/SEDONA.svg" width="229" height="39" alt="SEDONA">
       </div>
     </header>
+    <div class="box">
+      <main class="main wrapper">
+        <section class="worksheet">
+          <div class="feedback wrapper">
+            <h1 class="feedback__title">оставьте свой отзыв</h1>
+            <p class="feedback__subtitle">помогите нашим отелям стать лучше! оставьте отзыв о них, а также о посещенных
+              вами
+              достопримечательностях</p>
+          </div>
 
-    <main class="main wrapper">
 
-      <div class="feedback wrapper">
-        <h1 class="feedback__title">оставьте свой отзыв</h1>
-        <p class="feedback__subtitle">помогите нашим отелям стать лучше! оставьте отзыв о них, а также о посещенных
-          вами
-          достопримечательностях</p>
-      </div>
+          <form class="form wrapper" action="echo.htmlacademy.ru">
 
-      <section class="worksheet">
-        <form class="form wrapper" action="echo.htmlacademy.ru">
+            <fieldset class="form__container form__container--right">
 
-          <fieldset class="form__container">
-
-            <legend class="form__title form__title--center">представьтесь:</legend>
-            <div class="box">
-              <div class="box__wrap">
-                <label class="form__fill-in" for="name-field">имя<sup>*</sup>:</label>
-                <input class="form__input" type="text" name="name" placeholder="Петр" id="name-field" required>
+              <legend class="form__title">представьтесь:</legend>
+              <div class="form form--right">
+                <div class="form__wrap">
+                  <label class="form__fill-in" for="name-field">имя<sup>*</sup>:</label>
+                  <input class="form__input" type="text" name="name" placeholder="Петр" id="name-field" required>
+                </div>
+                <div class="form__wrap">
+                  <label class="form__fill-in" for="family-name">фамилия<sup>*</sup>:</label>
+                  <input class="form__input" type="text" name="name" placeholder="Иванов" id="family-name" required>
+                </div>
+                <div class="form__wrap">
+                  <label class="form__fill-in" for="father-name">отчество:</label>
+                  <input class="form__input" type="text" name="name" placeholder="Александрович" id="father-name">
+                </div>
               </div>
-              <div class="box__wrap">
-                <label class="form__fill-in" for="family-name">фамилия<sup>*</sup>:</label>
-                <input class="form__input" type="text" name="name" placeholder="Иванов" id="family-name" required>
-              </div>
-              <div class="box__wrap">
-                <label class="form__fill-in" for="father-name">отчество:</label>
-                <input class="form__input" type="text" name="name" placeholder="Александрович" id="father-name">
-              </div>
-            </div>
-          </fieldset>
+            </fieldset>
 
-          <fieldset class="form__container">
-            <legend class="form__title form__title--center">контактная информация:</legend>
-            <div class="wrap">
-              <div class="wrap__box">
+            <fieldset class="form__container form__container--center">
+              <legend class="form__title">контактная информация:</legend>
+
+              <div class="form__box">
                 <label class="form__fill-in" for="phone-field">контактный телефон<sup>*</sup>:</label>
                 <input class="form__input" type="text" name="name" placeholder="Введите телефон" id="phone-field"
                   required>
               </div>
-              <div class="wrap__box">
+              <div class="form__box">
                 <label class="form__fill-in" for="email-field">электронная почта<sup>*</sup>:</label>
                 <input class="form__input" type="text" name="email" placeholder="Введите телефон" id="email-field"
                   required>
               </div>
+
+            </fieldset>
+
+            <fieldset class="form__container form__container--left">
+
+              <legend class="form__title">ваше общее впечатление:</legend>
+              <div class="form form--flex">
+                <div class="form__wrap">
+                  <input class="visually-hidden" type="radio" id="positive" name="impression" value="good">
+                  <label class="form__radio" for="positive">Скорее положительное</label>
+                </div>
+                <div class="form__wrap">
+                  <input class="visually-hidden" type="radio" id="negative" name="impression" value="not good">
+                  <label class="form__radio" for="negative">Скорее отрицательное</label>
+                </div>
+                <div class="form__wrap">
+                  <input class="visually-hidden" type="radio" id="average" name="impression" value="neutral">
+                  <label class="form__radio" for="average">Затрудняюсь ответить</label>
+                </div>
+              </div>
+            </fieldset>
+
+            <fieldset class="form__container form__container--down">
+              <legend class="form__title">посещенные достопримечательности:</legend>
+              <div class="form">
+                <div class="form__wrap">
+                  <input class="visually-hidden" type="checkbox" name="places" id="bridge-field" checked>
+                  <label class="form__checkbox" for="bridge-field">Мост Дьявола</label>
+                </div>
+                <div class="form__wrap">
+                  <input class="visually-hidden" type="checkbox" name="places" id="mountain-field" checked>
+                  <label class="form__checkbox" for="mountain-field">Гора-Колокол</label>
+                </div>
+                <div class="form__wrap">
+                  <input class="visually-hidden" type="checkbox" name="places" id="park-field" checked>
+                  <label class="form__checkbox" for="park-field">Слайд парк</label>
+                </div>
+                <div class="form__wrap">
+                  <input class="visually-hidden" type="checkbox" name="places" id="places-field">
+                  <label class="form__checkbox" for="places-field">Красные скалы</label>
+                </div>
+              </div>
+            </fieldset>
+
+            <div class="textarea">
+              <div class="textarea__box textarea__box--bottom">
+                <label class="textarea__title">опишите свои эмоции:</label>
+                <textarea class="textarea__share" name="comment" id="comment-field"
+                  rows="10">опишите подробно все свои восторги</textarea>
+                <button class="button" type="submit">отправить отзыв</button>
+              </div>
             </div>
-          </fieldset>
 
-          <fieldset class="form__container">
+          </form>
+          <footer class="footer wrapper">
+            <p class="footer__hashtag">#visitsedona</p>
 
-            <legend class="form__title form__title--left">ваше общее впечатление:</legend>
-            <div class="box">
-              <div class="box__wrap">
-                <input class="visually-hidden" type="radio" id="positive" name="impression" value="good">
-                <label class="form__radio" for="positive">Скорее положительное</label>
-              </div>
-              <div class="box__wrap">
-                <input class="visually-hidden" type="radio" id="negative" name="impression" value="not good">
-                <label class="form__radio" for="negative">Скорее отрицательное</label>
-              </div>
-              <div class="box__wrap">
-                <input class="visually-hidden" type="radio" id="average" name="impression" value="neutral">
-                <label class="form__radio" for="average">Затрудняюсь ответить</label>
-              </div>
+            <ul class="social">
+              <li class="social__item">
+                <a class="social__link" href="#"><img src="img/icons/icon-twitter.svg" width="17" height="15"
+                    alt="твиттер"></a>
+              </li>
+              <li class="social__item">
+                <a class="social__link" href="#"><img src="img/icons/icon-facebook.svg" width="9" height="19"
+                    alt="фейсбук"></a>
+              </li>
+              <li class="social__item">
+                <a class="social__link" href="#"><img src="img/icons/icon-youtube.svg" width="20" height="14"
+                    alt="ютуб"></a>
+              </li>
+            </ul>
+            <div class="footer__copyright copyright">
+              <b class="copyright__text">Разработано:</b>
+              <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive"><img
+                  src="img/icons/htmlacademy.svg" width="27" height="34" alt="логотип академии"></a>
             </div>
-          </fieldset>
-
-          <fieldset class="form__container">
-            <legend class="form__title form__title--center">посещенные достопримечательности:</legend>
-            <div class="box">
-              <div class="box__wrap">
-                <input class="visually-hidden" type="checkbox" name="places" id="bridge-field" checked>
-                <label class="form__checkbox" for="bridge-field">Мост Дьявола</label>
-              </div>
-              <div class="box__wrap">
-                <input class="visually-hidden" type="checkbox" name="places" id="mountain-field" checked>
-                <label class="form__checkbox" for="mountain-field">Гора-Колокол</label>
-              </div>
-              <div class="box__wrap">
-                <input class="visually-hidden" type="checkbox" name="places" id="park-field" checked>
-                <label class="form__checkbox" for="park-field">Слайд парк</label>
-              </div>
-              <div class="box__wrap">
-                <input class="visually-hidden" type="checkbox" name="places" id="places-field">
-                <label class="form__checkbox" for="places-field">Красные скалы</label>
-              </div>
-            </div>
-          </fieldset>
-
-          <div class="textarea wrapper">
-            <label class="textarea__title">опишите свои эмоции:</label>
-            <textarea class="textarea__share" name="comment" id="comment-field"
-              rows="10">опишите подробно все свои восторги</textarea>
-          </div>
-          <button class="button" type="submit">отправить отзыв</button>
-        </form>
-      </section>
+          </footer>
+    </div>
+    </section>
 
 
 
 
     </main>
 
-    <footer class="footer wrapper">
-      <p class="footer__hashtag">#visitsedona</p>
 
-      <ul class="social">
-        <li class="social__item">
-          <a class="social__link" href="#"><img src="img/icons/icon-twitter.svg" width="17" height="15"
-              alt="твиттер"></a>
-        </li>
-        <li class="social__item">
-          <a class="social__link" href="#"><img src="img/icons/icon-facebook.svg" width="9" height="19"
-              alt="фейсбук"></a>
-        </li>
-        <li class="social__item">
-          <a class="social__link" href="#"><img src="img/icons/icon-youtube.svg" width="20" height="14" alt="ютуб"></a>
-        </li>
-      </ul>
-      <div class="footer__copyright copyright">
-        <b class="copyright__text">Разработано:</b>
-        <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive"><img src="img/icons/htmlacademy.svg"
-            width="27" height="34" alt="логотип академии"></a>
+
+    <div class="modal">
+      <div class="modal__failure">
+        <input class="visually-hidden" type="radio" id="average" name="impression" value="neutral">
+        <label class="form__radio" for="average">Затрудняюсь ответить</label>
       </div>
-    </footer>
-  </div>
+      <div class="modal__box">
+        <p class="modal__title">что-то пошло не так!</p>
+        <p class="modal__subtitle">проверьте поля, выделенные красным, скорее всего забыли их заполнить</p>
+        <button class="modal__button" type="button">ok</button>
+        <input class="visually-hidden" type="checkbox" name="places" id="places-field">
+        <label class="form__checkbox" for="places-field">Красные скалы</label>
+        <div class="textarea">
+
+          <label class="textarea__title">опишите свои эмоции:</label>
+          <textarea class="textarea__share" name="comment" id="comment-field"
+            rows="10">опишите подробно все свои восторги</textarea>
+          <button class="button" type="submit">отправить отзыв</button>
+
+        </div>
+        <div class="modal">
+          <p class="modal__hashtag">#visitsedona</p>
+
+          <ul class="social">
+            <li class="social__item">
+              <a class="social__link" href="#"><img src="img/icons/icon-twitter.svg" width="17" height="15"
+                  alt="твиттер"></a>
+            </li>
+            <li class="social__item">
+              <a class="social__link" href="#"><img src="img/icons/icon-facebook.svg" width="9" height="19"
+                  alt="фейсбук"></a>
+            </li>
+            <li class="social__item">
+              <a class="social__link" href="#"><img src="img/icons/icon-youtube.svg" width="20" height="14"
+                  alt="ютуб"></a>
+            </li>
+          </ul>
+          <div class="modal__copyright copyright">
+            <b class="copyright__text">Разработано:</b>
+            <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive"><img
+                src="img/icons/htmlacademy.svg" width="27" height="34" alt="логотип академии"></a>
+          </div>
+          </footer>
+
+        </div>
+      </div>
+    </div>
 </body>
+
+
+</div>
 
 </html>

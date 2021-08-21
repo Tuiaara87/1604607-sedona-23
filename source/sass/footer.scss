@@ -3,6 +3,10 @@
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
   }
+
+  @media (min-width: $desktop-width) {
+    column-gap: 260px;
+  }
 }
 
 .footer__hashtag {
