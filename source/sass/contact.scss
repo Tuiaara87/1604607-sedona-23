@@ -4,11 +4,12 @@
   @media (min-width: $tablet-width) {
     height: 318px;
     align-items: center;
+    display: flex;
+    flex-direction: column;
   }
 }
 
 .contact__question {
-  margin: 0;
   font-family: $base-font;
   font-size: $font-size21;
   line-height: $line-height26;
@@ -20,6 +21,7 @@
   @media (min-width: $tablet-width) {
     font-size: $font-size30;
     line-height: $line-height26;
+    margin-top: 57px;
   }
 
   @media (min-width: $desktop-width) {
@@ -34,20 +36,14 @@
   font-family: $base-font;
   text-transform: uppercase;
   text-align: center;
-  max-width: 289px;
+  max-width: 290px;
   color: $mine-shaft;
-  margin: 0;
+  margin-bottom: 30px;
+  margin-left: 10px;
 
   @media (min-width: $tablet-width) {
-    margin-left: 167px;
-    border: 2px solid $lime;
     margin-top: 40px;
     margin-bottom: 37px;
-  }
-
-  @media (min-width: $desktop-width) {
-    margin-bottom: 42px;
-    margin-left: 383px;
   }
 }
 
@@ -55,5 +51,17 @@
   @media (min-width: $tablet-width) {
     height: 350px;
     width: 100%;
+  }
+}
+
+.contact__submit {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.contact__map {
+  @media (min-width: $desktop-width) {
+    margin-top: 66px;
   }
 }

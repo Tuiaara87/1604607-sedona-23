@@ -79,13 +79,24 @@
 
               <div class="form__box">
                 <label class="form__fill-in" for="phone-field">контактный телефон<sup>*</sup>:</label>
-                <input class="form__input" type="text" name="name" placeholder="Введите телефон" id="phone-field"
-                  required>
+                <div class="form__wrap">
+                  <input class="form__input" type="text" name="name" placeholder="Введите телефон" id="phone-field"
+                    required>
+                  <div class="form__icon">
+                    <img src="img/icons/phone.svg" width="18" height="18" alt="телефон">
+                  </div>
+                </div>
               </div>
               <div class="form__box">
                 <label class="form__fill-in" for="email-field">электронная почта<sup>*</sup>:</label>
-                <input class="form__input" type="text" name="email" placeholder="Введите телефон" id="email-field"
-                  required>
+                <div class="form__wrap">
+                  <input class="form__input" type="text" name="email" placeholder="Введите телефон" id="email-field"
+                    required>
+                  <div class="form__icon">
+                    <img src="img/icons/mail.svg" width="16" height="12" alt="email">
+
+                  </div>
+                </div>
               </div>
 
             </fieldset>
@@ -96,15 +107,18 @@
               <div class="form form--flex">
                 <div class="form__wrap">
                   <input class="visually-hidden" type="radio" id="positive" name="impression" value="good">
-                  <label class="form__radio" for="positive">Скорее положительное</label>
+                  <label class="form__radio" for="positive"></label>
+                  <span>Скорее положительное</span>
                 </div>
                 <div class="form__wrap">
                   <input class="visually-hidden" type="radio" id="negative" name="impression" value="not good">
-                  <label class="form__radio" for="negative">Скорее отрицательное</label>
+                  <label class="form__radio" for="negative"></label>
+                  <span>Скорее отрицательное</span>
                 </div>
                 <div class="form__wrap">
                   <input class="visually-hidden" type="radio" id="average" name="impression" value="neutral">
-                  <label class="form__radio" for="average">Затрудняюсь ответить</label>
+                  <label class="form__radio" for="average"></label>
+                  <span>Затрудняюсь ответить</span>
                 </div>
               </div>
             </fieldset>
@@ -114,19 +128,23 @@
               <div class="form">
                 <div class="form__wrap">
                   <input class="visually-hidden" type="checkbox" name="places" id="bridge-field" checked>
-                  <label class="form__checkbox" for="bridge-field">Мост Дьявола</label>
+                  <label class="form__checkbox" for="bridge-field"></label>
+                  <span>Мост Дьявола</span>
                 </div>
                 <div class="form__wrap">
                   <input class="visually-hidden" type="checkbox" name="places" id="mountain-field" checked>
-                  <label class="form__checkbox" for="mountain-field">Гора-Колокол</label>
+                  <label class="form__checkbox" for="mountain-field"></label>
+                  <span>Гора-Колокол</span>
                 </div>
                 <div class="form__wrap">
                   <input class="visually-hidden" type="checkbox" name="places" id="park-field" checked>
-                  <label class="form__checkbox" for="park-field">Слайд парк</label>
+                  <label class="form__checkbox" for="park-field"></label>
+                  <span>Слайд парк</span>
                 </div>
                 <div class="form__wrap">
                   <input class="visually-hidden" type="checkbox" name="places" id="places-field">
-                  <label class="form__checkbox" for="places-field">Красные скалы</label>
+                  <label class="form__checkbox" for="places-field"></label>
+                  <span>Красные скалы</span>
                 </div>
               </div>
             </fieldset>
@@ -160,8 +178,13 @@
             </ul>
             <div class="footer__copyright copyright">
               <b class="copyright__text">Разработано:</b>
-              <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive"><img
-                  src="img/icons/htmlacademy.svg" width="27" height="34" alt="логотип академии"></a>
+
+              <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
+                <object class="copyright__icon" type="image/svg+xml" data="img/icons/htmlacademy.svg" width="27"
+                  height="34" alt="логотип академии">
+                  Your browser does not support SVG
+                </object>
+              </a>
             </div>
           </footer>
     </div>

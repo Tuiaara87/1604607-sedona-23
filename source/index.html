@@ -16,14 +16,14 @@
         <img class="header__pic" src="img/logo-mobile/logotype-mobile.svg" width="102" height="84" alt="Логотип Седона">
       </a>
 
-      <nav class="navigation  wrapper">
+      <nav class="navigation navigation--opened wrapper">
         <button class="navigation__toggle" type="button">
           <span class="visually-hidden">Открыть меню</span>
         </button>
 
         <ul class="navigation__list">
           <li class="navigation__item">
-            <a class="navigation__link--first">главная</a>
+            <a class="navigation__link navigation__link--first">главная</a>
           </li>
           <li class="navigation__item">
             <a class="navigation__link" href="catalog.html">фото и видео</a>
@@ -58,7 +58,7 @@
           <ol class="features__list">
             <li class="features__item">
               <div class="features__container">
-                <div class="features__box">
+                <div class="features__box features__box--left">
                   <h3 class="features__title">настоящий городок</h3>
                   <p class="features__number">- №1 -</p>
                   <p class="features__text">седона не аттракцион для туристов, там течет своя жизнь</p>
@@ -79,8 +79,8 @@
                   </div>
                 </li>
 
-                <li class="sights__item">
-                  <div class="sights__container--middle">
+                <li class="sights__item sights__item--middle">
+                  <div class="sights__container">
                     <img class="sights__img" src="img/icons/icon-gift.svg" width="32" height="38" alt="сувенир">
                     <div class="sights__box">
                       <p class="sights__title">сувениры</p>
@@ -94,7 +94,7 @@
                     <img class="sights__img" src="img/icons/icon-burger.svg" width="40" height="35" alt="питание">
                     <div class="sights__box">
                       <p class="sights__title">еда</p>
-                      <p class="sights__text">всегда заказывайте фирменный бургер, вы не разочаруетесь!</p>
+                      <p class="sights__text">всегда заказывайте фирменный бургер, вы&nbsp;не&nbsp;разочаруетесь!</p>
                     </div>
                   </div>
                 </li>
@@ -155,9 +155,11 @@
           <p class="contact__question">заинтересовались?</p>
           <p class="contact__text">укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения
             гостиниц в седоне</p>
-          <button class="button" type="button">
-            найти гостиницу
-          </button>
+          <form class="contact__submit" action="#" target="_blank">
+            <button class="button" type="submit">
+              найти гостиницу
+            </button>
+          </form>
         </div>
 
         <div class="contact__map">

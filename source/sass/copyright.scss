@@ -14,8 +14,10 @@
 
 .copyright__link {
   cursor: pointer;
+}
 
-  &:hover {
-    background-color: $steel-blue2;
+.copyright__icon {
+  svg {
+    fill: $steel-blue2;
   }
 }

@@ -1,7 +1,6 @@
 .pluses {
   height: 503px;
   background-color: $gallery;
-  padding-left: 26px;
 
   @media (min-width: $tablet-width) {
     height: 256px;
@@ -12,10 +11,18 @@
   list-style: none;
   padding: 0;
   margin: 0;
+  column-gap: 80px;
+  padding-right: 40px;
+  padding-left: 33px;
 
   @media (min-width: $tablet-width) {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-left: 42px;
+    padding-right: 55px;
   }
 }
 
@@ -46,6 +53,8 @@
 .pluses__container {
   padding-top: 26px;
   align-items: center;
+  display: flex;
+  flex-direction: column;
 
   @media (min-width: $tablet-width) {
     padding-top: 41px;

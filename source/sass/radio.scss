@@ -1,0 +1,55 @@
+[type="radio"]:checked,
+[type="radio"]:not(:checked) {
+  position: absolute;
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  height: 1px;
+  overflow: hidden;
+  // position: absolute;
+  white-space: nowrap;
+  width: 1px;
+}
+
+[type="radio"]:checked + label,
+[type="radio"]:not(:checked) + label {
+  position: relative;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 48px;
+  height: 48px;
+}
+
+[type="radio"]:checked + label::before,
+[type="radio"]:not(:checked) + label::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 48px;
+  height: 48px;
+  border-radius: 100%;
+  background-color: $concrete;
+}
+
+[type="radio"]:checked + label::after,
+[type="radio"]:not(:checked) + label::after {
+  content: "";
+  width: 18px;
+  height: 18px;
+  background: $mine-shaft;
+  position: absolute;
+  border-radius: 100%;
+  transition: all 0.2s ease;
+}
+
+[type="radio"]:not(:checked) + label::after {
+  opacity: 0;
+  transform: scale(0);
+}
+
+[type="radio"]:checked + label::after {
+  opacity: 1;
+  transform: scale(1);
+}
