@@ -3,6 +3,7 @@
   column-gap: 14px;
   justify-content: center;
   align-items: center;
+  padding-bottom: 26px;
 }
 
 .copyright__text {
@@ -14,8 +15,10 @@
 
 .copyright__link {
   cursor: pointer;
+}
 
-  &:hover {
-    background-color: $steel-blue2;
+.copyright__icon {
+  svg {
+    fill: $steel-blue2;
   }
 }

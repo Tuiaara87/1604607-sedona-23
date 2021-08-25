@@ -6,13 +6,14 @@
 .navigation__list {
   list-style: none;
   background-color: $steel-blue2;
-  position: absolute;
+  // position: absolute;
   cursor: pointer;
   z-index: 2;
   top: 0;
   width: 100%;
   margin: 0;
   padding: 0;
+  text-align: center;
 
   @media (min-width: $tablet-width) {
     background-color: $white;
@@ -26,15 +27,13 @@
 }
 
 .navigation__item {
-  text-transform: uppercase;
-  font-family: $base-font;
-  font-size: $font-size18;
-  line-height: $line-height40;
-  text-align: center;
+  height: 55px;
+  // padding-top: 10px;
+  box-shadow: 0 1px 0 rgba(1, 1, 1, 0.2), inset 0 1px 0 rgba(255, 255, 255, 0.2);
 
   @media (min-width: $tablet-width) {
     width: 20%;
-
+    box-shadow: none;
     &:nth-child(3) {
       margin-left: 20%;
     }
@@ -54,15 +53,49 @@
     color: $black;
     font-size: $font-size14;
     line-height: $line-height26;
-  }
 
-  &--first {
-    font-size: $font-size14;
-    line-height: $line-height26;
-    color: $brown-grey;
+    &--first {
+      font-size: $font-size14;
+      line-height: $line-height26;
+      color: $brown-grey;
+    }
   }
 }
 
 .navigation__toggle {
-  border: 2px solid $black;
+  position: absolute;
+  top: 0;
+  right: 0;
+  height: 50px;
+  width: 50px;
+  z-index: 3;
+  cursor: pointer;
+  background-color: transparent;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: none;
+
+  &::before,
+  &::after {
+    content: "";
+    position: absolute;
+
+    width: 50%;
+    height: 4px;
+    background-color: #ffffff;
+  }
+
+  &::before {
+    transform: rotate(45deg);
+    box-shadow: none;
+  }
+
+  &::after {
+    transform: rotate(-45deg);
+  }
+
+  @media (min-width: $tablet-width) {
+    display: none;
+  }
 }

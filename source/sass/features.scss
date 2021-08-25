@@ -22,6 +22,12 @@
   &:last-child {
     margin-bottom: 0;
   }
+
+  @media (min-width: $tablet-width) {
+    font-size: $font-size21;
+    line-height: $line-height26;
+    text-align: center;
+  }
 }
 
 .features__text {
@@ -31,6 +37,7 @@
   line-height: $line-height21;
   font-size: $font-size14;
   text-align: center;
+  max-width: 300px;
 }
 
 .features__picture {
@@ -47,7 +54,6 @@
 }
 
 .features__box {
-  height: 211px;
   background-color: $steel-blue2;
   display: flex;
   flex-direction: column;
@@ -63,6 +69,7 @@
   @media (min-width: $desktop-width) {
     width: 400px;
     height: 256px;
+    left: 810px;
   }
 
   &--right {

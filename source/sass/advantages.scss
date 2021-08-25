@@ -11,6 +11,10 @@
   margin-bottom: 35px;
   text-align: center;
   max-width: 257px;
+
+  @media (min-width: $tablet-width) {
+    max-width: 372px;
+  }
 }
 
 .advantages__subtitle {
@@ -24,10 +28,8 @@
 }
 
 .advantages__proof {
-  height: 281px;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding-left: 21px;
 }

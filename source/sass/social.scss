@@ -7,10 +7,10 @@
   justify-content: center;
   align-items: center;
   column-gap: 6px;
-  margin-bottom: 45px;
+  padding-bottom: 45px;
 
   @media (min-width: $tablet-width) {
-    margin-top: 36px;
+    padding-top: 36px;
   }
 }
 
