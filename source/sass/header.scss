@@ -12,4 +12,21 @@
     transform: translateX(-50%);
     display: block;
   }
+
+  @media (min-width: $desktop-width) {
+    display: flex;
+    justify-content: center;
+
+    &::before {
+      content: "";
+      display: block;
+      width: 186px;
+      height: 96px;
+
+      position: absolute;
+      top: 0;
+      z-index: -1;
+      background-image: url("../img/icons/triangle.png");
+    }
+  }
 }

@@ -1,10 +1,5 @@
 .pluses {
-  height: 503px;
   background-color: $gallery;
-
-  @media (min-width: $tablet-width) {
-    height: 256px;
-  }
 }
 
 .pluses__list {
@@ -34,6 +29,7 @@
   text-transform: uppercase;
   margin: 0;
   text-align: center;
+  padding-bottom: 20px;
 
   @media (min-width: $tablet-width) {
     font-size: $font-size21;
@@ -48,6 +44,8 @@
   color: $mine-shaft;
   text-align: center;
   max-width: 247px;
+  margin: 0;
+  padding-bottom: 20px;
 }
 
 .pluses__container {
@@ -55,9 +53,15 @@
   align-items: center;
   display: flex;
   flex-direction: column;
+  border-bottom: 1px solid $alto;
 
   @media (min-width: $tablet-width) {
     padding-top: 41px;
+    border-bottom: none;
+  }
+
+  @media (min-width: $desktop-width) {
+    border-bottom: none;
   }
 }
 
@@ -68,4 +72,6 @@
   text-transform: uppercase;
   color: $mine-shaft;
   text-align: center;
+  margin: 0;
+  padding-bottom: 20px;
 }

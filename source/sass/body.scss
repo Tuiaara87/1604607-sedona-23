@@ -2,7 +2,11 @@ body {
   * {
     box-sizing: border-box;
   }
+  background-color: $mercury3;
 
+  fieldset {
+    margin: 0;
+  }
   @media (min-width: $tablet-width) {
     margin: 0 auto;
   }
