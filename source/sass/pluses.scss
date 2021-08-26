@@ -1,5 +1,6 @@
 .pluses {
   background-color: $gallery;
+  padding-bottom: 62px;
 }
 
 .pluses__list {
@@ -63,6 +64,10 @@
   @media (min-width: $desktop-width) {
     border-bottom: none;
   }
+
+  // &:last-child {
+  //   border-bottom: none;
+  // }
 }
 
 .pluses__number {

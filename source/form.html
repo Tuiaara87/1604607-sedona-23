@@ -75,10 +75,11 @@
             </fieldset>
 
             <fieldset class="form__container form__container--center">
-              <legend class="form__title">контактная информация:</legend>
+              <legend class="form__title form__title--center">контактная информация:</legend>
 
               <div class="form__box">
-                <label class="form__fill-in" for="phone-field">контактный телефон<sup>*</sup>:</label>
+                <label class="form__fill-in" for="phone-field"><span class="desktop-hidden">контактный</span>
+                  телефон<sup>*</sup>:</label>
                 <div class="form__wrap">
                   <input class="form__input" type="text" name="name" placeholder="Введите телефон" id="phone-field"
                     required>
@@ -90,7 +91,7 @@
               <div class="form__box">
                 <label class="form__fill-in" for="email-field">электронная почта<sup>*</sup>:</label>
                 <div class="form__wrap">
-                  <input class="form__input" type="text" name="email" placeholder="Введите телефон" id="email-field"
+                  <input class="form__input" type="text" name="email" placeholder="Введите e-mail" id="email-field"
                     required>
                   <div class="form__icon">
                     <img src="img/icons/mail.svg" width="16" height="12" alt="email">
@@ -108,43 +109,43 @@
                 <div class="form__wrap">
                   <input class="visually-hidden" type="radio" id="positive" name="impression" value="good" checked>
                   <label class="form__radio" for="positive"></label>
-                  <span>Скорее положительное</span>
+                  <span class="form__text">Скорее положительное</span>
                 </div>
                 <div class="form__wrap">
                   <input class="visually-hidden" type="radio" id="negative" name="impression" value="not good">
                   <label class="form__radio" for="negative"></label>
-                  <span>Скорее отрицательное</span>
+                  <span class="form__text">Скорее отрицательное</span>
                 </div>
                 <div class="form__wrap">
                   <input class="visually-hidden" type="radio" id="average" name="impression" value="neutral">
                   <label class="form__radio" for="average"></label>
-                  <span>Затрудняюсь ответить</span>
+                  <span class="form__text">Затрудняюсь ответить</span>
                 </div>
               </div>
             </fieldset>
 
             <fieldset class="form__container form__container--down">
-              <legend class="form__title">посещенные достопримечательности:</legend>
+              <legend class="form__title form__title--middle">посещенные достопримечательности:</legend>
               <div class="form">
                 <div class="form__wrap">
                   <input class="visually-hidden" type="checkbox" name="places" id="bridge-field" checked>
                   <label class="form__checkbox" for="bridge-field"></label>
-                  <span>Мост Дьявола</span>
+                  <span class="form__text">Мост Дьявола</span>
                 </div>
                 <div class="form__wrap">
                   <input class="visually-hidden" type="checkbox" name="places" id="mountain-field" checked>
                   <label class="form__checkbox" for="mountain-field"></label>
-                  <span>Гора-Колокол</span>
+                  <span class="form__text">Гора-Колокол</span>
                 </div>
                 <div class="form__wrap">
                   <input class="visually-hidden" type="checkbox" name="places" id="park-field" checked>
                   <label class="form__checkbox" for="park-field"></label>
-                  <span>Слайд парк</span>
+                  <span class="form__text">Слайд парк</span>
                 </div>
                 <div class="form__wrap">
                   <input class="visually-hidden" type="checkbox" name="places" id="places-field">
                   <label class="form__checkbox" for="places-field"></label>
-                  <span>Красные скалы</span>
+                  <span class="form__text">Красные скалы</span>
                 </div>
               </div>
             </fieldset>
@@ -154,7 +155,10 @@
                 <label class="textarea__title">опишите свои эмоции:</label>
                 <textarea class="textarea__share" name="comment" id="comment-field"
                   rows="10">опишите подробно все свои восторги</textarea>
-                <button class="button" type="submit">отправить отзыв</button>
+                <div class="textarea__wrap">
+                  <button class="button" type="submit">отправить отзыв</button>
+                  <p class="textarea__fill-in"><span class="tablet-desktop">* - обязательные поля</span></p>
+                </div>
               </div>
             </div>
 
@@ -178,12 +182,12 @@
             </ul>
             <div class="footer__copyright copyright">
               <b class="copyright__text">Разработано:</b>
-
               <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
-                <object class="copyright__icon" type="image/svg+xml" data="img/icons/htmlacademy.svg" width="27"
-                  height="34" alt="логотип академии">
-                  Your browser does not support SVG
-                </object>
+                <svg width="27" height="35" viewBox="0 0 27 35" fill="black" xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M13.6 0H13.5L0 1.4V26.1L13.5 34.1L26.9 26.1V1.4L13.6 0ZM25 12.1L13.5 5.3V5.2H13.4L13.3 5.1V5.2L1.9 12.1V3.1L13.4 1.9L25 3.1V12.1ZM13.4 6.8L24.9 13.5L20.4 16.1L13.3 11.9V13.3L19.2 16.8L18.3 17.3L13.3 14.3V15.7L17.1 18L16.3 18.5L13.3 16.7V18.1L15.2 19.2L13.4 20.3L2 13.6L13.4 6.8ZM1.9 15.1L13.3 21.9V22.9L5.4 18.2V19.6L13.4 24.4V25.5L5.4 20.8V22.2L13.4 27L21.5 22.1V16.9L24.9 14.9V24.9L13.4 31.8L1.9 25V15.1Z" />
+                </svg>
+
               </a>
             </div>
           </footer>

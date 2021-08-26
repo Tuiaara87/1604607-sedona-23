@@ -4,16 +4,17 @@
   margin-left: 20px;
 }
 
-// .photos__pic {
-//   &--center {
-//     @media (min-width: $tablet-width) {
-//       width: 100%;
-//     }
-//   }
-// }
-
 .photos__box {
-  margin-left: 20px;
+  padding-left: 20px;
+
+  @media (min-width: $tablet-width) {
+    margin: 0 auto;
+    background-color: $concrete;
+  }
+
+  // @media (min-width: $desktop-width) {
+  //   position: absolute;
+  // }
 }
 
 .photos__title {
@@ -22,6 +23,7 @@
   font-size: $font-size14;
   line-height: $line-height24;
   font-weight: bold;
+  margin: 0;
 }
 
 .photos__author {
@@ -69,3 +71,9 @@
     display: flex;
   }
 }
+
+// .photos__pic {
+//   @media (min-width: $desktop-width) {
+//     position: relative;
+//   }
+// }

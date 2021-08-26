@@ -1,15 +1,16 @@
 .textarea {
-  // text-align: center;
   font-size: $font-size18;
   line-height: $line-height26;
   font-weight: bold;
   font-family: $base-font;
   text-transform: uppercase;
-  margin-bottom: 51px;
+
   text-align: left;
+  padding-top: 20px;
 
   @media (min-width: $tablet-width) {
     margin: 0;
+    padding-bottom: 80px;
   }
 }
 
@@ -22,12 +23,11 @@
   font-weight: bold;
   font-family: $base-font;
   background-color: $concrete;
+  margin-bottom: 51px;
 
   @media (min-width: $tablet-width) {
     width: 648px;
-    margin-bottom: 58px;
-    padding-left: 110px;
-    padding-right: 120px;
+    padding-left: 21px;
   }
 
   @media (min-width: $desktop-width) {
@@ -36,10 +36,23 @@
 }
 
 .textarea__title {
+  padding-bottom: 15px;
+
   @media (min-width: $tablet-width) {
     display: flex;
     justify-content: center;
     align-items: center;
     margin-bottom: 54px;
   }
+}
+
+.textarea__wrap {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.textarea__box {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }

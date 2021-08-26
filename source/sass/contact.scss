@@ -1,11 +1,12 @@
 .contact__box {
   background-color: $white;
-  padding-top: 58px;
+  padding-top: 33px;
 
   @media (min-width: $tablet-width) {
     align-items: center;
     display: flex;
     flex-direction: column;
+    padding-top: 58px;
   }
 }
 
@@ -58,4 +59,13 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  padding-bottom: 49px;
+
+  @media (min-width: $tablet-width) {
+    padding-bottom: 58px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-bottom: 66px;
+  }
 }

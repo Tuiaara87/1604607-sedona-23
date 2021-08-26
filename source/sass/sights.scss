@@ -7,11 +7,11 @@
 
   @media (min-width: $tablet-width) {
     display: flex;
-    margin-top: 57px;
-    margin-bottom: 30px;
     padding-left: 36px;
     padding-right: 31px;
     column-gap: 70px;
+    padding-top: 57px;
+    padding-bottom: 59px;
   }
 
   @media (min-width: $desktop-width) {
@@ -40,6 +40,7 @@
   font-size: $font-size14;
   font-family: $base-font;
   text-transform: uppercase;
+  margin: 0;
 
   @media (min-width: $tablet-width) {
     text-align: center;

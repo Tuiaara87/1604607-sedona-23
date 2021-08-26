@@ -38,6 +38,14 @@
   font-size: $font-size14;
   text-align: center;
   max-width: 300px;
+
+  @media (min-width: $tablet-width) {
+    max-width: 241px;
+  }
+
+  @media (min-width: $desktop-width) {
+    max-width: 288px;
+  }
 }
 
 .features__picture {
@@ -59,7 +67,8 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding: 13px;
+  padding-top: 55px;
+  padding-bottom: 39px;
 
   @media (min-width: $tablet-width) {
     width: 256px;

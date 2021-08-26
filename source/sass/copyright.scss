@@ -15,10 +15,20 @@
 
 .copyright__link {
   cursor: pointer;
-}
 
-.copyright__icon {
   svg {
-    fill: $steel-blue2;
+    transition: fill 0.3s;
+  }
+
+  &:hover {
+    svg {
+      fill: $steel-blue2;
+    }
+  }
+
+  &:active {
+    svg {
+      fill: $light-grey;
+    }
   }
 }
