@@ -57,41 +57,37 @@
   position: relative;
   right: 2px;
   bottom: 4px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
 }
 
 .video__repeat {
-  position: absolute;
   display: block;
   width: 16px;
   height: 20px;
-  background-image: url(../img/icons/replay.svg);
+  background-image: url("../img/icons/replay.svg");
   border: none;
-  left: 25px;
-  top: 22px;
+  margin-top: 22px;
+  margin-left: 25px;
 }
 
 .video__subtitle {
-  position: absolute;
   display: block;
   right: 100px;
   width: 32px;
   height: 20px;
-  background-image: url(../img/icons/subtitles.svg);
+  background-image: url("../img/icons/subtitles.svg");
   border: none;
-  top: 23px;
-  left: 174px;
 }
 
 .video__fullscreen {
-  position: absolute;
-  display: block;
   right: 150px;
   width: 20px;
   height: 20px;
-  background-image: url(../img/icons/fullscreen.svg);
+  background-image: url("../img/icons/fullscreen.svg");
   border: none;
-  top: 23px;
-  left: 237px;
+  display: block;
+  background-repeat: no-repeat;
 }
 
 .video__pic {
@@ -99,8 +95,6 @@
 }
 
 .video__controls {
-  width: 280px;
-  height: 66px;
   background-color: $black;
   opacity: 0.6;
   position: absolute;
@@ -108,4 +102,8 @@
   right: 20px;
   background-position: center;
   background-image: url("../img/icons/volume-scale.png");
+}
+
+.video__player {
+  position: relative;
 }

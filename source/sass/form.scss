@@ -1,6 +1,11 @@
 .form {
   display: flex;
   flex-wrap: wrap;
+  flex-direction: column;
+
+  @media (min-width: $tablet-width) {
+    flex-direction: unset;
+  }
 
   &--right {
     display: flex;
@@ -142,7 +147,6 @@
   height: 58px;
   background-color: $concrete;
   padding-left: 22px;
-  width: 100%;
 
   &::placeholder {
     color: $black;
@@ -167,10 +171,6 @@
   display: flex;
   align-items: center;
   padding-bottom: 25px;
-
-  span {
-    margin-left: 26px;
-  }
 }
 
 .form__icon {
@@ -186,5 +186,5 @@
   font-family: $base-font;
   font-weight: bold;
   font-size: $font-size18;
-  font-weight: $font-size26;
+  padding-left: 220px;
 }

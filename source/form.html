@@ -18,6 +18,7 @@
       </a>
 
       <nav class="navigation navigation--opened wrapper">
+        <!--для скрытия мобильного меню нужно удалить класс navigation--opened-->
         <button class="navigation__toggle" type="button">
           <span class="visually-hidden">Открыть меню</span>
         </button>
@@ -108,18 +109,20 @@
               <div class="form form--flex">
                 <div class="form__wrap">
                   <input class="visually-hidden" type="radio" id="positive" name="impression" value="good" checked>
-                  <label class="form__radio" for="positive"></label>
-                  <span class="form__text">Скорее положительное</span>
+                  <label class="form__radio" for="positive">
+                    <span class="form__text">Скорее
+                      положительное</span></label>
+
                 </div>
                 <div class="form__wrap">
                   <input class="visually-hidden" type="radio" id="negative" name="impression" value="not good">
-                  <label class="form__radio" for="negative"></label>
-                  <span class="form__text">Скорее отрицательное</span>
-                </div>
+                  <label class="form__radio" for="negative"><span class="form__text">Скорее отрицательное</span>
+                </div></label>
+
                 <div class="form__wrap">
                   <input class="visually-hidden" type="radio" id="average" name="impression" value="neutral">
-                  <label class="form__radio" for="average"></label>
-                  <span class="form__text">Затрудняюсь ответить</span>
+                  <label class="form__radio" for="average"><span class="form__text">Затрудняюсь ответить</span></label>
+
                 </div>
               </div>
             </fieldset>
@@ -129,23 +132,24 @@
               <div class="form">
                 <div class="form__wrap">
                   <input class="visually-hidden" type="checkbox" name="places" id="bridge-field" checked>
-                  <label class="form__checkbox" for="bridge-field"></label>
-                  <span class="form__text">Мост Дьявола</span>
+                  <label class="form__checkbox" for="bridge-field"><span class="form__text">Мост Дьявола</span></label>
+
                 </div>
                 <div class="form__wrap">
                   <input class="visually-hidden" type="checkbox" name="places" id="mountain-field" checked>
-                  <label class="form__checkbox" for="mountain-field"></label>
-                  <span class="form__text">Гора-Колокол</span>
+                  <label class="form__checkbox" for="mountain-field"><span
+                      class="form__text">Гора-Колокол</span></label>
+
                 </div>
                 <div class="form__wrap">
                   <input class="visually-hidden" type="checkbox" name="places" id="park-field" checked>
-                  <label class="form__checkbox" for="park-field"></label>
-                  <span class="form__text">Слайд парк</span>
+                  <label class="form__checkbox" for="park-field"><span class="form__text">Слайд парк</span></label>
+
                 </div>
                 <div class="form__wrap">
                   <input class="visually-hidden" type="checkbox" name="places" id="places-field">
-                  <label class="form__checkbox" for="places-field"></label>
-                  <span class="form__text">Красные скалы</span>
+                  <label class="form__checkbox" for="places-field"><span class="form__text">Красные скалы</span></label>
+
                 </div>
               </div>
             </fieldset>

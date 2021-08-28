@@ -49,6 +49,16 @@
 }
 
 .contact__location {
+  // &::after {
+  //   content: "";
+  //   position: absolute;
+  //   width: 27px;
+  //   height: 27px;
+  //   top: 0;
+  //   background-image: url("../img/icons/map-marker.svg");
+  //   background-repeat: no-repeat;
+  // }
+
   @media (min-width: $tablet-width) {
     height: 350px;
     width: 100%;
@@ -69,3 +79,7 @@
     padding-bottom: 66px;
   }
 }
+
+// .contact__map {
+//   position: relative;
+// }

@@ -6,11 +6,11 @@
 
 .header__logo {
   position: absolute;
-  // z-index: 12;
   left: 50%;
   transform: translateX(-50%);
   display: block;
   top: 0;
+  z-index: 1;
 
   @media (min-width: $tablet-width) {
     z-index: 12;

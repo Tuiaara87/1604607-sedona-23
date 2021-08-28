@@ -4,7 +4,6 @@
   font-weight: bold;
   font-family: $base-font;
   text-transform: uppercase;
-
   text-align: left;
   padding-top: 20px;
 
@@ -24,6 +23,7 @@
   font-family: $base-font;
   background-color: $concrete;
   margin-bottom: 51px;
+  resize: none;
 
   @media (min-width: $tablet-width) {
     width: 648px;
