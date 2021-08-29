@@ -16,14 +16,15 @@
         <img src="img/logo-mobile/logotype-mobile.svg" width="102" height="84" alt="Логотип Седона">
       </a>
 
-      <nav class="navigation  wrapper">
+      <nav class="navigation navigation--opened wrapper">
+        <!--для скрытия мобильного меню нужно удалить класс navigation--opened-->
         <button class="navigation__toggle" type="button">
           <span class="visually-hidden">Открыть меню</span>
         </button>
 
         <ul class="navigation__list">
           <li class="navigation__item">
-            <a class="navigation__link--first">главная</a>
+            <a class="navigation__link navigation__link--first">главная</a>
           </li>
           <li class="navigation__item">
             <a class="navigation__link" href="catalog.html">фото и видео</a>
@@ -57,8 +58,10 @@
           <a href="#"><img class="photos__pic photos__pic--center" src="img/catalog/road.png" width="280" height="280"
               alt="дорога"></a>
           <div class="photos__box">
+
             <h3 class="photos__title">неродные просторы</h3>
             <p class="photos__author">Автор: Борис</p>
+
             <div class="photos__wrap">
               <img src="img/icons/like-icon.svg" width="23" height="21" alt="мне нравится">
               <p class="photos__numbers">1350<span class="visually-hidden">мне нравится</span></p>
@@ -115,9 +118,10 @@
             раз!
           </p>
         </div>
+
         <div class="video__box">
           <div class="video__player">
-            <img src="img/catalog/video-mobile.png" width="320" height="201" alt="видеоролик Седоны">
+            <img class="video__pic" src="img/catalog/video-mobile.png" width="320" height="201" alt="видеоролик Седоны">
             <div class="video__controls"></div>
           </div>
           <div class="video__control">
@@ -150,10 +154,14 @@
         </li>
       </ul>
       <div class="footer__copyright copyright">
-
         <b class="copyright__text">Разработано:</b>
-        <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive"><img src="img/icons/htmlacademy.svg"
-            width="27" height="34" alt="логотип академии"></a>
+        <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
+          <svg width="27" height="35" viewBox="0 0 27 35" fill="black" xmlns="http://www.w3.org/2000/svg">
+            <path
+              d="M13.6 0H13.5L0 1.4V26.1L13.5 34.1L26.9 26.1V1.4L13.6 0ZM25 12.1L13.5 5.3V5.2H13.4L13.3 5.1V5.2L1.9 12.1V3.1L13.4 1.9L25 3.1V12.1ZM13.4 6.8L24.9 13.5L20.4 16.1L13.3 11.9V13.3L19.2 16.8L18.3 17.3L13.3 14.3V15.7L17.1 18L16.3 18.5L13.3 16.7V18.1L15.2 19.2L13.4 20.3L2 13.6L13.4 6.8ZM1.9 15.1L13.3 21.9V22.9L5.4 18.2V19.6L13.4 24.4V25.5L5.4 20.8V22.2L13.4 27L21.5 22.1V16.9L24.9 14.9V24.9L13.4 31.8L1.9 25V15.1Z" />
+          </svg>
+
+        </a>
       </div>
     </footer>
   </div>

@@ -1,16 +1,19 @@
 .header {
   position: relative;
+  background-color: $white;
+  padding-top: 56px;
 }
 
 .header__logo {
-  display: none;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  display: block;
+  top: 0;
+  z-index: 1;
 
   @media (min-width: $tablet-width) {
-    position: absolute;
-    z-index: 5;
-    left: 50%;
-    transform: translateX(-50%);
-    display: block;
+    z-index: 12;
   }
 
   @media (min-width: $desktop-width) {

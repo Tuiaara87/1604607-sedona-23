@@ -1,0 +1,12 @@
+.tablet-desktop {
+  display: none;
+
+  @media (min-width: $tablet-width) {
+    font-family: $base-font;
+    text-transform: uppercase;
+    font-size: $font-size14;
+    line-height: $line-height26;
+    color: $mine-shaft;
+    text-align: right;
+  }
+}

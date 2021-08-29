@@ -8,9 +8,10 @@
   font-family: $base-font;
   text-transform: uppercase;
   min-width: 200px;
-  margin-bottom: 35px;
+  margin: 0;
   text-align: center;
   max-width: 257px;
+  padding-bottom: 30px;
 
   @media (min-width: $tablet-width) {
     max-width: 372px;
@@ -25,6 +26,7 @@
   text-transform: uppercase;
   color: $mine-shaft;
   text-align: center;
+  max-width: 300px;
 }
 
 .advantages__proof {
@@ -32,4 +34,16 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  padding-top: 32px;
+  padding-bottom: 27px;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 43px;
+    padding-bottom: 52px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 55px;
+    padding-bottom: 41px;
+  }
 }

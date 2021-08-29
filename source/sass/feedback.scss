@@ -1,5 +1,17 @@
 .feedback {
   border-bottom: 1px solid $mercury;
+
+  @media (min-width: $tablet-width) {
+    border-bottom: none;
+    padding-left: 116px;
+    padding-right: 97px;
+    margin-bottom: 66px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-left: 250px;
+    padding-right: 267px;
+  }
 }
 
 .feedback__subtitle {
@@ -7,13 +19,14 @@
   margin: 0;
   font-family: $base-font;
   text-transform: uppercase;
-  margin-bottom: 37px;
   text-align: center;
+  padding-bottom: 16px;
 
   @media (min-width: $tablet-width) {
     font-size: $font-size14;
     line-height: $line-height24;
-    max-width: 440px;
+    text-transform: uppercase;
+    font-family: $base-font;
   }
 }
 
@@ -23,9 +36,8 @@
   margin: 0;
   font-family: $base-font;
   text-transform: uppercase;
-  margin-top: 36px;
+  padding-bottom: 30px;
   text-align: center;
-  margin-bottom: 36px;
 
   @media (min-width: $tablet-width) {
     font-size: $font-size30;

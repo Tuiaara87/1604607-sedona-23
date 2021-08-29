@@ -1,6 +1,19 @@
 .introduce {
   display: flex;
   flex-direction: column;
+  padding-top: 150px;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 65px;
+    padding-left: 155px;
+    padding-right: 155px;
+    padding-bottom: 65px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-left: 370px;
+    padding-right: 372px;
+  }
 }
 
 .introduce__title {
@@ -18,4 +31,6 @@
   text-transform: uppercase;
   font-size: $font-size14;
   line-height: $line-height24;
+  padding-left: 12px;
+  padding-right: 15px;
 }
