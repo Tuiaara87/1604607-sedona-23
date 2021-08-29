@@ -57,8 +57,9 @@
   position: relative;
   right: 2px;
   bottom: 4px;
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
+  display: flex;
+  column-gap: 85px;
+  padding-top: 23px;
 }
 
 .video__repeat {
@@ -67,7 +68,7 @@
   height: 20px;
   background-image: url("../img/icons/replay.svg");
   border: none;
-  margin-top: 22px;
+
   margin-left: 25px;
 }
 
