@@ -12,6 +12,7 @@
 <body class="body">
   <div class="layout">
     <header class="header">
+
       <a class="header__logo" href="http://127.0.0.1:5500/source/index.html">
         <img src="img/logo-mobile/logotype-mobile.svg" width="102" height="84" alt="Логотип Седона">
       </a>
@@ -55,8 +56,16 @@
 
       <section class="photos">
         <div class="photos__container">
-          <a href="#"><img class="photos__pic photos__pic--center" src="img/catalog/road.png" width="280" height="280"
-              alt="дорога"></a>
+          <picture>
+            <source media="(min-width: 1200px)"
+              srcset="img/catalog-desktop/road3.png 1x, img/catalog-desktop/road3@2x.png 2x">
+            <source media="(min-width: 768px)"
+              srcset="img/catalog-tablet/road2.png 1x, img/catalog-tablet/road2@2x.png 2x">
+            <a href="#"><img class="photos__pic photos__pic--center" src="img/catalog/road.png"
+                srcset="img/catalog/road@2x.png 2x"></a>
+          </picture>
+
+
           <div class="photos__box">
 
             <h3 class="photos__title">неродные просторы</h3>
@@ -70,8 +79,16 @@
         </div>
         <div class="photos__wrapper">
           <div class="photos__container">
-            <a href="#"><img class="photos__pic" src="img/catalog/plants.png" width="280" height="280"
-                alt="растения"></a>
+            <picture>
+              <source media="(min-width: 1200px)"
+                srcset="img/catalog-desktop/plants3.png 1x, img/img/catalog-desktop/plants3@2x.png 2x">
+              <source media="(min-width: 768px)"
+                srcset="img/catalog-tablet/plants2.png 1x, img/img/catalog-tablet/plants2@2x.png 2x">
+              <img src="img/catalog/plants.png" srcset="img/catalog/plants@2x.png 2x">
+            </picture>
+
+            <!-- <a href="#"><img class="photos__pic" src="img/catalog/plants.png" width="280" height="280"
+                alt="растения"></a> -->
             <div class="photos__box">
               <h3 class="photos__title">местная растительность</h3>
               <p class="photos__author">Автор: Сергей</p>
@@ -83,6 +100,12 @@
           </div>
 
           <div class="photos__container">
+
+
+            <picture>
+              <source media="(min-width: 1200px)"
+                srcset="img/catalog-tablet/plant.png 1x, img/catalog-tablet/plant@2x.png 2x">
+            </picture>
             <a href="#"><img class="photos__pic" src="img/catalog/north-road.png" width="280" height="280"
                 alt="северная дорога"></a>
             <div class="photos__box">

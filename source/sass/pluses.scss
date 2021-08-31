@@ -64,10 +64,6 @@
   @media (min-width: $desktop-width) {
     border-bottom: none;
   }
-
-  // &:last-child {
-  //   border-bottom: none;
-  // }
 }
 
 .pluses__number {
@@ -79,4 +75,8 @@
   text-align: center;
   margin: 0;
   padding-bottom: 20px;
+}
+
+.pluses__item:last-child .pluses__container {
+  border-bottom: 0;
 }
