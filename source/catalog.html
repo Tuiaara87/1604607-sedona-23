@@ -7,6 +7,8 @@
   <title>Каталог</title>
   <link rel="stylesheet" href="normalize.css">
   <link rel="stylesheet" href="css/style.css">
+  <link rel="icon" href="favicon.ico/">
+  <link rel="icon" href="img/favicon/32.svg">
 </head>
 
 <body class="body">
@@ -14,7 +16,11 @@
     <header class="header">
 
       <a class="header__logo" href="http://127.0.0.1:5500/source/index.html">
-        <img src="img/logo-mobile/logotype-mobile.svg" width="102" height="84" alt="Логотип Седона">
+        <picture>
+          <source media="(min-width: 1200px)" srcset="img/logo-desktop/logotype-desktop.svg">
+          <source media="(min-width: 768px)" srcset="img/logo-tablet/logotype-tablet.svg">
+          <img class="header__pic" src="img/logo-mobile/logotype-mobile.svg" alt="Логотип Седона">
+        </picture>
       </a>
 
       <nav class="navigation navigation--opened wrapper">
@@ -41,9 +47,8 @@
       </nav>
 
       <div class="banner">
-        <img class="banner__sedona" src="img/welcome-mobile/SEDONA.svg" width="229" height="39" alt="SEDONA">
+        <img class="banner__sedona" src="img/welcome-mobile/sedona.svg" width="229" height="39" alt="SEDONA">
       </div>
-
     </header>
 
     <main class="main">
@@ -61,16 +66,16 @@
               srcset="img/catalog-desktop/road3.png 1x, img/catalog-desktop/road3@2x.png 2x">
             <source media="(min-width: 768px)"
               srcset="img/catalog-tablet/road2.png 1x, img/catalog-tablet/road2@2x.png 2x">
-            <a href="#"><img class="photos__pic photos__pic--center" src="img/catalog/road.png"
-                srcset="img/catalog/road@2x.png 2x"></a>
+            <img class="photos__photo" src="img/catalog/road.png" srcset="img/catalog/road@2x.png 2x">
           </picture>
-
+          <!-- <a href="#"><img class="photos__pic photos__pic--center" src="img/catalog/road.png"
+            srcset="img/catalog/road@2x.png 2x"></a> -->
 
           <div class="photos__box">
-
-            <h3 class="photos__title">неродные просторы</h3>
-            <p class="photos__author">Автор: Борис</p>
-
+            <div class="photos__package">
+              <h3 class="photos__title">неродные просторы</h3>
+              <p class="photos__author">Автор: Борис</p>
+            </div>
             <div class="photos__wrap">
               <img src="img/icons/like-icon.svg" width="23" height="21" alt="мне нравится">
               <p class="photos__numbers">1350<span class="visually-hidden">мне нравится</span></p>
@@ -81,17 +86,19 @@
           <div class="photos__container">
             <picture>
               <source media="(min-width: 1200px)"
-                srcset="img/catalog-desktop/plants3.png 1x, img/img/catalog-desktop/plants3@2x.png 2x">
+                srcset="img/catalog-desktop/plants3.png 1x, img/catalog-desktop/plants3@2x.png 2x">
               <source media="(min-width: 768px)"
-                srcset="img/catalog-tablet/plants2.png 1x, img/img/catalog-tablet/plants2@2x.png 2x">
+                srcset="img/catalog-tablet/plants2.png 1x, img/catalog-tablet/plants2@2x.png 2x">
               <img src="img/catalog/plants.png" srcset="img/catalog/plants@2x.png 2x">
             </picture>
 
             <!-- <a href="#"><img class="photos__pic" src="img/catalog/plants.png" width="280" height="280"
                 alt="растения"></a> -->
             <div class="photos__box">
-              <h3 class="photos__title">местная растительность</h3>
-              <p class="photos__author">Автор: Сергей</p>
+              <div class="photos__package">
+                <h3 class="photos__title">местная растительность</h3>
+                <p class="photos__author">Автор: Сергей</p>
+              </div>
               <div class="photos__wrap">
                 <img src="img/icons/like-icon.svg" width="23" height="21" alt="мне нравится">
                 <p class="photos__numbers">143<span class="visually-hidden">мне нравится</span></p>
@@ -100,17 +107,22 @@
           </div>
 
           <div class="photos__container">
-
-
             <picture>
               <source media="(min-width: 1200px)"
-                srcset="img/catalog-tablet/plant.png 1x, img/catalog-tablet/plant@2x.png 2x">
+                srcset="img/catalog-desktop/north-road3.png 1x, img/catalog-desktop/north-road3@2x.png 2x">
+              <source media="(min-width: 768px)"
+                srcset="img/catalog-tablet/north-road2.png 1x, img/catalog-tablet/north-road2@2x.png 2x">
+              <img src="img/catalog/north-road.png" srcset="img/catalog/north-road@2x.png 2x">
             </picture>
-            <a href="#"><img class="photos__pic" src="img/catalog/north-road.png" width="280" height="280"
-                alt="северная дорога"></a>
+
+
+            <!-- <a href="#"><img class="photos__pic" src="img/catalog/north-road.png" width="280" height="280"
+                alt="северная дорога"></a> -->
             <div class="photos__box">
-              <h3 class="photos__title">дорога на север</h3>
-              <p class="photos__author">Автор: Петр</p>
+              <div class="photos__package">
+                <h3 class="photos__title">дорога на север</h3>
+                <p class="photos__author">Автор фото: Петр</p>
+              </div>
               <div class="photos__wrap">
                 <img src="img/icons/like-icon.svg" width="23" height="21" alt="мне нравится">
                 <p class="photos__numbers">96<span class="visually-hidden">мне нравится</span></p>
@@ -119,12 +131,21 @@
           </div>
 
           <div class="photos__container">
-            <a class="photos__link" href="#">
+            <picture>
+              <source media="(min-width: 1200px)"
+                srcset="img/catalog-desktop/devil-bridge3.png 1x, img/catalog-desktop/devil-bridge3@2x.png 2x">
+              <source media="(min-width: 768px)"
+                srcset="img/catalog-tablet/devil-bridge2.png 1x, img/catalog-tablet/devil-bridge2@2x.png 2x">
+              <img src="img/catalog/north-road.png" srcset="img/catalog/north-road@2x.png 2x">
+            </picture>
+            <!-- <a class="photos__link" href="#">
               <img class="photos__pic" src="img/catalog/devil-bridge.png" width="280" height="280"
-                alt="мост Дьявола"></a>
+                alt="мост Дьявола"></a> -->
             <div class="photos__box">
-              <h3 class="photos__title">мост дьявола</h3>
-              <p class="photos__author">Автор: Антон</p>
+              <div class="photos__package">
+                <h3 class="photos__title">мост дьявола</h3>
+                <p class="photos__author">Автор: Антон</p>
+              </div>
               <div class="photos__wrap">
                 <img src="img/icons/like-icon.svg" width="23" height="21" alt="мне нравится">
                 <p class="photos__numbers">254<span class="visually-hidden">мне нравится</span></p>
@@ -144,7 +165,17 @@
 
         <div class="video__box">
           <div class="video__player">
-            <img class="video__pic" src="img/catalog/video-mobile.png" width="320" height="201" alt="видеоролик Седоны">
+            <picture>
+              <source media="(min-width: 1200px)"
+                srcset="img/catalog-desktop/video-mobile3.png 1x, img/catalog-desktop/video-mobile3@2x.png 2x">
+              <source media="(min-width: 768px)"
+                srcset="img/catalog-tablet/video-mobile2.png 1x, img/catalog-tablet/video-mobile2@2x.png 2x">
+              <img class="video__pic" src="img/catalog/video-mobile.png" srcset="img/catalog/video-mobile@2x.png 2x"
+                width="320" height="201" alt="видеоролик Седоны">
+
+            </picture>
+
+
             <div class="video__controls"></div>
           </div>
           <div class="video__control">
