@@ -7,9 +7,9 @@
   <title>Форма</title>
   <link rel="stylesheet" href="normalize.css">
   <link rel="stylesheet" href="css/style.css">
-  <link rel="icon" href="favicon.ico/">
-  <link rel="icon" href="img/favicon/32.svg">
+  <link rel="icon" href="img/favicon/32.ico" type="image/svg+xml">
 </head>
+
 
 <body class="body">
   <div class="layout">
@@ -208,17 +208,18 @@
     <div class="modal">
       <div class="modal__box">
         <p class="modal__title">что-то пошло не так!</p>
-        <p class="modal__subtitle">проверьте поля, выделенные красным, скорее всего забыли их заполнить</p>
+        <p class="modal__subtitle">проверьте поля, выделенные красным, скорее всего вы забыли их заполнить</p>
         <button class="modal__button" type="button">ok</button>
       </div>
     </div>
 
-    <div class="modal">
-      <div class="modal__sent">
-        <p class="modal__title">ваш отзыв отправлен</p>
-        <p class="modal__subtitle">спасибо за ваше участие, ваш отзыв уже поступил к нам. В ближайшее время мы
-          опубликуем его на сайте.</p>
-        <button class="modal__button" type="button">закрыть окно</button>
+    <div class="sent">
+
+      <p class="sent__title">ваш отзыв отправлен!</p>
+      <p class="sent__subtitle">спасибо за ваше участие, ваш отзыв уже поступил к нам. В ближайшее время мы
+        опубликуем его на сайте.</p>
+      <div class="sent__box">
+        <button class="sent__button" type="button">закрыть окно</button>
       </div>
     </div>
 </body>

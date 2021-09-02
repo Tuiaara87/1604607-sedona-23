@@ -173,7 +173,7 @@
 
   &:active {
     background-color: $white;
-    box-shadow: 0px 0px 0px 4px $mercury inset;
+    box-shadow: 0 0 0 4px $mercury inset;
   }
 
   &:focus {
@@ -218,15 +218,15 @@
 }
 
 .form__wrap .form__radio {
-  &:hover:before {
+  &:hover::before {
     background-color: $mercury;
   }
 
-  &:active:before {
+  &:active::before {
     background-color: $alto2;
   }
 
-  &:active:after {
+  &:active::after {
     opacity: 0.3;
     transition: 0.3;
   }
