@@ -4,20 +4,17 @@
   padding-left: 22px;
   padding-top: 26px;
   padding-bottom: 35px;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
 
   @media (min-width: $tablet-width) {
-    display: flex;
-    padding-left: 36px;
-    padding-right: 31px;
-    column-gap: 70px;
-    padding-top: 57px;
-    padding-bottom: 59px;
+    padding: 57px 31px 59px 36px;
   }
 
   @media (min-width: $desktop-width) {
     padding-left: 58px;
-    padding-right: 78px;
-    column-gap: 104px;
+    padding-right: 58px;
   }
 }
 
@@ -41,6 +38,7 @@
   font-family: $base-font;
   text-transform: uppercase;
   margin: 0;
+  width: 30ch;
 
   @media (min-width: $tablet-width) {
     text-align: center;
@@ -49,7 +47,7 @@
 
 .sights__container {
   display: flex;
-  justify-content: space-between;
+  column-gap: 12px;
   align-items: center;
   margin-bottom: 26px;
 

@@ -1,6 +1,5 @@
 .pluses {
   background-color: $gallery;
-  padding-bottom: 62px;
 }
 
 .pluses__list {
@@ -14,6 +13,8 @@
   @media (min-width: $tablet-width) {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
+    padding: 0;
+    column-gap: 0;
   }
 
   @media (min-width: $desktop-width) {
@@ -47,6 +48,7 @@
   max-width: 247px;
   margin: 0;
   padding-bottom: 20px;
+  width: 33ch;
 }
 
 .pluses__container {
@@ -64,10 +66,6 @@
   @media (min-width: $desktop-width) {
     border-bottom: none;
   }
-
-  // &:last-child {
-  //   border-bottom: none;
-  // }
 }
 
 .pluses__number {
@@ -79,4 +77,8 @@
   text-align: center;
   margin: 0;
   padding-bottom: 20px;
+}
+
+.pluses__item:last-child .pluses__container {
+  border-bottom: 0;
 }

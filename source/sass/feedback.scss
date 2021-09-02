@@ -1,11 +1,12 @@
 .feedback {
   border-bottom: 1px solid $mercury;
+  padding-top: 36px;
 
   @media (min-width: $tablet-width) {
     border-bottom: none;
     padding-left: 116px;
     padding-right: 97px;
-    margin-bottom: 66px;
+    padding-bottom: 66px;
   }
 
   @media (min-width: $desktop-width) {

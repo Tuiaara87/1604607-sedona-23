@@ -7,13 +7,20 @@
   <title>Седона</title>
   <link rel="stylesheet" href="normalize.css">
   <link rel="stylesheet" href="css/style.css">
+  <link rel="icon" href="img/favicon/32.ico" type="image/svg+xml">
 </head>
 
 <body class="body">
   <div class="layout">
     <header class="header">
+
       <a class="header__logo">
-        <img class="header__pic" src="img/logo-mobile/logotype-mobile.svg" width="102" height="84" alt="Логотип Седона">
+        <picture>
+          <source media="(min-width: 1200px)" srcset="img/logo-desktop/logotype-desktop.svg">
+          <source media="(min-width: 768px)" srcset="img/logo-tablet/logotype-tablet.svg">
+          <img class="header__pic" src="img/logo-mobile/logotype-mobile.svg" alt="Логотип Седона">
+        </picture>
+
       </a>
 
       <nav class="navigation navigation--opened wrapper">
@@ -65,8 +72,14 @@
                   <p class="features__text">седона не аттракцион для туристов, там течет своя жизнь</p>
                 </div>
                 <div class="features__wrap">
-                  <img class="features__photo" src="img/views-mobile/photo-city.png" width="520" height="260"
-                    alt="город Седона">
+                  <picture>
+                    <source media="(min-width: 1200px)"
+                      srcset="img/views-desktop/photo-city.png 1x, img/views-desktop/photo-city@2x.png 2x">
+                    <source media="(min-width: 768px)"
+                      srcset="img/views-tablet/photo-city.png 1x, img/views-tablet/photo-city@2x.png 2x">
+                    <img class="features__picture" src="img/views-mobile/photo-city.png"
+                      srcset="img/views-mobile/photo-city@2x.png 2x">
+                  </picture>
                 </div>
               </div>
               <ul class="sights">
@@ -95,7 +108,7 @@
                     <img class="sights__img" src="img/icons/icon-burger.svg" width="40" height="35" alt="питание">
                     <div class="sights__box">
                       <p class="sights__title">еда</p>
-                      <p class="sights__text">всегда заказывайте фирменный бургер, вы&nbsp;не&nbsp;разочаруетесь!</p>
+                      <p class="sights__text">всегда заказывайте фирменный бургер, вы не разочаруетесь!</p>
                     </div>
                   </div>
                 </li>
@@ -111,8 +124,16 @@
                   <p class="features__text">да, по нему можно пройти! если вы осмелитесь, конечно</p>
                 </div>
                 <div class="features__wrap">
-                  <img class="features__picture" src="img/views-mobile/photo-bridge.png" width="520" height="260"
-                    alt="мост Седона">
+
+                  <picture>
+                    <source media="(min-width: 1200px)"
+                      srcset="img/views-desktop/photo-bridge.png 1x, img/views-desktop/photo-bridge@2x.png 2x">
+                    <source media="(min-width: 768px)"
+                      srcset="img/views-tablet/photo-bridge.png 1x, img/views-tablet/photo-bridge@2x.png 2x">
+                    <img src="img/views-mobile/photo-bridge.png" srcset="img/views-mobile/photo-bridge@2x.png 2x">
+                  </picture>
+
+
                 </div>
               </div>
             </li>

@@ -1,7 +1,14 @@
 .modal {
-  display: none;
+  // display: none;
   background-color: $white;
   border: 2px solid $lime;
+  width: 320px;
+  height: 280px;
+
+  @media (min-width: $tablet-width) {
+    width: 400px;
+    height: 347px;
+  }
 }
 
 .modal__title {
@@ -13,6 +20,18 @@
   color: $black;
   margin: 0;
   padding-bottom: 15px;
+  text-align: center;
+
+  @media (min-width: $tablet-width) {
+    font-size: $font-size30;
+    line-height: $line-height40;
+    text-transform: uppercase;
+    font-family: $base-font;
+    font-weight: bold;
+    color: $black;
+    padding-left: 92px;
+    padding-right: 76px;
+  }
 }
 
 .modal__failure {
@@ -32,8 +51,13 @@
   color: $mine-shaft;
   margin: 0;
   text-align: center;
-  padding-top: 20px;
   padding-bottom: 20px;
+  padding-left: 42px;
+  padding-right: 42px;
+
+  @media (min-width: $tablet-width) {
+    padding-bottom: 40px;
+  }
 }
 
 .modal__wrapp {
@@ -55,10 +79,25 @@
   line-height: $line-height26;
   text-transform: uppercase;
   font-weight: bold;
+  margin-left: 70px;
+  cursor: pointer;
+  transition: 0.3;
+
+  &:hover {
+    background-color: $fountain-blue;
+  }
+
+  &:active {
+    background-color: $steel-blue;
+  }
+
+  @media (min-width: $tablet-width) {
+    width: 272px;
+    margin-left: 64px;
+  }
 }
 
 .modal__box {
-  display: flex;
   flex-direction: column;
   align-items: center;
   padding-top: 61px;

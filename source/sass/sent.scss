@@ -1,0 +1,98 @@
+.sent {
+  // display: none;
+  width: 320px;
+  height: 323px;
+  background-color: $white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  @media (min-width: $tablet-width) {
+    width: 640px;
+    height: 347px;
+  }
+}
+
+.sent__title {
+  font-size: $font-size18;
+  line-height: $line-height26;
+  text-transform: uppercase;
+  font-family: $base-font;
+  font-weight: bold;
+  color: $black;
+  margin: 0;
+  text-align: center;
+
+  @media (min-width: $tablet-width) {
+    font-size: $font-size30;
+    line-height: $line-height26;
+    text-transform: uppercase;
+    font-family: $base-font;
+    font-weight: bold;
+    color: $black;
+    margin: 0;
+    text-align: center;
+  }
+}
+
+.sent__subtitle {
+  font-size: $font-size14;
+  line-height: $line-height24;
+  text-transform: uppercase;
+  font-family: $base-font;
+  color: $mine-shaft;
+  margin: 0;
+  text-align: center;
+  padding: 34px 39px 0 33px;
+
+  @media (min-width: $tablet-width) {
+    padding-left: 64px;
+    padding-right: 69px;
+    max-width: 554px;
+  }
+}
+
+.sent__button {
+  width: 280px;
+  height: 58px;
+  background-color: $steel-blue2;
+  border: none;
+  color: $white;
+  font-family: $base-font;
+  font-size: $font-size18;
+  line-height: $line-height26;
+  text-transform: uppercase;
+  font-weight: bold;
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  cursor: pointer;
+  transition: 0.3;
+
+  &:hover {
+    background-color: $fountain-blue;
+  }
+
+  &:active {
+    background-color: $steel-blue;
+  }
+
+  @media (min-width: $tablet-width) {
+    width: 458px;
+    left: 91px;
+  }
+}
+
+.sent__box {
+  width: 320px;
+  height: 98px;
+  background-color: $concrete;
+  position: relative;
+  top: 46px;
+
+  @media (min-width: $tablet-width) {
+    width: 100%;
+    top: 70px;
+  }
+}

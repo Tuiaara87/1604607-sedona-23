@@ -3,7 +3,7 @@
   list-style: none;
   display: none;
   position: absolute;
-  top: 0;
+  top: -2px;
   width: 100%;
   z-index: 10;
 
@@ -15,7 +15,6 @@
 .navigation__list {
   list-style: none;
   background-color: $steel-blue2;
-  // position: absolute;
   cursor: pointer;
   z-index: 2;
   top: 0;
@@ -61,6 +60,16 @@
   color: $white;
   text-decoration: none;
 
+  &:hover {
+    color: $steel-blue2;
+    transition: 0.3;
+  }
+
+  &:active {
+    opacity: 0.3;
+    transition: 0.3;
+  }
+
   @media (min-width: $tablet-width) {
     color: $black;
     font-size: $font-size14;
@@ -92,10 +101,17 @@
   &::after {
     content: "";
     position: absolute;
-
     width: 50%;
     height: 4px;
     background-color: #ffffff;
+
+    &:hover {
+      opacity: 0.6;
+    }
+
+    &:active {
+      opacity: 0.3;
+    }
   }
 
   &::before {
