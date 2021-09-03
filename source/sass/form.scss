@@ -22,6 +22,7 @@
   border: none;
   border-bottom: 1px solid $mercury;
   width: 100%;
+  position: relative;
 
   @media (min-width: $tablet-width) {
     border-bottom: none;
@@ -31,6 +32,7 @@
     @media (min-width: $tablet-width) {
       width: 50%;
       border-bottom: none;
+      padding-left: 50px;
     }
   }
 
@@ -46,6 +48,10 @@
   &--center {
     @media (min-width: $tablet-width) {
       width: 100%;
+
+      .form__fill-in {
+        padding-left: 25px;
+      }
     }
 
     @media (min-width: $desktop-width) {
@@ -86,7 +92,17 @@
   font-weight: bold;
   text-align: center;
   padding-top: 20px;
-  padding-bottom: 19px;
+  margin-bottom: 40px;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+
+  // @media (min-width: $mobile-width-only) {
+  //   &--middle span {
+  //     width: 100%;
+  //     padding: 0;
+  //   }
+  // }
 
   @media (min-width: $tablet-width) {
     padding-top: 0;
@@ -95,6 +111,23 @@
     &--center {
       text-align: center;
       padding-top: 72px;
+
+      &::before {
+        content: "";
+        position: absolute;
+        background-color: $line;
+        width: 100%;
+        height: 1px;
+        left: 0;
+        top: 4.6em;
+      }
+
+      &::after {
+        content: "контактная информация";
+        position: absolute;
+        background-color: $white;
+        padding: 0 60px;
+      }
     }
   }
 
@@ -104,6 +137,22 @@
     padding-right: 50px;
     padding-top: 51px;
     padding-bottom: 47px;
+
+    .form__line {
+      position: absolute;
+      background-color: $line;
+      width: 100%;
+      height: 1px;
+      left: 0;
+      top: 4.6em;
+    }
+
+    span {
+      position: absolute;
+      background-color: $white;
+      padding: 0 60px;
+      width: 35ch;
+    }
   }
 }
 
@@ -214,7 +263,7 @@
   font-family: $base-font;
   font-weight: bold;
   font-size: $font-size18;
-  padding-left: 220px;
+  padding-left: 63px;
 }
 
 .form__wrap .form__radio {

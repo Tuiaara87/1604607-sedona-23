@@ -61,6 +61,10 @@
   display: flex;
   column-gap: 85px;
   padding-top: 23px;
+
+  @media (min-width: $tablet-width) {
+    display: none;
+  }
 }
 
 .video__repeat {

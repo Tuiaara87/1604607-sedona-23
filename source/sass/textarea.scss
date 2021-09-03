@@ -56,4 +56,22 @@
   flex-direction: column;
   justify-content: center;
   margin-left: 20px;
+
+  &--bottom {
+    .form__line {
+      position: absolute;
+      background-color: $line;
+      width: 100%;
+      height: 1px;
+      left: 0;
+      top: 4.6em;
+    }
+
+    span {
+      position: absolute;
+      background-color: $white;
+      padding: 0 60px;
+      width: 35ch;
+    }
+  }
 }
