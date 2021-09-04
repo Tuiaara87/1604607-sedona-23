@@ -10,6 +10,10 @@
   &--opened {
     display: block;
   }
+
+  @media (min-width: $tablet-width) {
+    display: block;
+  }
 }
 
 .navigation__list {
