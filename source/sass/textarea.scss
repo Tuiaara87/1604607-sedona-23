@@ -48,14 +48,13 @@
 
 .textarea__wrap {
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 70% 30%;
 }
 
 .textarea__box {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  margin-left: 20px;
 
   &--bottom {
     .form__line {
@@ -65,13 +64,6 @@
       height: 1px;
       left: 0;
       top: 4.6em;
-    }
-
-    span {
-      position: absolute;
-      background-color: $white;
-      padding: 0 60px;
-      width: 35ch;
     }
   }
 }

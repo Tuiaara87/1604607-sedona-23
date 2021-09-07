@@ -28,5 +28,9 @@
 
   &:active {
     background-color: $steel-blue;
+
+    span {
+      opacity: 0.3;
+    }
   }
 }

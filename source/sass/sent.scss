@@ -1,16 +1,19 @@
 .sent {
-  // display: none;
+  display: none;
   width: 320px;
   height: 323px;
   background-color: $white;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+  position: fixed;
+  top: 117px;
+  left: 50%;
+  margin-left: -160px;
 
   @media (min-width: $tablet-width) {
     width: 640px;
     height: 347px;
+    top: 162px;
+    left: 50%;
+    margin-left: -320px;
   }
 }
 
@@ -23,6 +26,7 @@
   color: $black;
   margin: 0;
   text-align: center;
+  padding-top: 38px;
 
   @media (min-width: $tablet-width) {
     font-size: $font-size30;
@@ -76,6 +80,10 @@
 
   &:active {
     background-color: $steel-blue;
+
+    span {
+      opacity: 0.3;
+    }
   }
 
   @media (min-width: $tablet-width) {

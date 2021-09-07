@@ -14,15 +14,18 @@
   <div class="layout">
     <header class="header">
 
-      <a class="header__logo" href="http://127.0.0.1:5500/source/index.html">
+      <a class="header__logo" href="/index.html">
         <picture>
           <source media="(min-width: 1200px)" srcset="img/logo-desktop/logotype-desktop.svg">
           <source media="(min-width: 768px)" srcset="img/logo-tablet/logotype-tablet.svg">
           <img class="header__pic" src="img/logo-mobile/logotype-mobile.svg" alt="Логотип Седона">
         </picture>
       </a>
+      <div class="header__burger">
+        <span></span>
+      </div>
 
-      <nav class="navigation navigation--opened wrapper">
+      <nav class="navigation  wrapper">
         <!--для скрытия мобильного меню нужно удалить класс navigation--opened-->
         <button class="navigation__toggle" type="button">
           <span class="visually-hidden">Открыть меню</span>
@@ -30,9 +33,9 @@
 
         <ul class="navigation__list">
           <li class="navigation__item">
-            <a class="navigation__link navigation__link--first">главная</a>
+            <a class="navigation__link navigation__link--first" href="/index.html">главная</a>
           </li>
-          <li class="navigation__item">
+          <li class=" navigation__item">
             <a class="navigation__link" href="catalog.html">фото и видео</a>
           </li>
           <li class="navigation__item">
@@ -46,7 +49,12 @@
       </nav>
 
       <div class="banner">
-        <img class="banner__sedona" src="img/welcome-mobile/sedona.svg" width="229" height="39" alt="SEDONA">
+        <picture>
+          <source media="(min-width: 1200px)" srcset="img/sedona/text-sedona.svg 1x, img/sedona/text-sedona.svg@2x 2x">
+          <source media="(min-width: 768px)" srcset="img/sedona/sedona 1x, img/sedona/text-sedona.svg@2x 2x">
+          <img class="banner__sedona" src="img/welcome-mobile/sedona.svg" width="229" height="39" alt="SEDONA">
+        </picture>
+
       </div>
     </header>
 
@@ -73,7 +81,7 @@
 
           <div class="photos__box">
             <div class="photos__package">
-              <h3 class="photos__title">неродные просторы</h3>
+              <h3 class="photos__title">неродные просторыне</h3>
               <p class="photos__author">Автор фото: Борис</p>
             </div>
             <div class="photos__wrap">
@@ -174,20 +182,18 @@
                 srcset="img/catalog-tablet/video-mobile2.png 1x, img/catalog-tablet/video-mobile2@2x.png 2x">
               <img class="video__pic" src="img/catalog/video-mobile.png" srcset="img/catalog/video-mobile@2x.png 2x"
                 alt="видеоролик Седоны">
-
             </picture>
+            <div class="video__control">
+              <button class="video__repeat" type="button"><span class="visually-hidden">Проиграть
+                  сначала</span></button>
+              <button class="video__subtitle" type="button"><span class="visually-hidden">включить
+                  субтитры</span></button>
+              <button class="video__fullscreen" type="button"><span class="visually-hidden">развернуть полностью
+                  экран</span></button>
+            </div>
+          </div>
 
 
-            <div class="video__controls"></div>
-          </div>
-          <div class="video__control">
-            <button class="video__repeat" type="button"><span class="visually-hidden">Проиграть
-                сначала</span></button>
-            <button class="video__subtitle" type="button"><span class="visually-hidden">включить
-                субтитры</span></button>
-            <button class="video__fullscreen" type="button"><span class="visually-hidden">развернуть полностью
-                экран</span></button>
-          </div>
         </div>
       </div>
 

@@ -20,11 +20,11 @@
   @media (min-width: $desktop-width) {
     position: absolute;
     width: 100%;
-    height: 80px;
+    min-height: 80px;
     z-index: 1;
     bottom: 3px;
     mix-blend-mode: normal;
-    color: white;
+    color: $white;
     background: rgba(0, 0, 0, 0.3);
   }
 }

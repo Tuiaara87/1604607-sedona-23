@@ -2,6 +2,7 @@
   display: none;
 
   @media (min-width: $tablet-width) {
+    display: block;
     font-family: $base-font;
     text-transform: uppercase;
     font-size: $font-size14;
