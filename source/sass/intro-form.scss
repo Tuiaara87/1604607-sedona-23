@@ -6,7 +6,7 @@
   align-items: center;
   justify-content: center;
   position: relative;
-  min-height: 389px;
+  height: 158px;
 
   &::after {
     content: "";
@@ -24,8 +24,7 @@
 
   @media (min-width: $tablet-width) {
     background-image: url("../img/banner-form/tablet-form.jpg");
-
-    min-height: 518px;
+    min-height: 462px;
     top: -102px;
     left: 0;
 

@@ -19,20 +19,20 @@
 
   @media (min-width: $desktop-width) {
     position: absolute;
-    width: 1200px;
-    height: 80px;
+    width: 100%;
+    min-height: 80px;
     z-index: 1;
     bottom: 3px;
-    background: #000000;
     mix-blend-mode: normal;
-    opacity: 0.3;
+    color: $white;
+    background: rgba(0, 0, 0, 0.3);
   }
 }
 
 .photos__package {
   display: flex;
   flex-direction: column;
-  padding-top: 22px;
+  padding-top: 17px;
 }
 
 .photos__title {

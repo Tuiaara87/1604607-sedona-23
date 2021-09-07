@@ -15,15 +15,17 @@
   <div class="layout">
 
     <header class="header">
-      <a class="header__logo" href="http://127.0.0.1:5500/source/index.html">
+      <a class="header__logo" href="/index.html">
         <picture>
           <source media="(min-width: 1200px)" srcset="img/logo-desktop/logotype-desktop.svg">
           <source media="(min-width: 768px)" srcset="img/logo-tablet/logotype-tablet.svg">
           <img class="header__pic" src="img/logo-mobile/logotype-mobile.svg" alt="Логотип Седона">
         </picture>
       </a>
-
-      <nav class="navigation navigation--opened wrapper">
+      <div class="header__burger">
+        <span></span>
+      </div>
+      <nav class="navigation wrapper">
         <!--для скрытия мобильного меню нужно удалить класс navigation--opened-->
         <button class="navigation__toggle" type="button">
           <span class="visually-hidden">Открыть меню</span>
@@ -31,7 +33,7 @@
 
         <ul class="navigation__list">
           <li class="navigation__item">
-            <a class="navigation__link navigation__link--first">главная</a>
+            <a class="navigation__link navigation__link--first" href="/index.html">главная</a>
           </li>
           <li class="navigation__item">
             <a class="navigation__link" href="catalog.html">фото и видео</a>
@@ -134,7 +136,9 @@
             </fieldset>
 
             <fieldset class="form__container form__container--down">
-              <legend class="form__title form__title--middle">посещенные достопримечательности:</legend>
+              <legend class="form__title form__title--middle">
+                <div class="form__line"></div><span>посещенные достопримечательности:</span>
+              </legend>
               <div class="form">
                 <div class="form__wrap">
                   <input class="visually-hidden" type="checkbox" name="places" id="bridge-field" checked>
@@ -162,11 +166,14 @@
 
             <div class="textarea">
               <div class="textarea__box textarea__box--bottom">
-                <label class="textarea__title">опишите свои эмоции:</label>
+                <label class="textarea__title">
+                  <div class="textarea__line"></div>
+                  <span>опишите свои эмоции:</span>
+                </label>
                 <textarea class="textarea__share" name="comment" id="comment-field"
-                  rows="10">опишите подробно все свои восторги</textarea>
+                  rows="10">Опишите подробно все свои восторги</textarea>
                 <div class="textarea__wrap">
-                  <button class="button" type="submit">отправить отзыв</button>
+                  <button class="button" type="submit"><span>отправить отзыв</span></button>
                   <p class="textarea__fill-in"><span class="tablet-desktop">* - обязательные поля</span></p>
                 </div>
               </div>
@@ -209,7 +216,7 @@
       <div class="modal__box">
         <p class="modal__title">что-то пошло не так!</p>
         <p class="modal__subtitle">проверьте поля, выделенные красным, скорее всего вы забыли их заполнить</p>
-        <button class="modal__button" type="button">ok</button>
+        <button class="modal__button" type="button"><span>ok</span></button>
       </div>
     </div>
 
@@ -219,7 +226,7 @@
       <p class="sent__subtitle">спасибо за ваше участие, ваш отзыв уже поступил к нам. В ближайшее время мы
         опубликуем его на сайте.</p>
       <div class="sent__box">
-        <button class="sent__button" type="button">закрыть окно</button>
+        <button class="sent__button" type="button"><span>закрыть окно</span></button>
       </div>
     </div>
 </body>

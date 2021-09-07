@@ -4,6 +4,7 @@
   @media (min-width: $tablet-width) {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
+    margin-top: 0;
   }
 
   @media (min-width: $desktop-width) {
@@ -17,10 +18,14 @@
   font-weight: bold;
   text-transform: uppercase;
   font-family: $base-font;
-  padding-top: 38px;
   padding-bottom: 33px;
   text-align: center;
   margin: 0;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 50px;
+    margin: 0;
+  }
 }
 
 .footer__copyright {
