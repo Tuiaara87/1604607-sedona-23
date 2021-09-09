@@ -36,6 +36,7 @@
 
   @media (min-width: $tablet-width) {
     font-size: $font-size21;
+    max-width: 153px;
   }
 }
 
@@ -50,6 +51,11 @@
   margin: 0;
   padding-bottom: 20px;
   width: 33ch;
+
+  @media (min-width: $tablet-width) {
+    padding-left: 26px;
+    padding-right: 41px;
+  }
 }
 
 .pluses__container {

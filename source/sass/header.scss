@@ -9,7 +9,7 @@
   left: 50%;
   transform: translateX(-50%);
   display: block;
-  top: 0;
+  top: -2px;
   z-index: 1;
 
   @media (min-width: $tablet-width) {
