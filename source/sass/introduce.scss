@@ -23,6 +23,15 @@
   font-weight: bold;
   font-size: $font-size18;
   line-height: $line-height26;
+
+  @media (min-width: $tablet-width) {
+    text-align: center;
+    font-family: $base-font;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: $font-size30;
+    line-height: $line-height26;
+  }
 }
 
 .introduce__subtitle {

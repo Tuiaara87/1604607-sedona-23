@@ -1,5 +1,5 @@
 .feedback {
-  border-bottom: 1px solid $mercury;
+  // border-bottom: 1px solid $mercury;
   padding-top: 36px;
 
   @media (min-width: $tablet-width) {
@@ -44,4 +44,8 @@
   @media (min-width: $tablet-width) {
     font-size: $font-size30;
   }
+}
+
+.feedback__line {
+  border-bottom: 1px solid $mercury;
 }

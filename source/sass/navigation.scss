@@ -79,7 +79,19 @@
     font-size: $font-size14;
     line-height: $line-height26;
 
-    &--first {
+    &--main {
+      font-size: $font-size14;
+      line-height: $line-height26;
+      color: $brown-grey;
+    }
+
+    &--catalog {
+      font-size: $font-size14;
+      line-height: $line-height26;
+      color: $brown-grey;
+    }
+
+    &--form {
       font-size: $font-size14;
       line-height: $line-height26;
       color: $brown-grey;

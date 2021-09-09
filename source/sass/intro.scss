@@ -8,6 +8,7 @@
   position: relative;
   min-height: 389px;
   overflow: hidden;
+  bottom: -1px;
 
   &::after {
     content: "";
