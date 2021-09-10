@@ -1,5 +1,4 @@
 .sights {
-  padding: 0;
   list-style: none;
   padding-left: 22px;
   padding-top: 26px;
@@ -8,9 +7,9 @@
   justify-content: space-between;
   flex-wrap: wrap;
 
-  @media (min-width: $tablet-width) {
-    padding: 57px 31px 59px 36px;
-  }
+  // @media (min-width: $tablet-width) {
+  //   padding: 57px 31px 59px 36px;
+  // }
 
   @media (min-width: $desktop-width) {
     padding-left: 58px;

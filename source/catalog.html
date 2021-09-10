@@ -13,7 +13,6 @@
 <body class="body">
   <div class="layout">
     <header class="header">
-
       <a class="header__logo" href="/index.html">
         <picture>
           <source media="(min-width: 1200px)" srcset="img/logo-desktop/logotype-desktop.svg">
@@ -65,6 +64,7 @@
         <p class="introduce__subtitle">не можете решиться на путешествие из-за курса? фотографии помогут вам забыть о
           политике и экономике.</p>
       </div>
+      <div class="line"></div>
 
       <section class="photos">
         <div class="photos__container">
@@ -77,26 +77,23 @@
               <img class="photos__photo" src="img/catalog/road.png" srcset="img/catalog/road@2x.png 2x" alt="дорога">
             </picture>
           </a>
-        </div>
-
-        <div class="photos__box">
-          <div class="photos__package">
-            <h3 class="photos__title">неродные просторыне</h3>
-            <p class="photos__author">Автор фото: Борис</p>
+          <div class="photos__box">
+            <div class="photos__package">
+              <h3 class="photos__title">неродные просторыне</h3>
+              <p class="photos__author">Автор фото: Борис</p>
+            </div>
+            <div class="photos__wrap">
+              <button class="photos__like" type="button">
+                <svg width="23" height="21" viewBox="0 0 23 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M12.9636 3.78L12.3364 6.825L11.7091 9.45H14.3227H20.8045V11.55C20.8045 11.55 20.8045 11.55 20.8045 11.655L17.7727 18.9H8.36364V8.4L12.9636 3.78ZM2.09091 10.5V18.9V10.5ZM13.8 0L6.9 6.93C6.48182 7.245 6.27273 7.77 6.27273 8.4V18.9C6.27273 20.055 7.21364 21 8.36364 21H17.7727C18.6091 21 19.3409 20.475 19.6545 19.74L22.7909 12.285C22.8955 12.075 22.8955 11.76 22.8955 11.55V9.45H23C23 8.295 22.0591 7.35 20.9091 7.35H14.3227L15.3682 2.52V2.205C15.3682 1.785 15.1591 1.365 14.95 1.05L13.8 0ZM4.18182 8.4H0V21H4.18182V8.4Z"
+                    fill="black" />
+                </svg></button>
+              <p class="photos__numbers">1350<span class="visually-hidden">мне нравится</span></p>
+            </div>
           </div>
-          <div class="photos__wrap">
-            <!-- <img src="img/icons/like-icon.svg" width="23" height="21" alt="мне нравится"> -->
-            <p class="photos__numbers">1350<span class="visually-hidden">мне нравится</span></p>
-            <button class="photos__like" type="button">
-              <svg width="23" height="21" viewBox="0 0 23 21" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path opacity="0.3"
-                  d="M12.9636 3.78L12.3364 6.825L11.7091 9.45H14.3227H20.8045V11.55C20.8045 11.55 20.8045 11.55 20.8045 11.655L17.7727 18.9H8.36364V8.4L12.9636 3.78ZM2.09091 10.5V18.9V10.5ZM13.8 0L6.9 6.93C6.48182 7.245 6.27273 7.77 6.27273 8.4V18.9C6.27273 20.055 7.21364 21 8.36364 21H17.7727C18.6091 21 19.3409 20.475 19.6545 19.74L22.7909 12.285C22.8955 12.075 22.8955 11.76 22.8955 11.55V9.45H23C23 8.295 22.0591 7.35 20.9091 7.35H14.3227L15.3682 2.52V2.205C15.3682 1.785 15.1591 1.365 14.95 1.05L13.8 0ZM4.18182 8.4H0V21H4.18182V8.4Z"
-                  fill="black" />
-              </svg>
-
-          </div>
+          <div class="line"></div>
         </div>
-
 
         <div class="photos__wrapper">
           <div class="photos__container">
@@ -109,19 +106,23 @@
                 <img src="img/catalog/plants.png" srcset="img/catalog/plants@2x.png 2x" alt="местная растительность">
               </picture>
             </a>
-
-
             <div class="photos__box">
               <div class="photos__package">
                 <h3 class="photos__title">местная растительность</h3>
                 <p class="photos__author">Автор фото Сергей</p>
               </div>
               <div class="photos__wrap">
-                <img src="img/icons/like-icon.svg" width="23" height="21" alt="мне нравится">
+                <button class="photos__like" type="button">
+                  <svg width="23" height="21" viewBox="0 0 23 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                      d="M12.9636 3.78L12.3364 6.825L11.7091 9.45H14.3227H20.8045V11.55C20.8045 11.55 20.8045 11.55 20.8045 11.655L17.7727 18.9H8.36364V8.4L12.9636 3.78ZM2.09091 10.5V18.9V10.5ZM13.8 0L6.9 6.93C6.48182 7.245 6.27273 7.77 6.27273 8.4V18.9C6.27273 20.055 7.21364 21 8.36364 21H17.7727C18.6091 21 19.3409 20.475 19.6545 19.74L22.7909 12.285C22.8955 12.075 22.8955 11.76 22.8955 11.55V9.45H23C23 8.295 22.0591 7.35 20.9091 7.35H14.3227L15.3682 2.52V2.205C15.3682 1.785 15.1591 1.365 14.95 1.05L13.8 0ZM4.18182 8.4H0V21H4.18182V8.4Z"
+                      fill="black" />
+                  </svg>
+                </button>
                 <p class="photos__numbers">143<span class="visually-hidden">мне нравится</span></p>
-
               </div>
             </div>
+            <div class="line"></div>
           </div>
 
           <div class="photos__container">
@@ -134,19 +135,23 @@
                 <img src="img/catalog/north-road.png" srcset="img/catalog/north-road@2x.png 2x" alt="северная дорога">
               </picture>
             </a>
-
-
-
-            <div class="photos__box">
+            <div class="photos__box photos__box--third">
               <div class="photos__package">
                 <h3 class="photos__title">дорога на север</h3>
                 <p class="photos__author">Автор фото: Петр</p>
               </div>
               <div class="photos__wrap">
-                <img src="img/icons/like-icon.svg" width="23" height="21" alt="мне нравится">
+                <button class="photos__like" type="button">
+                  <svg width="23" height="21" viewBox="0 0 23 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                      d="M12.9636 3.78L12.3364 6.825L11.7091 9.45H14.3227H20.8045V11.55C20.8045 11.55 20.8045 11.55 20.8045 11.655L17.7727 18.9H8.36364V8.4L12.9636 3.78ZM2.09091 10.5V18.9V10.5ZM13.8 0L6.9 6.93C6.48182 7.245 6.27273 7.77 6.27273 8.4V18.9C6.27273 20.055 7.21364 21 8.36364 21H17.7727C18.6091 21 19.3409 20.475 19.6545 19.74L22.7909 12.285C22.8955 12.075 22.8955 11.76 22.8955 11.55V9.45H23C23 8.295 22.0591 7.35 20.9091 7.35H14.3227L15.3682 2.52V2.205C15.3682 1.785 15.1591 1.365 14.95 1.05L13.8 0ZM4.18182 8.4H0V21H4.18182V8.4Z"
+                      fill="black" />
+                  </svg>
+                </button>
                 <p class="photos__numbers">96<span class="visually-hidden">мне нравится</span></p>
               </div>
             </div>
+            <div class="line"></div>
           </div>
 
           <div class="photos__container">
@@ -166,11 +171,18 @@
                 <p class="photos__author">Автор фото: Антон</p>
               </div>
               <div class="photos__wrap">
-                <img src="img/icons/like-icon.svg" width="23" height="21" alt="мне нравится">
+                <button class="photos__like" type="button">
+                  <svg width="23" height="21" viewBox="0 0 23 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                      d="M12.9636 3.78L12.3364 6.825L11.7091 9.45H14.3227H20.8045V11.55C20.8045 11.55 20.8045 11.55 20.8045 11.655L17.7727 18.9H8.36364V8.4L12.9636 3.78ZM2.09091 10.5V18.9V10.5ZM13.8 0L6.9 6.93C6.48182 7.245 6.27273 7.77 6.27273 8.4V18.9C6.27273 20.055 7.21364 21 8.36364 21H17.7727C18.6091 21 19.3409 20.475 19.6545 19.74L22.7909 12.285C22.8955 12.075 22.8955 11.76 22.8955 11.55V9.45H23C23 8.295 22.0591 7.35 20.9091 7.35H14.3227L15.3682 2.52V2.205C15.3682 1.785 15.1591 1.365 14.95 1.05L13.8 0ZM4.18182 8.4H0V21H4.18182V8.4Z"
+                      fill="black" />
+                  </svg>
+                </button>
                 <p class="photos__numbers">254<span class="visually-hidden">мне нравится</span></p>
               </div>
             </div>
           </div>
+          <div class="line"></div>
         </div>
 
 
