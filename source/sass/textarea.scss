@@ -24,6 +24,8 @@
   background-color: $concrete;
   margin-bottom: 51px;
   resize: none;
+  padding-left: 20px;
+  padding-top: 15px;
 
   @media (min-width: $tablet-width) {
     width: 648px;
@@ -37,6 +39,24 @@
 
 .textarea__title {
   padding-bottom: 15px;
+  text-align: center;
+
+  // &::before {
+  //   content: "";
+  //   position: absolute;
+  //   background-color: $line;
+  //   width: 100%;
+  //   height: 1px;
+  //   left: 0;
+  //   top: 4.6em;
+  // }
+
+  // &::after {
+  //   content: "опишите свои эмоции";
+  //   position: absolute;
+  //   background-color: $white;
+  //   padding: 0 60px;
+  // }
 
   @media (min-width: $tablet-width) {
     display: flex;
