@@ -34,8 +34,8 @@
 
     @media (min-width: $desktop-width) {
       background-image: url("../img/banner-form/desktop-form.jpg");
-      height: 518px;
-      top: -201px;
+      // height: 518px;
+      // // top: -201px;
 
       @media (min-resolution: 2dppx) {
         background-image: url("../img/banner-form/desktop-form@2x.jpg");

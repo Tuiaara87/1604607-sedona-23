@@ -77,8 +77,8 @@
 
   @media (min-width: $tablet-width) {
     svg path {
-      fill: $white;
-      opacity: 1;
+      fill: $black;
+      opacity: 0.3;
     }
   }
 }
@@ -103,8 +103,9 @@
   }
 
   @media (min-width: $desktop-width) {
-    width: 100%;
-    display: flex;
+    width: auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
   }
 }
 
