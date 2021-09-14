@@ -1,7 +1,11 @@
 .header {
   position: relative;
   background-color: $white;
-  padding-top: 35px;
+  padding-top: 38px;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 0;
+  }
 }
 
 .header__logo {
@@ -9,7 +13,7 @@
   left: 50%;
   transform: translateX(-50%);
   display: block;
-  top: -2px;
+  top: 0;
   z-index: 1;
 
   @media (min-width: $tablet-width) {

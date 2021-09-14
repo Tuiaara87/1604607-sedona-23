@@ -7,14 +7,10 @@
   justify-content: space-between;
   flex-wrap: wrap;
 
-  // @media (min-width: $tablet-width) {
-  //   padding: 57px 31px 59px 36px;
+  // @media (min-width: $desktop-width) {
+  //   padding-left: 58px;
+  //   padding-right: 58px;
   // }
-
-  @media (min-width: $desktop-width) {
-    padding-left: 58px;
-    padding-right: 58px;
-  }
 }
 
 .sights__title {
@@ -39,8 +35,18 @@
   margin: 0;
   width: 30ch;
 
+  br {
+    @media (min-width: $desktop-width) {
+      display: none;
+    }
+  }
+
   @media (min-width: $tablet-width) {
     text-align: center;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 39ch;
   }
 }
 
@@ -48,7 +54,6 @@
   display: flex;
   column-gap: 12px;
   align-items: center;
-  margin-bottom: 26px;
 
   @media (min-width: $tablet-width) {
     display: flex;

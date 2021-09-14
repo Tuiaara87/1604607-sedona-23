@@ -40,3 +40,13 @@
     }
   }
 }
+
+.banner__sedona {
+  width: 229px;
+  height: 39px;
+
+  @media (min-width: $tablet-width) {
+    width: 457px;
+    height: 77px;
+  }
+}

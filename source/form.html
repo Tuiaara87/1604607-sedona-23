@@ -49,7 +49,7 @@
       </nav>
       <div class="intro-form">
         <picture>
-          <source media="(min-width: 1200px)" srcset="img/sedona/text-sedona.svg 1x, img/sedona/text-sedona.svg@2x 2x">
+          <source media="(min-width: 1200px)" srcset="img/sedona/sedona.svg 1x, img/sedona/sedona@2x.svg 2x">
           <source media="(min-width: 768px)"
             srcset="img/sedona/text-sedona.svg 1x, img/sedona/text-sedona.svg@2x.svg 2x">
           <img class="banner__sedona" src="img/sedona/sedona.svg" alt="SEDONA">
@@ -61,17 +61,16 @@
       <section class="worksheet">
         <div class="feedback wrapper">
           <h1 class="feedback__title">оставьте свой отзыв</h1>
-          <p class="feedback__subtitle">помогите нашим отелям стать лучше! оставьте отзыв о них, а также о посещенных
+          <p class="feedback__subtitle">помогите нашим отелям стать лучше! оставьте отзыв о них, а также о
+            посещенных
             вами
             достопримечательностях</p>
           <div class="line"></div>
         </div>
 
-
         <form class="form wrapper" action="echo.htmlacademy.ru">
 
           <fieldset class="form__container form__container--right">
-
             <legend class="form__title">представьтесь:</legend>
             <div class="form form--right">
               <div class="form__wrap">
@@ -92,9 +91,9 @@
 
           <fieldset class="form__container form__container--center">
             <legend class="form__title form__title--center">контактная информация:</legend>
-
             <div class="form__box">
-              <label class="form__fill-in" for="phone-field"><span class="desktop-hidden">контактный</span>
+              <label class="form__fill-in form__fill-in--contact" for="phone-field"><span
+                  class="desktop-hidden">контактный</span>
                 телефон<sup>*</sup>:</label>
               <div class="form__wrap">
                 <input class="form__input" type="text" name="name" placeholder="Введите телефон" id="phone-field"
@@ -105,7 +104,8 @@
               </div>
             </div>
             <div class="form__box">
-              <label class="form__fill-in" for="email-field">электронная почта<sup>*</sup>:</label>
+              <label class="form__fill-in form__fill-in--contact" for="email-field">электронная
+                почта<sup>*</sup>:</label>
               <div class="form__wrap">
                 <input class="form__input" type="text" name="email" placeholder="Введите e-mail" id="email-field"
                   required>
@@ -120,8 +120,7 @@
           </fieldset>
 
           <fieldset class="form__container form__container--left">
-
-            <legend class="form__title">ваше общее впечатление:</legend>
+            <legend class="form__title form__title--desktop-first">ваше общее впечатление:</legend>
             <div class="form form--flex">
               <div class="form__wrap">
                 <input class="visually-hidden" type="radio" id="positive" name="impression" value="good" checked>
@@ -145,7 +144,7 @@
 
           <fieldset class="form__container form__container--down">
             <legend class="form__title form__title--middle">
-              <div class="form__line"></div><span>посещенные достопримечательности:</span>
+              <span class="form__line"></span><span>посещенные достопримечательности:</span>
             </legend>
             <div class="form">
               <div class="form__wrap">
@@ -174,13 +173,15 @@
           <div class="textarea">
             <div class="textarea__box textarea__box--bottom">
               <label class="textarea__title">
-                <div class="textarea__line"></div>
+                <span class="textarea__line"></span>
                 <span>опишите свои эмоции:</span>
               </label>
               <textarea class="textarea__share" name="comment" id="comment-field"
                 rows="10">Опишите подробно все свои восторги</textarea>
               <div class="textarea__wrap">
-                <button class="button" type="submit"><span>отправить отзыв</span></button>
+                <a class="button" href="#">
+                  <span>отправить отзыв</span>
+                </a>
                 <p class="textarea__fill-in"><span class="tablet-desktop">* - обязательные поля</span></p>
               </div>
             </div>

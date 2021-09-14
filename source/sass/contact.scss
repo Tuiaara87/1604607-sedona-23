@@ -41,17 +41,20 @@
   padding-left: 24px;
   padding-right: 30px;
 
+  br {
+    display: none;
+  }
+
   @media (min-width: $tablet-width) {
     margin: 0;
     padding-top: 40px;
     padding-bottom: 37px;
-    padding-left: 185px;
-    padding-right: 182px;
+    // padding-left: 185px;
+    // padding-right: 182px;
   }
 
   @media (min-width: $desktop-width) {
-    padding-left: 400px;
-    padding-right: 400px;
+    width: 59ch;
   }
 }
 

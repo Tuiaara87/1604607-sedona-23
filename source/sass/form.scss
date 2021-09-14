@@ -5,6 +5,7 @@
 
   @media (min-width: $tablet-width) {
     flex-direction: unset;
+    align-items: flex-start;
   }
 
   &--right {
@@ -28,10 +29,15 @@
   }
 
   &--right {
+    padding-left: 0;
     @media (min-width: $tablet-width) {
       width: 50%;
       border-bottom: none;
       padding-left: 50px;
+    }
+
+    @media (min-width: $desktop-width) {
+      padding-left: 125px;
     }
   }
 
@@ -50,6 +56,7 @@
 
       .form__fill-in {
         padding-left: 25px;
+        padding-top: 12px;
       }
     }
 
@@ -92,12 +99,12 @@
   text-align: center;
   padding-top: 20px;
   margin-bottom: 40px;
-  display: flex;
   width: 100%;
 
   @media (min-width: $tablet-width) {
     padding-top: 0;
     text-align: left;
+    font-size: $font-size21;
 
     &--center {
       text-align: center;
@@ -112,7 +119,7 @@
         width: 100%;
         height: 1px;
         left: 0;
-        top: 4.6em;
+        top: 85px;
       }
 
       &::after {
@@ -120,6 +127,10 @@
         position: absolute;
         background-color: $white;
         padding: 0 60px;
+      }
+
+      @media (min-width: $desktop-width) {
+        padding-bottom: 72px;
       }
     }
   }
@@ -142,7 +153,7 @@
       width: 100%;
       height: 1px;
       left: 0;
-      top: 4.6em;
+      top: 74px;
     }
 
     span {
@@ -155,14 +166,25 @@
       }
     }
   }
+
+  &--desktop-first {
+    @media (min-width: $desktop-width) {
+      padding-left: 52px;
+    }
+  }
 }
 
 .form__fill-in {
   line-height: $line-height26;
+  font-size: $font-size14;
   margin-right: 10px;
   font-family: $base-font;
   text-transform: uppercase;
   padding-bottom: 8px;
+
+  &--contact {
+    padding-left: 20px;
+  }
 }
 
 .form__radio {
@@ -242,6 +264,7 @@
   @media (min-width: $desktop-width) {
     display: flex;
     flex-direction: unset;
+    padding-right: 37px;
   }
 }
 

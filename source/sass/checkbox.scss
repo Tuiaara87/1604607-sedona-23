@@ -14,10 +14,8 @@
   position: relative;
   cursor: pointer;
   display: flex;
-
   align-items: center;
-
-  height: 46px;
+  min-height: 46px;
 }
 
 [type="checkbox"]:checked + label::before,
@@ -28,7 +26,6 @@
   top: 0;
   width: 46px;
   min-height: 46px;
-
   background-color: $concrete;
 }
 
@@ -42,7 +39,8 @@
   transform: rotate(-45deg);
   position: absolute;
   transition: all 0.2s ease;
-  left: 9px;
+  left: 12px;
+  top: 12px;
 }
 
 [type="checkbox"]:not(:checked) + label::after {

@@ -6,7 +6,7 @@
 }
 
 .photos__box {
-  padding: 0 20px 44px 20px;
+  padding-bottom: 20px;
 
   @media (min-width: $tablet-width) {
     margin: 0 auto;
@@ -15,6 +15,8 @@
     justify-content: space-between;
     padding-bottom: 0;
     margin-top: -4px;
+    padding-left: 20px;
+    padding-right: 28px;
 
     &--third {
       background-color: $catalog-background;
@@ -45,6 +47,18 @@
   line-height: $line-height24;
   font-weight: bold;
   margin: 0;
+
+  @media (min-width: $tablet-width) {
+    &--first {
+      max-width: 133px;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    &--first {
+      max-width: 0;
+    }
+  }
 }
 
 .photos__author {
@@ -52,12 +66,21 @@
   font-size: $font-size14;
   line-height: $line-height24;
   font-weight: normal;
+  color: $mine-shaft;
+
+  @media (min-width: $desktop-width) {
+    color: $white;
+  }
 }
 
 .photos__wrap {
   display: flex;
   column-gap: 14px;
   align-items: center;
+
+  @media (min-width: $desktop-width) {
+    padding-right: 20px;
+  }
 }
 
 .photos__numbers {
@@ -77,15 +100,24 @@
 
   @media (min-width: $tablet-width) {
     svg path {
+      fill: $black;
+      opacity: 0.3;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    svg path {
       fill: $white;
-      opacity: 1;
     }
   }
 }
 
 .photos__container {
+  padding-top: 22px;
+
   @media (min-width: $tablet-width) {
     margin: 0 auto;
+    padding-top: 0;
   }
 
   @media (min-width: $desktop-width) {
@@ -103,8 +135,9 @@
   }
 
   @media (min-width: $desktop-width) {
-    width: 100%;
-    display: flex;
+    width: auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
   }
 }
 
