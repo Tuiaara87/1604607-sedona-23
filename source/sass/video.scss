@@ -142,9 +142,28 @@
     fill: $shuttle-gray;
   }
 
+  &:hover svg path {
+    fill: $mine-shaft;
+  }
+
+  &:active svg path {
+    fill: $mine-shaft;
+    opacity: 0.3;
+  }
+
   @media (min-width: $tablet-width) {
     svg path {
       fill: $white;
+    }
+
+    &:hover svg path {
+      fill: $white;
+      opacity: 0.6;
+    }
+
+    &:active svg path {
+      fill: $white;
+      opacity: 0.3;
     }
   }
 }
@@ -157,9 +176,28 @@
     fill: $shuttle-gray;
   }
 
+  &:hover svg path {
+    fill: $mine-shaft;
+  }
+
+  &:active svg path {
+    fill: $mine-shaft;
+    opacity: 0.3;
+  }
+
   @media (min-width: $tablet-width) {
     svg path {
       fill: $white;
+    }
+
+    &:hover svg path {
+      fill: $white;
+      opacity: 0.6;
+    }
+
+    &:active svg path {
+      fill: $white;
+      opacity: 0.3;
     }
   }
 }
@@ -172,9 +210,28 @@
     fill: $shuttle-gray;
   }
 
+  &:hover svg path {
+    fill: $mine-shaft;
+  }
+
+  &:active svg path {
+    fill: $mine-shaft;
+    opacity: 0.3;
+  }
+
   @media (min-width: $tablet-width) {
     svg path {
       fill: $white;
+    }
+
+    &:hover svg path {
+      fill: $white;
+      opacity: 0.6;
+    }
+
+    &:active svg path {
+      fill: $white;
+      opacity: 0.3;
     }
   }
 }

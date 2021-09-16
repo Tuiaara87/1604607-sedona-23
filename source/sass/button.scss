@@ -14,15 +14,15 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  // margin-left: 20px;
   margin-bottom: 49px;
 
   &--index {
     margin-left: 20px;
+    padding-bottom: 22px;
   }
 
   @media (min-width: $tablet-width) {
-    width: 324px;
+    width: 458px;
     height: 58px;
   }
 

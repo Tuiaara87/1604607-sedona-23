@@ -16,18 +16,19 @@
 
       <a class="header__logo">
         <picture>
-          <source media="(min-width: 1200px)" srcset="img/logo-desktop/logotype-desktop.svg">
+          <source class="header__logo" media="(min-width: 1200px)" srcset="img/logo-desktop/logotype-desktop.svg">
           <source media="(min-width: 768px)" srcset="img/logo-tablet/logotype-tablet.svg">
-          <img class="header__pic" src="img/logo-mobile/logotype-mobile.svg" alt="Логотип Седона">
+          <img class="header__pic" src="img/logo-mobile/logotype-mobile.svg" width="101" height="84"
+            alt="Логотип Седона">
         </picture>
       </a>
       <div class="header__burger">
         <span></span>
       </div>
 
-      <nav class="navigation wrapper">
+      <nav class="navigation navigation--opened wrapper">
         <!--для скрытия мобильного меню нужно удалить класс navigation--opened-->
-        <button class="navigation__toggle" type="button">
+        <button class="navigation__toggle visually-hidden" type="button">
           <span class="visually-hidden">Открыть меню</span>
         </button>
 
@@ -182,7 +183,7 @@
           <p class="contact__text">укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения
             гостиниц в седоне</p>
           <a class="button button--index" href="#">
-            <span>найти гостиницу</span>
+            найти гостиницу
           </a>
         </div>
 

@@ -1,16 +1,11 @@
 .sights {
   list-style: none;
-  padding-left: 22px;
-  padding-top: 26px;
+  padding-left: 14px;
+  padding-top: 20px;
   padding-bottom: 35px;
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
-
-  // @media (min-width: $desktop-width) {
-  //   padding-left: 58px;
-  //   padding-right: 58px;
-  // }
 }
 
 .sights__title {
@@ -58,11 +53,13 @@
   @media (min-width: $tablet-width) {
     display: flex;
     flex-direction: column;
+    padding-right: 15px;
   }
 
   @media (min-width: $desktop-width) {
     display: flex;
     flex-direction: column;
+    padding-right: 45px;
   }
 }
 
@@ -75,12 +72,12 @@
 }
 
 .sights__img {
-  margin-bottom: 40px;
+  margin-bottom: 76px;
 
   @media (min-width: $tablet-width) {
     width: 75px;
     height: 72px;
-    margin-bottom: 26px;
+    margin-bottom: 7px;
   }
 
   @media (min-width: $desktop-width) {
@@ -96,5 +93,9 @@
       flex-wrap: wrap;
       order: 1;
     }
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-left: 36px;
   }
 }

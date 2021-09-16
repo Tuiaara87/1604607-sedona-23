@@ -19,6 +19,7 @@
   line-height: $line-height26;
   font-weight: bold;
   min-width: 200px;
+  padding-top: 10px;
 
   &:last-child {
     margin-bottom: 0;
@@ -90,12 +91,13 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding-top: 55px;
+  padding-top: 46px;
   padding-bottom: 39px;
   position: relative;
 
   @media (min-width: $tablet-width) {
     width: 256px;
+    padding-top: 26px;
   }
 
   @media (min-width: $desktop-width) {
@@ -146,6 +148,7 @@
 .features__wrap {
   @media (min-width: $tablet-width) {
     flex: 1;
+    padding-bottom: 4px;
   }
 }
 

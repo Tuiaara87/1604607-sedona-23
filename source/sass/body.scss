@@ -1,9 +1,20 @@
-body {
-  * {
-    box-sizing: border-box;
-  }
-  background-color: $mercury3;
+img {
+  max-width: 100%;
+}
 
+a {
+  text-decoration: none;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background-color: $mercury3;
   font-family: $base-font;
 
   fieldset,

@@ -1,12 +1,16 @@
 .contact__box {
   background-color: $white;
-  padding-top: 33px;
+  padding-top: 26px;
 
   @media (min-width: $tablet-width) {
     align-items: center;
     display: flex;
     flex-direction: column;
     padding-top: 58px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 80px;
   }
 }
 
@@ -18,6 +22,7 @@
   text-transform: uppercase;
   margin: 0;
   text-align: center;
+  padding-bottom: 1px;
 
   @media (min-width: $tablet-width) {
     font-size: $font-size30;
@@ -49,8 +54,6 @@
     margin: 0;
     padding-top: 40px;
     padding-bottom: 37px;
-    // padding-left: 185px;
-    // padding-right: 182px;
   }
 
   @media (min-width: $desktop-width) {
@@ -104,5 +107,9 @@
       left: 586px;
       top: 162px;
     }
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 16px;
   }
 }

@@ -19,16 +19,24 @@
   text-transform: uppercase;
   font-family: $base-font;
   padding-bottom: 33px;
-  padding-top: 38px;
+  padding-top: 24px;
   text-align: center;
   margin: 0;
 
   @media (min-width: $tablet-width) {
-    padding-top: 50px;
+    padding-top: 46px;
     margin: 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-left: 122px;
   }
 }
 
 .footer__copyright {
   text-align: center;
+
+  @media (min-width: $desktop-width) {
+    padding-right: 116px;
+  }
 }

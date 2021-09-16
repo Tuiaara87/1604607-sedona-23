@@ -19,15 +19,16 @@
         <picture>
           <source media="(min-width: 1200px)" srcset="img/logo-desktop/logotype-desktop.svg">
           <source media="(min-width: 768px)" srcset="img/logo-tablet/logotype-tablet.svg">
-          <img class="header__pic" src="img/logo-mobile/logotype-mobile.svg" alt="Логотип Седона">
+          <img class="header__pic" src="img/logo-mobile/logotype-mobile.svg" width="101" height="84"
+            alt="Логотип Седона">
         </picture>
       </a>
       <div class="header__burger">
         <span></span>
       </div>
-      <nav class="navigation wrapper">
+      <nav class="navigation navigation--opened wrapper">
         <!--для скрытия мобильного меню нужно удалить класс navigation--opened-->
-        <button class="navigation__toggle" type="button">
+        <button class="navigation__toggle visually-hidden" type="button">
           <span class="visually-hidden">Открыть меню</span>
         </button>
 
@@ -47,7 +48,7 @@
         </ul>
 
       </nav>
-      <div class="intro-form">
+      <div class="banner">
         <picture>
           <source media="(min-width: 1200px)" srcset="img/sedona/sedona.svg 1x, img/sedona/sedona@2x.svg 2x">
           <source media="(min-width: 768px)"
@@ -96,7 +97,7 @@
                   class="desktop-hidden">контактный</span>
                 телефон<sup>*</sup>:</label>
               <div class="form__wrap">
-                <input class="form__input" type="text" name="name" placeholder="Введите телефон" id="phone-field"
+                <input class="form__input" type="tel" name="name" placeholder="Введите телефон" id="phone-field"
                   required>
                 <div class="form__icon">
                   <img src="img/icons/phone.svg" width="18" height="18" alt="телефон">
@@ -107,7 +108,7 @@
               <label class="form__fill-in form__fill-in--contact" for="email-field">электронная
                 почта<sup>*</sup>:</label>
               <div class="form__wrap">
-                <input class="form__input" type="text" name="email" placeholder="Введите e-mail" id="email-field"
+                <input class="form__input" type="email" name="email" placeholder="Введите e-mail" id="email-field"
                   required>
                 <div class="form__icon">
                   <img src="img/icons/mail.svg" width="16" height="12" alt="email">
@@ -176,11 +177,15 @@
                 <span class="textarea__line"></span>
                 <span>опишите свои эмоции:</span>
               </label>
-              <textarea class="textarea__share" name="comment" id="comment-field"
-                rows="10">Опишите подробно все свои восторги</textarea>
+
+              <label>
+                <textarea class="textarea__share" name="comment" id="comment-field"
+                  rows="10">Опишите подробно все свои восторги</textarea>
+              </label>
+
               <div class="textarea__wrap">
                 <a class="button" href="#">
-                  <span>отправить отзыв</span>
+                  отправить отзыв
                 </a>
                 <p class="textarea__fill-in"><span class="tablet-desktop">* - обязательные поля</span></p>
               </div>

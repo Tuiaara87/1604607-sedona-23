@@ -30,6 +30,7 @@
 
   &--right {
     padding-left: 0;
+
     @media (min-width: $tablet-width) {
       width: 50%;
       border-bottom: none;
@@ -243,12 +244,9 @@
     background-color: $mercury;
   }
 
-  &:active {
+  &:focus {
     background-color: $white;
     box-shadow: 0 0 0 4px $mercury inset;
-  }
-
-  &:focus {
     outline: none;
   }
 

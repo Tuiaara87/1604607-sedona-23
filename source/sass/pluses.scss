@@ -17,11 +17,6 @@
     padding: 0;
     column-gap: 0;
   }
-
-  // @media (min-width: $desktop-width) {
-  //   padding-left: 42px;
-  //   padding-right: 55px;
-  // }
 }
 
 .pluses__title {
@@ -78,7 +73,7 @@
 }
 
 .pluses__container {
-  padding-top: 26px;
+  padding-top: 19px;
   align-items: center;
   display: flex;
   flex-direction: column;
@@ -91,6 +86,7 @@
 
   @media (min-width: $desktop-width) {
     border-bottom: none;
+    padding-top: 67px;
   }
 }
 
