@@ -5,6 +5,7 @@ const sass = require("gulp-sass");
 const postcss = require("gulp-postcss");
 const autoprefixer = require("autoprefixer");
 const sync = require("browser-sync").create();
+const del = require("del");
 
 // Styles
 
@@ -17,11 +18,36 @@ const styles = () => {
       autoprefixer()
     ]))
     .pipe(sourcemap.write("."))
-    .pipe(gulp.dest("source/css"))
+    .pipe(gulp.dest("build/css"))
     .pipe(sync.stream());
 }
 
-exports.styles = styles;
+// HTML
+
+const html = () => {
+  return gulp.src("source/*.html")
+    .pipe(gulp.dest("build"));
+}
+
+// images
+
+const images = () => {
+  return gulp.src("source/img/**/*")
+    .pipe(gulp.dest("build/img"));
+}
+
+// fonts
+
+const fonts = () => {
+  return gulp.src("source/fonts/*")
+    .pipe(gulp.dest("build/fonts"));
+}
+
+// Clean
+
+const clean = () => {
+  return del ("build");
+};
 
 // Server
 
@@ -37,15 +63,20 @@ const server = (done) => {
   done();
 }
 
-exports.server = server;
-
 // Watcher
 
 const watcher = () => {
-  gulp.watch("source/sass/**/*.scss", gulp.series("styles"));
+  gulp.watch("source/sass/**/*.scss", gulp.series(styles));
   gulp.watch("source/*.html").on("change", sync.reload);
 }
 
+const build = gulp.series(clean,
+  gulp.parallel(
+    styles, html, images, fonts
+  ));
+
+exports.build = build;
+
 exports.default = gulp.series(
-  styles, server, watcher
+  build, server, watcher
 );

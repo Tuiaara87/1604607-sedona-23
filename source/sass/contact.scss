@@ -1,6 +1,6 @@
 .contact__box {
   background-color: $white;
-  padding-top: 26px;
+  padding-top: 30px;
 
   @media (min-width: $tablet-width) {
     align-items: center;
@@ -58,6 +58,7 @@
 
   @media (min-width: $desktop-width) {
     width: 59ch;
+    padding-top: 33px;
   }
 }
 

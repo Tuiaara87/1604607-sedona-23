@@ -1,5 +1,5 @@
 .feedback {
-  padding-top: 36px;
+  padding-top: 50px;
 
   @media (min-width: $tablet-width) {
     border-bottom: none;
@@ -12,6 +12,7 @@
   @media (min-width: $desktop-width) {
     padding-left: 250px;
     padding-right: 267px;
+    padding-top: 49px;
   }
 }
 
@@ -42,5 +43,12 @@
 
   @media (min-width: $tablet-width) {
     font-size: $font-size30;
+    padding-top: 13px;
+    padding-right: 12px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 62px;
+    padding-left: 36px;
   }
 }

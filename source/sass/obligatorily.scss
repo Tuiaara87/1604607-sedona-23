@@ -1,0 +1,12 @@
+.obligatorily {
+  @media (min-width: $tablet-width) {
+    position: absolute;
+    bottom: 125px;
+    left: 490px;
+  }
+
+  @media (min-width: $desktop-width) {
+    bottom: 128px;
+    left: 806px;
+  }
+}

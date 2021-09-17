@@ -4,14 +4,14 @@
   align-items: center;
   justify-content: center;
   position: relative;
-  height: 214px;
+  height: 140px;
 
   &::after {
     content: "";
     position: absolute;
     width: 100%;
     height: 57px;
-    bottom: -1px;
+    bottom: 0;
     background-image: url("../img/decor/intro-triangle.svg");
     background-position: center;
   }
@@ -21,7 +21,7 @@
   }
 
   @media (min-width: $tablet-width) {
-    height: 241px;
+    height: 271px;
     background-image: url("../img/banner-catalog/tablet-catalog.jpg");
     background-repeat: no-repeat;
     background-size: cover;
@@ -34,6 +34,7 @@
 
   @media (min-width: $desktop-width) {
     background-image: url("../img/banner-desktop/banner-desktop.jpg");
+    height: 284px;
 
     @media (min-resolution: 2dppx) {
       background-image: url("../img/banner-desktop/banner-desktop@2x.jpg");

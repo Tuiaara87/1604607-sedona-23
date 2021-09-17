@@ -3,19 +3,46 @@
   flex-wrap: wrap;
   flex-direction: column;
 
+  &--tablet {
+    .form__wrap {
+      @media (min-width: $tablet-width) {
+        width: 50%;
+        padding-left: 100px;
+      }
+
+      @media (min-width: $desktop-width) {
+        width: auto;
+        padding-left: 0;
+      }
+    }
+  }
+
   @media (min-width: $tablet-width) {
     flex-direction: unset;
     align-items: flex-start;
   }
 
+  @media (min-width: $desktop-width) {
+    justify-content: space-between;
+  }
+
   &--right {
     display: flex;
     flex-direction: column;
+
+    @media (min-width: $tablet-width) {
+      padding-top: 50px;
+      padding-left: 10px;
+    }
   }
 
   &--flex {
     display: flex;
     flex-direction: column;
+
+    @media (min-width: $tablet-width) {
+      padding-top: 51px;
+    }
   }
 }
 
@@ -38,7 +65,7 @@
     }
 
     @media (min-width: $desktop-width) {
-      padding-left: 125px;
+      padding-left: 88px;
     }
   }
 
@@ -57,95 +84,96 @@
 
       .form__fill-in {
         padding-left: 25px;
-        padding-top: 12px;
-      }
-    }
-
-    @media (min-width: $desktop-width) {
-      display: flex;
-      column-gap: 79px;
-      justify-content: center;
-    }
-  }
-
-  &--down {
-    @media (min-width: $tablet-width) {
-      width: 100%;
-      padding-left: 100px;
-      padding-right: 100px;
-
-      .form__wrap {
-        width: 50%;
-      }
-    }
-
-    @media (min-width: $desktop-width) {
-      width: 100%;
-      padding: 0;
-
-      .form__wrap {
-        width: 25%;
-      }
-    }
-  }
-}
-
-.form__title {
-  font-size: $font-size18;
-  line-height: $line-height26;
-  margin: 0;
-  font-family: $base-font;
-  text-transform: uppercase;
-  font-weight: bold;
-  text-align: center;
-  padding-top: 20px;
-  margin-bottom: 40px;
-  width: 100%;
-
-  @media (min-width: $tablet-width) {
-    padding-top: 0;
-    text-align: left;
-    font-size: $font-size21;
-
-    &--center {
-      text-align: center;
-      padding-top: 72px;
-      display: flex;
-      justify-content: center;
-
-      &::before {
-        content: "";
-        position: absolute;
-        background-color: $line;
-        width: 100%;
-        height: 1px;
-        left: 0;
-        top: 85px;
-      }
-
-      &::after {
-        content: "контактная информация";
-        position: absolute;
-        background-color: $white;
-        padding: 0 60px;
+        padding-top: 0;
       }
 
       @media (min-width: $desktop-width) {
-        padding-bottom: 72px;
+        display: flex;
+        column-gap: 79px;
+        justify-content: center;
+      }
+    }
+
+    &--down {
+      @media (min-width: $tablet-width) {
+        width: 100%;
+        padding-left: 100px;
+        padding-right: 100px;
+
+        .form__wrap {
+          width: 50%;
+        }
+      }
+
+      @media (min-width: $desktop-width) {
+        width: 100%;
+        padding: 0;
+
+        .form__wrap {
+          width: 25%;
+        }
       }
     }
   }
 
-  &--middle {
+  .form__title {
+    font-size: $font-size18;
+    line-height: $line-height26;
+    margin: 0;
+    font-family: $base-font;
+    text-transform: uppercase;
+    font-weight: bold;
     text-align: center;
-    padding-top: 51px;
-    padding-bottom: 47px;
-    display: flex;
-    justify-content: center;
+    width: 100%;
+    padding-bottom: 19px;
+    padding-top: 20px;
 
-    @media (min-width: $desktop-width) {
+    @media (min-width: $tablet-width) {
+      padding-top: 0;
+      text-align: left;
+      font-size: $font-size21;
+      padding-left: 84px;
+
+      &--center {
+        text-align: center;
+        padding-top: 43px;
+        display: flex;
+        justify-content: center;
+
+        &::before {
+          content: "";
+          position: absolute;
+          background-color: $line;
+          width: 100%;
+          height: 1px;
+          left: 0;
+          top: 53px;
+        }
+
+        &::after {
+          content: "контактная информация";
+          position: absolute;
+          background-color: $white;
+          padding: 0 60px;
+        }
+
+        @media (min-width: $desktop-width) {
+          padding-bottom: 72px;
+        }
+      }
+    }
+
+    &--middle {
+      text-align: center;
+      padding-top: 36px;
+      padding-bottom: 74px;
       display: flex;
       justify-content: center;
+
+      @media (min-width: $desktop-width) {
+        display: flex;
+        justify-content: center;
+      }
     }
 
     .form__line {
@@ -154,7 +182,7 @@
       width: 100%;
       height: 1px;
       left: 0;
-      top: 74px;
+      top: 59px;
     }
 
     span {
@@ -181,7 +209,7 @@
   margin-right: 10px;
   font-family: $base-font;
   text-transform: uppercase;
-  padding-bottom: 8px;
+  padding-bottom: 15px;
 
   &--contact {
     padding-left: 20px;
@@ -269,7 +297,7 @@
 .form__wrap {
   display: flex;
   align-items: center;
-  padding-bottom: 25px;
+  padding-bottom: 20px;
 }
 
 .form__icon {

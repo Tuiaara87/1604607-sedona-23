@@ -31,13 +31,14 @@
     mix-blend-mode: normal;
     color: $white;
     background: rgba(0, 0, 0, 0.3);
+    height: 77px;
   }
 }
 
 .photos__package {
   display: flex;
   flex-direction: column;
-  padding-top: 17px;
+  padding-top: 5px;
 }
 
 .photos__title {
@@ -47,6 +48,7 @@
   line-height: $line-height24;
   font-weight: bold;
   margin: 0;
+  padding-top: 7px;
 
   @media (min-width: $tablet-width) {
     &--first {
@@ -113,7 +115,7 @@
 }
 
 .photos__container {
-  padding-top: 22px;
+  padding-top: 10px;
 
   @media (min-width: $tablet-width) {
     margin: 0 auto;

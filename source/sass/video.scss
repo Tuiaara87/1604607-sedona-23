@@ -9,8 +9,12 @@
   @media (min-width: $tablet-width) {
     font-size: $font-size30;
     margin: 0;
-    padding-bottom: 30px;
+    padding-bottom: 0;
     padding-top: 58px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 64px;
   }
 }
 
@@ -26,14 +30,16 @@
   padding-bottom: 33px;
 
   @media (min-width: $tablet-width) {
+    padding-top: 37px;
     padding-left: 157px;
     padding-right: 162px;
-    padding-bottom: 67px;
+    padding-bottom: 77px;
   }
 
   @media (min-width: $desktop-width) {
     padding-left: 377px;
     padding-right: 375px;
+    padding-top: 38px;
   }
 }
 

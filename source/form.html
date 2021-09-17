@@ -26,7 +26,7 @@
       <div class="header__burger">
         <span></span>
       </div>
-      <nav class="navigation navigation--opened wrapper">
+      <nav class="navigation wrapper">
         <!--для скрытия мобильного меню нужно удалить класс navigation--opened-->
         <button class="navigation__toggle visually-hidden" type="button">
           <span class="visually-hidden">Открыть меню</span>
@@ -76,15 +76,15 @@
             <div class="form form--right">
               <div class="form__wrap">
                 <label class="form__fill-in" for="name-field">имя<sup>*</sup>:</label>
-                <input class="form__input" type="text" name="name" value="Петр" id="name-field" required>
+                <input class="form__input" type="text" name="name" placeholder="Петр" id="name-field" required>
               </div>
               <div class="form__wrap">
                 <label class="form__fill-in" for="family-name">фамилия<sup>*</sup>:</label>
-                <input class="form__input" type="text" name="name" value="Иванов" id="family-name" required>
+                <input class="form__input" type="text" name="name" placeholder="Иванов" id="family-name" required>
               </div>
               <div class="form__wrap">
                 <label class="form__fill-in" for="father-name">отчество:</label>
-                <input class="form__input" type="text" name="name" value="Александрович" id="father-name">
+                <input class="form__input" type="text" name="name" placeholder="Александрович" id="father-name">
               </div>
             </div>
             <div class="line"></div>
@@ -147,7 +147,7 @@
             <legend class="form__title form__title--middle">
               <span class="form__line"></span><span>посещенные достопримечательности:</span>
             </legend>
-            <div class="form">
+            <div class="form form--tablet">
               <div class="form__wrap">
                 <input class="visually-hidden" type="checkbox" name="places" id="bridge-field" checked>
                 <label class="form__checkbox" for="bridge-field"><span class="form__text">Мост Дьявола</span></label>
@@ -183,11 +183,15 @@
                   rows="10">Опишите подробно все свои восторги</textarea>
               </label>
 
-              <div class="textarea__wrap">
-                <a class="button" href="#">
-                  отправить отзыв
-                </a>
-                <p class="textarea__fill-in"><span class="tablet-desktop">* - обязательные поля</span></p>
+              <div class="button">
+                <div class="button__container button__container--tablet">
+                  <a class="button__wrap" href="#">
+                    отправить отзыв
+                  </a>
+                </div>
+              </div>
+              <div class="obligatorily">
+                <p class="obligatorily__fill-in"><span class="tablet-desktop">* - обязательные поля</span></p>
               </div>
             </div>
           </div>
@@ -195,7 +199,7 @@
         </form>
       </section>
       <footer class="footer wrapper">
-        <p class="footer__hashtag">#visitsedona</p>
+        <p class="footer__hashtag footer__hashtag--form">#visitsedona</p>
 
         <ul class="social">
           <li class="social__item">
